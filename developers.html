@@ -61,7 +61,7 @@
 <table cellpadding="15" cellspacing="0" border="0" width="100%">
 <tr>
 <td align="left" valign="top"><br>
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<table cellpadding="0" cellspacing="0" border="0" width="90%">
 <tr>
 <td align="right"><img src="img/dots.gif" width="52" height="11" hspace="5" alt=">>>>>"></td>
 <td valign="top" class="headertext">QuickFIX Source Code</td>
@@ -87,10 +87,22 @@
 <tr>
 <td>&nbsp;</td>
 <td class="bodytext">
-
-      Instructions for checking out from the repository using
-      anonymous CVS access can be found <a
-      href="http://sourceforge.net/cvs/?group_id=37535">here</a>.
+      
+      <p>
+      <u>login</u><br/>
+      cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/quickfix login
+      <br/><br/>
+      <u>checkout</u><br/>
+      cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/quickfix co quickfix
+      </p>
+      <p>
+      When prompted for a password for anonymous, simply hit [return].
+      </p>
+      <p>
+      More information about CVS access can be found at out
+      SourceForge <a
+      href="http://sourceforge.net/cvs/?group_id=37535">CVS page</a>
+      </p>
       
 </td>
 </tr>
@@ -157,7 +169,7 @@
 <td valign="top"><img src="img/newsDots.gif" alt="::" border="0" vspace="5"></td>
 <td valign="top" class="callouttext">
 
-    New QuickFIX 1.6.0 is available! Please see the release
+    New <b>QuickFIX 1.7.0</b> is available! Please see the release
     notes. Need support? Join our <a href="mailinglist.html">mailing
     list</a> or ask us about "<a href="services.html">services</a> we 
     provide."

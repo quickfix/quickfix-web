@@ -20,9 +20,9 @@ textarea{font-family:"Verdana","Arial","Helvetica",sans-serif;font-size:0.60em;c
 .divider{background-color:#B4B4B4;}
 .calloutcolor{background-color:#999999;}
 .calloutborder{background-color:#CCCCCC;}
-.callouttext{font-size:0.60em;color:#666666;line-height:1.5em;}
+.callouttext{font-size:0.70em;color:#666666;line-height:1.0em;}
 .bordercolor{background-color:#000000;}
-.bodytext{font-size:0.66em;color:#000000; line-height:1.5em;}
+.bodytext{font-size:0.70em;color:#000000; line-height:1.2em;}
 .headertext{font-size:1em;color:#000000;font-weight:bold;font-family:"Arial","Helvetica",sans-serif;}
 .footertext{font-size:0.54em;color:#000000; text-align:center}
 .spacer{width:1px;height:1px;}

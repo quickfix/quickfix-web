@@ -9,7 +9,7 @@
   </static>
   <static title="News">
     <![CDATA[
-    New QuickFIX 1.6.0 is available! Please see the release
+    New <b>QuickFIX 1.7.0</b> is available! Please see the release
     notes. Need support? Join our <a href="mailinglist.html">mailing
     list</a> or ask us about "<a href="services.html">services</a> we 
     provide."
@@ -36,22 +36,172 @@
       <a href="http://www.fixprotocol.org/">FIX protocol web site</a>.
       ]]>
     </section>
+    <section title="Future of QuickFIX">
+      <![CDATA[
+      <p>
+      QuickFIX has already proven itself as a viable, and often
+      preferable, alternative to both commercial and proprietary FIX
+      engines.  Not only are little guys flocking to it due to it's
+      cheap price (free), but the big guys are just as interested due
+      to the outstanding flexibility that comes with no strings
+      attached access to the source code.
+      </p>
+      <p>
+      But QuickFIX does not rely on cost to be
+      relevant. For many companies, their FIX interface is the primary
+      public presentation of their technology based services. It is how they say
+      "<i>hey look what we can do!</i>". To have people put their faith in
+      QuickFIX is a demonstration that they have faith in it's
+      quality.
+      </p>
+      <p>
+      I've seen the process of many companies, large and small, go
+      through the adoption process of a FIX engine. What is
+      interesting about QuickFIX is where the adoption has it's
+      roots... <b>software developers</b>. QuickFIX has been so
+      sucessful because software developers have downloaded it, used
+      it, liked it, and convinced management that this is the way to
+      go. Software teams cannot underestimate the impact they can
+      have on their organization. This industry has so rapidly
+      adopted technology that the technologist have an unusual amount
+      of influence not found in many other industries.
+      </p>
+      <p>
+      Why does QuickFIX garner so much grass roots support? Opening
+      up the source code is part of it, but that is only the
+      start. It is really the over all culture of openess that
+      QuickFIX enourages. Not only do we open up the source code, we
+      open up our developement methods, the tools we use, the
+      automated tests we run, the community we create which each and
+      every one of you has an opportunity to contribute to, and of
+      course the future direction we decide to take.
+      </p>
+      <p>
+      More than two years after releasing QuickFIX I am now asking
+      myself, for the first time really, <b>what now?</b>. When starting
+      out the project, the goal was obvious: To create a fully
+      functional, non-crippled, open implementation of the FIX
+      protocol (<i>after all, an open protocol deserves an open
+      implementation, does it not?</i>). It was intended to act as an
+      alternative, or a complement to, existing FIX engines. Having
+      seen this come to fruition, I am now eager to see what our
+      longer term impact will be.
+      </p>
+      <p>
+      Over the past few months I've had a real shift in
+      perspective. I have since become one of the many users of
+      QuickFIX. Yes, I had helped others establish QuickFIX
+      installations before, but now I use and maintain it for my
+      own purposes. My hope is that this experience will enlighten me
+      somewhat. So I have outlined a few goals. These are some
+      initial thoughts which I hope will kick off some discussions.
+      </p>
+      <p>
+      <br/><u>More Transparency</u><br/>
+      We need to get better visibility into the system. The logs are
+      a great start, but we should be able to learn more about what
+      is going on. What sessions are available? Who is logged on?
+      What are my sequence numbers? These are generally available in
+      files or databases but can be hard to aggregate and get at in a
+      moments notice. This information and more should be quickly and
+      easily retrieved.<br/>
+      <br/><u>More Control</u><br/>
+      QuickFIX should become more dynamic. Let's have the ability to
+      modify the sequence numbers, add and remove sessions, and
+      modify the session times without taking down the engine. We
+      should have the ability to modify the configuration file and
+      have QuickFIX reconfigure itself while it's running.<br/>
+      <br/><u>Simplify Installation</u><br/>
+      Let's lower the learning curve. Part of this is to improve the
+      quality and depth of our documentation, but more of it is to
+      just make it more intuitive. Have project templates for
+      different application types in all supported API
+      languages. Supply binary distributions that can be installed in
+      one step. Have more <i>useful</i> example applications that
+      demonstrate how to create applications and can be used to solve
+      real world problems.<br/>
+      <br/><u>Keep It Pure</u><br/>
+      QuickFIX is a FIX Engine. The real core that implements the
+      protocol. It is not a so called enterprise solution. We
+      shouldn't clog with layers that increase complexity and can
+      make us lose sight of out purpose. Let's keep it simple and
+      elegant. And in this simplicity and elegance will come a power
+      and flexibility unmatched from more bloated solutions.<br/>
+      <br/><u>Build Tools <i>Around</i> QuickFIX / FIX</u><br/>
+      That being said, we should not shy away from building powerful
+      tools around the core engine. The kinds of tools that make up
+      enterprise solutions. These tools should be kept in modules
+      separated from the main quickfix module. Let's create the log
+      viewers, control panels, and other tools that will be useful in
+      administering QuickFIX or any FIX insallation. Let's just keep
+      them logically separate from the base engine. The
+      should <i>use</i> QuickFIX, not <i>be</i> QuickFIX.<br/>
+      <br/><u>Add Scripting Support</u><br/>
+      Powerful tools and capabilities can be added with support for a
+      modern scripting language like Ruby or Python. So many great
+      utilities and applications could be developed much more rapidly.
+      </p>
+      <p>
+      In addition to these, we should continue to create necessary
+      functionality like more flexible session times, additional
+      database support, and more transports like tibco. Now I know
+      many of are right now screaming <b><i>"What about a pure Java
+      implementation!!!"</i></b> To be perfectly honest I'm quite
+      torn about this. I know many people want this but I'm not sure
+      if this is yet the time or if we have the proper framework in
+      place to support two implementations of the same detailed
+      session logic. I realize it will be a big usability win for
+      many people, but I believe pre-built binaries is a good step to
+      eliminate some of those issues. Of course there are the issues
+      with the flakiness of JNI (which is really just due to the
+      extreme difficulty of getting it right). These issues seem to
+      have subsided with newer releases as we learned more about the
+      issues involved. I'm sure I will hear many opinions on this and
+      I would like to hear them as this may be a bigger issues with
+      bigger reasons then I am currently aware of.
+      </p>
+      <p>
+      Please give me feedback on where you would like to see QuickFIX
+      go.  Either send feedback directly to <a
+      href="mailto:orenmnero@users.sourceforge.net">me</a>, or better
+      yet post to the <a
+      href="mailto:quickfix-developers@lists.sourceforge.net">mailing
+      list</a> so everyone can weigh in on you're thoughts.
+      </p>
+      <p>
+      <i>Oren Miller</i><br/>
+      <a href="mailto:orenmnero@users.sourceforge.net">orenmnero@users.sourceforge.net</a>
+      </p>
+      ]]>
+    </section>
   </page>
   
   <page title="Download">
-    <section title="Source Code Archives">
+    <section title="Source Code">
       <![CDATA[
-      <i>Updated release source code</i>
-      <br/><br/>
-      <b>Windows: </b>
-      <a
-      href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.6.0.zip">
-      quickfix-1.6.0.zip</a>
       <br/>
-      <b>*nix: </b>
-      <a
-      href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.6.0.tar.gz">
-      quickfix-1.6.0.tar.gz</a>
+      <table>
+        <tr>
+          <td align="right">
+            Windows:
+          </td>
+          <td>
+            <a
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.7.0.zip">
+            quickfix-1.7.0.zip</a>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            Unix:
+          </td>
+          <td>
+            <a
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.7.0.zip">
+            quickfix-1.7.0.tar.gz</a>
+          </td>
+        </tr>
+      </table>
       ]]>
     </section>
     <section title="Warnings">
@@ -91,14 +241,19 @@
     <section title="Protocol Documentation">
       <![CDATA[
       For help with the FIX protocol itself, check out the 
-      <a href="http://www.fixprotocol.org">FIX Protocol Homepage</a>
+      <a href="http://www.fixprotocol.org">FIX Protocol
+      Homepage</a>. Of particular interest are the <a
+      href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">specification
+      documents</a> and the <a
+      href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">discussion forums</a>
       ]]>
     </section>
   </page>
   
   <page title="MailingList">
-    <section title="Subscribing">
+    <section title="Subscriptions and Archives">
       <![CDATA[
+      <br/>
       <b>User Support</b>
       <br/>
       <i>quickfix-users@lists.sourceforge.net</i>
@@ -107,7 +262,7 @@
       | 
       <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-users">Subscribe/Unsubscribe</a>
       <br/><br/>
-      <b>Developer Support*</b>
+      <b>Developer Support</b> [<i>most active</i>]
       <br/>
       <i>quickfix-developers@lists.sourceforge.net</i>
       <br/>
@@ -132,7 +287,11 @@
       use this XML version to generate most of the code for our FIX
       engine. Seeing as though it is so useful for us, we figured
       other people might be interested too.
-     <br><br>            
+     <br/><br/>
+      This is a <i>machine readable</i> version of the FIX
+      specification. If you have been looking for such a thing, this
+      is it!
+     <br/><br/>
      <li>FIX 4.0  <a href="FIX40.xml">xml</a>
                   <a href="FIX40.html">html</a>
      </li>
@@ -148,10 +307,9 @@
      <li>FIX 4.4  <a href="FIX43.xml">xml</a>
                   <a href="FIX43.html">html</a>
      </li>    
-     <br><br>    
+     <br/>
      The XML documents were then reformatted into small browsable HTML
-     files using this <a href="fixtohtml.xsl">xsl</a>
-     <br><br>
+     files using this <a href="fixtohtml.xsl">xsl stylesheet</a>
       ]]>
     </section>
   </page>
@@ -166,10 +324,22 @@
       ]]>
     </section>
     <section title="Anonymous CVS Access">
-      <![CDATA[
-      Instructions for checking out from the repository using
-      anonymous CVS access can be found <a
-      href="http://sourceforge.net/cvs/?group_id=37535">here</a>.
+      <![CDATA[      
+      <p>
+      <u>login</u><br/>
+      cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/quickfix login
+      <br/><br/>
+      <u>checkout</u><br/>
+      cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/quickfix co quickfix
+      </p>
+      <p>
+      When prompted for a password for anonymous, simply hit [return].
+      </p>
+      <p>
+      More information about CVS access can be found at out
+      SourceForge <a
+      href="http://sourceforge.net/cvs/?group_id=37535">CVS page</a>
+      </p>
       ]]>
     </section>
   </page>
@@ -179,7 +349,9 @@
     <![CDATA[
      If you are interested in learning about ThoughtWorks' QuickFIX,
      FIX, and trading related services, just email us at <a
-     href="mailto:trading@thoughtworks.com">trading@thoughtworks.com</a>
+     href="mailto:trading@thoughtworks.com">trading@thoughtworks.com</a>. Please
+     leave you're contact information such as email or a telephone
+     number where you can be reached.
     ]]>
     </section>
   </page>

@@ -149,7 +149,7 @@ document.elements.each { |element|
     f.puts "<table cellpadding=\"15\" cellspacing=\"0\" border=\"0\" width=\"100%\">"
     f.puts "<tr>"
     f.puts "<td align=\"left\" valign=\"top\"><br>"
-    f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">"
+    f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"90%\">"
     outputPage(f, page)
     f.puts "</table>"
     f.puts "</td>"
