@@ -218,10 +218,9 @@
     <section title="External Tools">
       <![CDATA[
       <p>
-      Here is a list of *free* third party tools that can be used in conjunction
+      Here is a list of <i>free</i> third party tools that can be used in conjunction
       with QuickFIX.  These utilities are in no way affiliated with QuickFIX 
-      and are supported by their respective companies or organizations.  All 
-      tools
+      and are supported by their respective companies or organizations.
       </p>
       <p>
       <table border="1" width="100%">

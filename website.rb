@@ -65,6 +65,9 @@ def outputHeader(f, page, document)
   f.puts "<table cellpadding=\"4\" cellspacing=\"0\" border=\"0\">"
   f.puts "<tr>"
   title = page.attributes["title"].downcase
+
+  last = document.elements["/website/page[position()=last()]"]
+
   document.elements.each { |element|
     element.elements.each("page") { |page|
       pageTitle = page.attributes["title"].downcase
@@ -73,7 +76,10 @@ def outputHeader(f, page, document)
       else
 	f.puts "<td class=\"navoff\"><a href=\"#{pageTitle}.html\"><img src=\"img/#{pageTitle}Off.gif\" alt=\"#{pageTitle}\"></a></td>"
       end
-      f.puts "<td><img src=\"img/navDots.gif\" alt=\"::\"></td>"
+      if( page != last )
+      then
+	f.puts "<td><img src=\"img/navDots.gif\" alt=\"::\"></td>"
+      end
     }
   }
   f.puts "</tr>"
@@ -93,6 +99,7 @@ def outputPage(f, page)
     f.puts "<td>&nbsp;</td>"
     f.puts "<td class=\"bodytext\">"
     f.puts section.cdatas
+    f.puts "<br/>"
     f.puts "</td>"
     f.puts "</tr>"
     f.puts "<tr>"
