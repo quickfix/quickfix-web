@@ -108,38 +108,44 @@
 </tr>
 <tr>
 <td align="right"><img src="img/dots.gif" width="52" height="11" hspace="5" alt=">>>>>"></td>
-<td valign="top" class="headertext">Scripting FIX</td>
+<td valign="top" class="headertext">Getting Help</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td class="bodytext">
 
-      <i>June 29, 2004</i>
       <p>
-      Integration of FIX into a trading system is often viewed as a <b>big complicated thing</b>, and in large systems, it sometimes can be.  But does it always have to be?
-      </p>
-      <p>
-      At it's core, FIX does something really simple. No matter how much someone may go on about "Enterprise Solutions", the fact is you just want to move data from one place to another.  Sometimes you need all the bells and whistles required by a large-scale deployment, but sometimes you just need to shove some data down the pipe.
-      </p>
-      <p>
-      An interesting thing happened in the financial industry a couple of years ago. Traditionally based on C and C++, more firms began adopting Java as their primary development platform. Moving from C++ to Java is not interesting in itself.  What is interesting is the idea of CTO's shifting focus from pure execution speed, and beginning to concentrate more on rapid development.  They saw Java as a way to achieve this.
-      </p>
-      <p>
-      Scripting languages like 
-      <a href="http://www.ruby-lang.org">Ruby</a> and <a href="http://www.python.org">Python</a> have proven themselves to be wonderfully robust rapid development environments. At the cost of execution speed, you can put together systems in days which could take weeks with higher maintenance languages like C++ or even Java. For processes that don't need to eke out every last CPU cycle, my hope and belief is that these languages will become adopted for more diverse tasks.  
-      </p>
-      <p>
-      Although several nice libraries like <a href="http://www.quantlib.org">quantlib</a> have scripting interfaces through python, there are few options for connectivity.  Well, thanks to the magic of <a href="http://www.swig.org">SWIG</a>, this is changing.  As of version <i>1.8.0</i>, QuickFIX comes with a full-featured Python API.  Now you can take those "prototypes" you have implemented in python and connect them to real trading systems.  And since the core is still implemented in C++, you still retain many of the speed advantages over a pure python implementation.
-      </p>
-      <p>
-      Next time someone dumps a list of trades in <b>Random File Format v.136.98b</b> that must be pushed over a FIX connection, you will have a proper tool to do this.  You can rapidly implement your automated trading strategies and forward test them on a live connection.  And heck, if it makes money, why re-implement it anyway.
-      </p>
-      <p>
-      Replacing complexity with simplicity is my main motivator right now.  Less C++ and more scripting will make my life easier.  I can write more functionality with less scaffolding.  Spend time running code instead of compiling it.  What can I say?  The summer makes me lazy.  I'd rather do more in less time with less effort.  Isn't that why we invented computers to begin with?
-      </p>
-      <p>
-      <i>Oren Miller</i><br/>
-      <a href="mailto:oren@quickfixengine.org">oren@quickfixengine.org</a>
+      <table cellspacing="10">
+      <tr>
+       <td valign="top"><b><a href="quickfix/doc/html/index.html">Documentation</a></b></td>
+       <td>The best way to get started is with the online documentation, also provided with every QuickFIX download.  The documentation helps you with installation, setting up your projects, creating applications, configuration and code samples for all supported APIs.
+       </td>
+      </tr>
+      <tr>
+	<td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td>       
+	<td>QuickFIX has a very active user and development community.  Join our mailing lists and take advantage of our knowledge and helpful disposition.  Mailing lists messages all get stored in a searchable archive.  You can choose to receive emails as they come, in daily batches, or not at all if you prefer to browse through the archives.</a>
+      </td>
+      </tr>
+      <tr>
+       <td valign="top"><b><a href="wikifix/index.php?QuickFix">Wiki</a></b></td>
+       <td>
+	 Wikis provide an environment ideal for collaborative content management where anyone can contribute.  This is a good place to get up to date information on what is happening with QuickFIX.
+       </td>
+      </tr>
+      <tr>
+       <td valign="top"><b><a href="bugtracker">Bug Tracker</a></b></td>
+       <td>
+	 We have recently added a public defect tracker.  Here you can report defects and monitor their progress.
+       </td>
+      </tr>
+      <tr>
+	<td valign="top"><b><a href="services.html">Support Contracts</a></b></td>
+	<td>Support contracts and consulting services are available for purchase.  You can ensure the someone will be available to assist you, guaranteed. We have offices in in North America and Europe, and provide several levels of support depending on your needs.
+	</td>
+      </tr>
+      </table>
+      <br/>
+      Need more information?  Email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
       </p>
       
 <br/>
@@ -172,11 +178,14 @@
 <td valign="top" class="callouttext">
 
     <p>
-    New <b>QuickFIX 1.8.0</b> is available! Please see the release
+    <a href="http://www.wikifix.org">WikiFIX</a> is now online.
+    </p>
+    <p>
+    <b><font color="#33DD33">QuickFIX 1.9.2</font></b> is available! Please see the release
     <a href="quickfix/NEWS">notes</a>. 
     </p>
     <p>
-    QuickFIX support contracts <a href="services.html">now available</a>!
+    QuickFIX support contracts <a href="services.html">now available</a>.
     </p>
     
 </td>

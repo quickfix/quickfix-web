@@ -2,11 +2,14 @@
   <static title="News">
     <![CDATA[
     <p>
-    New <b>QuickFIX 1.8.0</b> is available! Please see the release
+    <a href="http://www.wikifix.org">WikiFIX</a> is now online.
+    </p>
+    <p>
+    <b><font color="#33DD33">QuickFIX 1.9.2</font></b> is available! Please see the release
     <a href="quickfix/NEWS">notes</a>. 
     </p>
     <p>
-    QuickFIX support contracts <a href="services.html">now available</a>!
+    QuickFIX support contracts <a href="services.html">now available</a>.
     </p>
     ]]>
   </static>
@@ -45,34 +48,40 @@
       </p>
       ]]>
     </section>
-    <section title="Scripting FIX">
+    <section title="Getting Help">
       <![CDATA[
-      <i>June 29, 2004</i>
       <p>
-      Integration of FIX into a trading system is often viewed as a <b>big complicated thing</b>, and in large systems, it sometimes can be.  But does it always have to be?
-      </p>
-      <p>
-      At it's core, FIX does something really simple. No matter how much someone may go on about "Enterprise Solutions", the fact is you just want to move data from one place to another.  Sometimes you need all the bells and whistles required by a large-scale deployment, but sometimes you just need to shove some data down the pipe.
-      </p>
-      <p>
-      An interesting thing happened in the financial industry a couple of years ago. Traditionally based on C and C++, more firms began adopting Java as their primary development platform. Moving from C++ to Java is not interesting in itself.  What is interesting is the idea of CTO's shifting focus from pure execution speed, and beginning to concentrate more on rapid development.  They saw Java as a way to achieve this.
-      </p>
-      <p>
-      Scripting languages like 
-      <a href="http://www.ruby-lang.org">Ruby</a> and <a href="http://www.python.org">Python</a> have proven themselves to be wonderfully robust rapid development environments. At the cost of execution speed, you can put together systems in days which could take weeks with higher maintenance languages like C++ or even Java. For processes that don't need to eke out every last CPU cycle, my hope and belief is that these languages will become adopted for more diverse tasks.  
-      </p>
-      <p>
-      Although several nice libraries like <a href="http://www.quantlib.org">quantlib</a> have scripting interfaces through python, there are few options for connectivity.  Well, thanks to the magic of <a href="http://www.swig.org">SWIG</a>, this is changing.  As of version <i>1.8.0</i>, QuickFIX comes with a full-featured Python API.  Now you can take those "prototypes" you have implemented in python and connect them to real trading systems.  And since the core is still implemented in C++, you still retain many of the speed advantages over a pure python implementation.
-      </p>
-      <p>
-      Next time someone dumps a list of trades in <b>Random File Format v.136.98b</b> that must be pushed over a FIX connection, you will have a proper tool to do this.  You can rapidly implement your automated trading strategies and forward test them on a live connection.  And heck, if it makes money, why re-implement it anyway.
-      </p>
-      <p>
-      Replacing complexity with simplicity is my main motivator right now.  Less C++ and more scripting will make my life easier.  I can write more functionality with less scaffolding.  Spend time running code instead of compiling it.  What can I say?  The summer makes me lazy.  I'd rather do more in less time with less effort.  Isn't that why we invented computers to begin with?
-      </p>
-      <p>
-      <i>Oren Miller</i><br/>
-      <a href="mailto:oren@quickfixengine.org">oren@quickfixengine.org</a>
+      <table cellspacing="10">
+      <tr>
+       <td valign="top"><b><a href="quickfix/doc/html/index.html">Documentation</a></b></td>
+       <td>The best way to get started is with the online documentation, also provided with every QuickFIX download.  The documentation helps you with installation, setting up your projects, creating applications, configuration and code samples for all supported APIs.
+       </td>
+      </tr>
+      <tr>
+	<td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td>       
+	<td>QuickFIX has a very active user and development community.  Join our mailing lists and take advantage of our knowledge and helpful disposition.  Mailing lists messages all get stored in a searchable archive.  You can choose to receive emails as they come, in daily batches, or not at all if you prefer to browse through the archives.</a>
+      </td>
+      </tr>
+      <tr>
+       <td valign="top"><b><a href="wikifix/index.php?QuickFix">Wiki</a></b></td>
+       <td>
+	 Wikis provide an environment ideal for collaborative content management where anyone can contribute.  This is a good place to get up to date information on what is happening with QuickFIX.
+       </td>
+      </tr>
+      <tr>
+       <td valign="top"><b><a href="bugtracker">Bug Tracker</a></b></td>
+       <td>
+	 We have recently added a public defect tracker.  Here you can report defects and monitor their progress.
+       </td>
+      </tr>
+      <tr>
+	<td valign="top"><b><a href="services.html">Support Contracts</a></b></td>
+	<td>Support contracts and consulting services are available for purchase.  You can ensure the someone will be available to assist you, guaranteed. We have offices in in North America and Europe, and provide several levels of support depending on your needs.
+	</td>
+      </tr>
+      </table>
+      <br/>
+      Need more information?  Email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
       </p>
       ]]>
     </section>
@@ -96,8 +105,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.8.0.zip">
-            quickfix-1.8.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.9.2.zip">
+            quickfix-1.9.2.zip</a>
           </td>
         </tr>
         <tr>
@@ -106,8 +115,17 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-1.8.0.zip">
-            quickfix-bin-1.8.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vc6-1.9.2.zip">
+            quickfix-bin-vc6-1.9.2.zip</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td
+          <td>
+            <a
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vc7-1.9.2.zip">
+            quickfix-bin-vc7-1.9.2.zip</a>
           </td>
         </tr>
 	<tr>
@@ -123,14 +141,23 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.8.0.tar.gz">
-            quickfix-1.8.0.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.9.2.tar.gz">
+            quickfix-1.9.2.tar.gz</a>
           </td>
         </tr>
       </table>
       </p><br/>
+      <a href="http://sourceforge.net/project/showfiles.php?group_id=37535&package_id=29816">Release Archive</a>
+      <br/>
       ]]>
     </section>
+    <section title="Updates">
+      <![CDATA[
+      <p>
+	Keep informed of future releases by subscribing to our <a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=37535">RSS</a> feed.
+      </p>
+      ]]>
+    </section> -->
     <section title="External Tools">
       <![CDATA[
       <p>
@@ -180,21 +207,23 @@
     <section title="Project/Code Documentation">
       <![CDATA[
       <p>
-      Documentation is included with the QuickFIX distribution. You
-      can also access it <a
-      href="quickfix/doc/html/index.html">online</a>. We generate our 
-      documentation with an open source product called 
-      <a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a>  It
-      is amazing. We highly recommend checking it out.
+      Online documentation is available <a href="quickfix/doc/html/index.html">here</a>.
       </p>
       ]]>
     </section>
     <section title="Installing QuickFIX">
       <![CDATA[
       <p>
-      You can also find help on how to 
-      <a href="quickfix/doc/html/install.html">install QuickFIX</a>
-      and run the acceptance tests.
+      Complete instructions are available for 
+      <a href="quickfix/doc/html/install.html">installing QuickFIX</a>
+      and running the acceptance tests.
+      </p>
+      ]]>
+    </section>
+    <section title="Wiki">
+      <![CDATA[
+      <p>
+      We also maintain a <a href="wikifix/index.php?QuickFix">wiki</a> to provide a forum for discussion and collaboration.
       </p>
       ]]>
     </section>
@@ -276,9 +305,26 @@
       </p>
       ]]>
     </section>
+    <section title="FPL Repository XML Conversion">
+      <![CDATA[
+      <p>
+	The FPL has recently released an xml repository for the FIX protocol.  This repository is available to FPL members only.  We have created a script that will convert from the FPL repository into a QuickFIX data dictionary in the format of the ones available above.  Simply place this script in the root directory of the unzipped schema, and run it.  It will scan for all directories in the format of FIX.x.y and create a FIXxy.xml file where x is the major and y is the minor version of FIX.  You will need a <a href="http://www.rubycentral.com/">ruby</a> interpreter.
+      </p>
+      <p>
+	<b>Download Script: </b><a href="fix_to_quickfix.rb">fix_to_quickfix.rb</a>
+      </p>
+      ]]>
+    </section>
   </page>
   
   <page title="Developers">
+    <section title="Defect Tracking">
+      <![CDATA[
+        <p>
+        Report and follow-up on bug reports <a href="bugtracker">here</a>.
+        </p>
+      ]]>
+    </section>
     <section title="QuickFIX Source Code">
       <![CDATA[
       <p>
@@ -306,6 +352,14 @@
       SourceForge <a
       href="http://sourceforge.net/cvs/?group_id=37535">CVS page</a>
       </p>
+      ]]>
+    </section>
+    <section title="Automated Builds">
+      <![CDATA[
+      <br/>
+      <li><a href="autobuild-i686-linux.html">Slackware Linux 9.0</a></li>
+      <li><a href="autobuild-i386-msvcrt-vc6.html">Windows Visual Studio 6</a></li>
+      <li><a href="autobuild-i386-msvcrt-vc7.html">Windows Visual Studio 7</a></li>
       ]]>
     </section>
   </page>
