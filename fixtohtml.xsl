@@ -50,7 +50,7 @@
     <H2><CENTER>ADMINISTRATIVE MESSAGES</CENTER></H2>
     <xsl:for-each select="fix/messages/message[@msgcat='admin']">
     <A>
-      <xsl:attribute name="NAME">MESSAGE_<xsl:value-of select="@name"/></xsl:attribute>
+      <xsl:attribute name="NAME">message_<xsl:value-of select="@name"/></xsl:attribute>
       <H3><xsl:value-of select="@name"/></H3>
     </A>
     <xsl:call-template name="message-table"/>
@@ -60,7 +60,7 @@
     <H2><CENTER>APPLICATION MESSAGES</CENTER></H2>
     <xsl:for-each select="fix/messages/message[@msgcat='app']">
     <A>
-      <xsl:attribute name="NAME">MESSAGE_<xsl:value-of select="@name"/></xsl:attribute>
+      <xsl:attribute name="NAME">message_<xsl:value-of select="@name"/></xsl:attribute>
       <H3><xsl:value-of select="@name"/></H3>
     </A>
     <xsl:call-template name="message-table"/>

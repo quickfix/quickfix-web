@@ -1,10 +1,13 @@
-function xml-to-html
-{
-  xsltproc fixtohtml.xsl FIX$1.xml > FIX$1.html
-}
+#!/bin/bash
 
-xml-to-html 40
-xml-to-html 41
-xml-to-html 42
-xml-to-html 43
-xml-to-html 44
+for XML in FIX??_*.xml
+do
+    ./trimxml.rb $XML > $XML.tmp
+    mv $XML.tmp $XML
+done
+
+for XML in FIX*.xml 
+do
+    HTML=`echo $XML | sed 's/xml/html/'`
+    xsltproc fixtohtml.xsl $XML > $HTML
+done
