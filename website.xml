@@ -126,7 +126,7 @@
       QuickFIX is a FIX Engine. The real core that implements the
       protocol. It is not a so called enterprise solution. We
       shouldn't clog with layers that increase complexity and can
-      make us lose sight of out purpose. Let's keep it simple and
+      make us lose sight of our purpose. Let's keep it simple and
       elegant. And in this simplicity and elegance will come a power
       and flexibility unmatched from more bloated solutions.<br/>
       <br/><u>Build Tools <i>Around</i> QuickFIX / FIX</u><br/>
@@ -135,7 +135,7 @@
       enterprise solutions. These tools should be kept in modules
       separated from the main quickfix module. Let's create the log
       viewers, control panels, and other tools that will be useful in
-      administering QuickFIX or any FIX insallation. Let's just keep
+      administering QuickFIX or any FIX installation. Let's just keep
       them logically separate from the base engine. The
       should <i>use</i> QuickFIX, not <i>be</i> QuickFIX.<br/>
       <br/><u>Add Scripting Support</u><br/>
@@ -199,7 +199,7 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.7.0.zip">
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.7.0.tar.gz">
             quickfix-1.7.0.tar.gz</a>
           </td>
         </tr>
@@ -306,8 +306,8 @@
      <li>FIX 4.3  <a href="FIX43.xml">xml</a>
                   <a href="FIX43.html">html</a>
      </li>    
-     <li>FIX 4.4  <a href="FIX43.xml">xml</a>
-                  <a href="FIX43.html">html</a>
+     <li>FIX 4.4  <a href="FIX44.xml">xml</a>
+                  <a href="FIX44.html">html</a>
      </li>    
      <br/>
      The XML documents were then reformatted into small browsable HTML
@@ -352,7 +352,7 @@
      If you are interested in learning about ThoughtWorks' QuickFIX,
      FIX, and trading related services, just email us at <a
      href="mailto:trading@thoughtworks.com">trading@thoughtworks.com</a>. Please
-     leave you're contact information such as email or a telephone
+     leave your contact information such as email or a telephone
      number where you can be reached.
     ]]>
     </section>
