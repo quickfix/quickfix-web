@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>QuickFix</title>
+<title>QuickFix: Open Source FIX Engine</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="css/styleGuide.css" rel="stylesheet" type="text/css">
 </head>
@@ -73,7 +73,7 @@
       QuickFIX is a full-featured open source FIX engine, currently
       compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
       Solaris, FreeBSD and Mac OS X.  API's are available for C++,
-      Java, and .NET.  Learn <a href="About QuickFIX.pdf">more</a>.
+      Java, .NET, and Python.  Learn <a href="About QuickFIX.pdf">more</a>.
       </p>
       
 <br/>
@@ -108,46 +108,34 @@
 </tr>
 <tr>
 <td align="right"><img src="img/dots.gif" width="52" height="11" hspace="5" alt=">>>>>"></td>
-<td valign="top" class="headertext">Open Source in Finance</td>
+<td valign="top" class="headertext">Scripting FIX</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td class="bodytext">
 
+      <i>June 29, 2004</i>
       <p>
-      Attending the <a href="http://www.simc-inc.org/">SIMC</a> conference on
-      <a href="http://www.simc-inc.org/archive0304/opensource/index.htm">Open
-      Source for the Securities Industry</a> was a very surprising, and positive
-      experience. What was interesting was the number of firms, major
-      firms, that are actively encouraging the use and creation of open source
-      software. For the first time when talking about QuickFIX, I didn't feel
-      the need to start out by convincing people that open source has
-      merit. This simple idea seemed to be generally accepted. When QuickFIX
-      was starting out, just a couple of years ago, the attitude out there 
-      was very different.
+      Integration of FIX into a trading system is often viewed as a <b>big complicated thing</b>, and in large systems, it sometimes can be.  But does it always have to be?
       </p>
       <p>
-      It was nice to see that firms like Hewlett Packard, JP Morgan, Reuters,
-      and the like are thinking about these things in a positive light. The
-      general attitude from these companies seems to be that developers are
-      participating in these open source communities anyway, we might as
-      well see how we can capitalize on it. I think this is a good attitude to
-      take because it is a tacit acknowledgement that good ideas come from all
-      sorts of places. There is an understanding that open source projects
-      create value even though they aren't spawned by a corporate strategist.
-      Encouraging participation in the open source community is to encourage 
-      entrepreneurial activity from all employees.
+      At it's core, FIX does something really simple. No matter how much someone may go on about "Enterprise Solutions", the fact is you just want to move data from one place to another.  Sometimes you need all the bells and whistles required by a large-scale deployment, but sometimes you just need to shove some data down the pipe.
       </p>
       <p>
-      I'm very excited to see how OSS will proliferate in finance over the next
-      couple of years. During the month of March when we released version 1.7.0,
-      there were 1000 downloads of QuickFIX. This is three times what we
-      normally see for a release. During the past couple of months we have also
-      seen many major firms that are adopting or seriously evaluating
-      QuickFIX. In the previous corporate climate, I don't think many of these
-      companies would have considered relying on something like QuickFIX. This
-      is changing rapidly, and I hope we begin to see a surge in OSS
-      participation from the financial community.
+      An interesting thing happened in the financial industry a couple of years ago. Traditionally based on C and C++, more firms began adopting Java as their primary development platform. Moving from C++ to Java is not interesting in itself.  What is interesting is the idea of CTO's shifting focus from pure execution speed, and beginning to concentrate more on rapid development.  They saw Java as a way to achieve this.
+      </p>
+      <p>
+      Scripting languages like 
+      <a href="http://www.ruby-central.org">Ruby</a> and <a href="http://www.python.org">Python</a> have proven themselves to be wonderfully robust rapid development environments. At the cost of execution speed, you can put together systems in days which could take weeks with higher maintenance languages like C++ or even Java. For processes that don't need to eek out every last CPU cycle, my hope and belief is that these languages will become adopted for more diverse tasks.  
+      </p>
+      <p>
+      Although several nice libraries like <a href="http://www.quantlib.org">quantlib</a> have scripting interfaces through python, there are few options for connectivity.  Well, thanks to the magic of <a href="http://www.swig.org">SWIG</a>, this is changing.  As of version <i>1.8.0</i>, QuickFIX comes with a full-featured Python API.  Now you can take those "prototypes" you have implemented in python and connect them to real trading systems.  And since the core is still implemented in C++, you still retain many of the speed advantages over a pure python implementation.
+      </p>
+      <p>
+      Next time someone dumps a list of trades in <b>Random File Format v.136.98b</b> that must be pushed over a FIX connection, you will have a proper tool to do this.  You can rapidly implement your automated trading strategies and forward test them on a live connection.  And heck, if it makes money, why re-implement it anyway.
+      </p>
+      <p>
+      Replacing complexity with simplicity is my main motivator right now.  Less C++ and more scripting will make my life easier.  I can write more functionality with less scaffolding.  Spend time running code instead of compiling it.  What can I say?  The summer makes me lazy.  I'd rather do more in less time with less effort.  Isn't that why we invented computers to begin with?
       </p>
       <p>
       <i>Oren Miller</i><br/>
@@ -184,12 +172,11 @@
 <td valign="top" class="callouttext">
 
     <p>
-    New <b>QuickFIX 1.7.1</b> is available! Please see the release
+    New <b>QuickFIX 1.8.0</b> is available! Please see the release
     <a href="quickfix/NEWS">notes</a>. 
-    <br/><br/>
-    Need support? Join our <a href="mailinglist.html">mailing
-    list</a> or ask us about "<a href="services.html">services</a> we 
-    provide."
+    </p>
+    <p>
+    QuickFIX support contracts <a href="services.html">now available</a>!
     </p>
     
 </td>
@@ -208,20 +195,32 @@
 <table>
 <tr>
 <td>
+<p align="center" class="sidetext">
+Source Code Hosted By
+</p>
 <a href="http://sourceforge.net"><IMG src="http://sourceforge.net/sflogo.php?group_id=37535&amp;type=5" width="210" height="62" border="0" alt="SourceForge.net Logo"></a>
 </td>
 </tr>
 <tr>
 <td>
+<p align="center" class="sidetext">
+Website Design By <a href="mailto:ABLewis@thoughtworks.com">Anne B. Lewis</a> Of
+</p>
 <a href="http://www.thoughtworks.com"><IMG src="img/thoughtworks.jpg" width="210" height="61" border="0" alt="ThoughtWorks Logo"></a>
+</td>
+</tr>
+<td>
+<p align="center" class="sidetext">
+<a href="services.html"/>Customer Support And Consulting By</a>
+</p>
+<a href="http://www.connamara.com"><IMG src="img/connamara.gif" width="210" height="33" border="0" alt="Connamara Logo"></a>
 </td>
 </tr>
 <tr>
 <td>
-<p align="center" class="bodytext">
-Website Design By <a href="mailto:ABLewis@thoughtworks.com">Anne B. Lewis  </a>
-</p>
+<a href="http://www.macd.com"><IMG src="img/macd.gif" width="210" height="60" border="0" alt="Macdonald Associates Logo"></a>
 </td>
+</tr>
 </tr>
 </table>
 </table>
