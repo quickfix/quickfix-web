@@ -13,7 +13,7 @@
     <![CDATA[
     <p>
     New <b>QuickFIX 1.7.1</b> is available! Please see the release
-    <a href="http://quickfix.sourceforge.net/quickfix/NEWS">notes</a>. 
+    <a href="quickfix/NEWS">notes</a>. 
     <br/><br/>
     Need support? Join our <a href="mailinglist.html">mailing
     list</a> or ask us about "<a href="services.html">services</a> we 
@@ -46,7 +46,50 @@
       </p>
       ]]>
     </section>
-    <section title="Future of QuickFIX">
+    <section title="Open Source in Finance">
+      <![CDATA[
+      <p>
+      Attending the <a href="http://www.simc-inc.org/">SIMC</a> conference on
+      <a href="http://www.simc-inc.org/archive0304/opensource/index.htm">Open
+      Source for the Securities Industry</a> was a very surprising, and positive
+      experience. What was interesting was the number of firms, major
+      firms, that are actively encouraging the use and creation of open source
+      software. For the first time when talking about QuickFIX, I didn't feel
+      the need to start out by convincing people that open source has
+      merit. This simple idea seemed to be generally accepted. When QuickFIX
+      was starting out, just a couple of years ago, the attitude out there 
+      was very different.
+      </p>
+      <p>
+      It was nice to see that firms like Hewlett Packard, JP Morgan, Reuters,
+      and the like are thinking about these things in a positive light. The
+      general attitude from these companies seems to be that developers are
+      participating in these open source communities anyway, we might as
+      well see how we can capitalize on it. I think this is a good attitude to
+      take because it is a tacit acknowledgement that good ideas come from all
+      sorts of places. There is an understanding that open source projects
+      create value even though they aren't spawned by a corporate strategist.
+      Encouraging participation in the open source community is to encourage 
+      entrepreneurial activity from all employees.
+      </p>
+      <p>
+      I'm very excited to see how OSS will proliferate in finance over the next
+      couple of years. During the month of March when we released version 1.7.0,
+      there were 1000 downloads of QuickFIX. This is three times what we
+      normally see for a release. During the past couple of months we have also
+      seen many major firms that are adopting or seriously evaluating
+      QuickFIX. In the previous corporate climate, I don't think many of these
+      companies would have considered relying on something like QuickFIX. This
+      is changing rapidly, and I hope we begin to see a surge in OSS
+      participation from the financial community.
+      </p>
+      <p>
+      <i>Oren Miller</i><br/>
+      <a href="mailto:oren@quickfixengine.org">oren@quickfixengine.org</a>
+      </p>
+      ]]>
+    </section>
+    <!-- <section title="Future of QuickFIX">
       <![CDATA[
       <p>
       QuickFIX has already proven itself as a viable, and often
@@ -183,7 +226,7 @@
       <a href="mailto:oren@quickfixengine.org">oren@quickfixengine.org</a>
       </p>
       ]]>
-    </section>
+    </section> -->
   </page>
   
   <page title="Download">
@@ -266,7 +309,7 @@
       <p>
       Documentation is included with the QuickFIX distribution. You
       can also access it <a
-      href="http://quickfix.sourceforge.net/quickfix/doc/html/index.html">online</a>. We generate our 
+      href="quickfix/doc/html/index.html">online</a>. We generate our 
       documentation with an open source product called 
       <a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a>  It
       is amazing. We highly recommend checking it out.
@@ -277,7 +320,7 @@
       <![CDATA[
       <p>
       You can also find help on how to 
-      <a href="http://quickfix.sourceforge.net/quickfix/doc/html/install.html">install QuickFIX</a>
+      <a href="quickfix/doc/html/install.html">install QuickFIX</a>
       and run the acceptance tests.
       </p>
       ]]>
