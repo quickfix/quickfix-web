@@ -239,6 +239,9 @@
           <td><a href="http://www.javtech.com/rc/fixionary.htm">Javelin Technologies</a></td>
           <td>Interactively browse the FIX protocol specification through this java application. Much nicer then browsing through the massive word documents or XML dictionaries.  Can be downloaded or used online.</td>
         </tr>
+	<td><a href="http://www.transacttools.net/ttportal/datadict/browser.jsp">FIX Data Dictionary</a></td>
+	<td><a href="http://www.transacttools.net/">transacttools</a></td>
+	<td>Similar to FIXionary, but lighter weight.  Only available online</td>
         <tr>
           <td><a href="http://www.stunnel.org/download/">Stunnel</a></td>
 	  <td><a href="http://www.stunnel.org">Stunnel.org</a></td>
