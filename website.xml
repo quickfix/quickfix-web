@@ -1,34 +1,41 @@
 <website>
   <static title="About">
     <![CDATA[
+    <p>
     QuickFIX is a full-featured open source FIX engine, currently
     compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
     Solaris, FreeBSD and Mac OS X.  API's are available for C++,
     Java, and .NET
+    </p>
     ]]>
   </static>
   <static title="News">
     <![CDATA[
+    <p>
     New <b>QuickFIX 1.7.0</b> is available! Please see the release
     <a href="http://quickfix.sourceforge.net/quickfix/NEWS">notes</a>. 
     <br/><br/>
     Need support? Join our <a href="mailinglist.html">mailing
     list</a> or ask us about "<a href="services.html">services</a> we 
     provide."
+    </p>
     ]]>
   </static>
   
   <page title="About">
     <section title="About QuickFIX">
       <![CDATA[
-      ssQuickFIX is a full-featured open source FIX engine, currently
+      <p>
+      QuickFIX is a full-featured open source FIX engine, currently
       compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
       Solaris, FreeBSD and Mac OS X.  API's are available for C++,
       Java, and .NET
+      </p>
       ]]>
     </section>
     <section title="About FIX">
       <![CDATA[
+      <p>
       The Financial Information eXchange (FIX) Protocol is a
       "language" which defines specific kinds of electronic messages
       for communicating securities transactions between two parties.  
@@ -36,6 +43,7 @@
       session-level interaction between two applications. More
       information on FIX can be found at the 
       <a href="http://www.fixprotocol.org/">FIX protocol web site</a>.
+      </p>
       ]]>
     </section>
     <section title="Future of QuickFIX">
@@ -57,7 +65,7 @@
       quality.
       </p>
       <p>
-      I've seen the process of many companies, large and small, go
+      I've seen many companies, large and small, go
       through the adoption process of a FIX engine. What is
       interesting about QuickFIX is where the adoption has it's
       roots... <b>software developers</b>. QuickFIX has been so
@@ -136,7 +144,7 @@
       separated from the main quickfix module. Let's create the log
       viewers, control panels, and other tools that will be useful in
       administering QuickFIX or any FIX installation. Let's just keep
-      them logically separate from the base engine. The
+      them logically separate from the base engine. They
       should <i>use</i> QuickFIX, not <i>be</i> QuickFIX.<br/>
       <br/><u>Add Scripting Support</u><br/>
       Powerful tools and capabilities can be added with support for a
@@ -147,7 +155,7 @@
       In addition to these, we should continue to create necessary
       functionality like more flexible session times, additional
       database support, and more transports like tibco. Now I know
-      many of are right now screaming <b><i>"What about a pure Java
+      many of you are right now screaming <b><i>"What about a pure Java
       implementation!!!"</i></b> To be perfectly honest I'm quite
       torn about this. I know many people want this but I'm not sure
       if this is yet the time or if we have the proper framework in
@@ -165,14 +173,14 @@
       <p>
       Please give me feedback on where you would like to see QuickFIX
       go.  Either send feedback directly to <a
-      href="mailto:orenmnero@users.sourceforge.net">me</a>, or better
+      href="mailto:oren@quickfixengine.org">me</a>, or better
       yet post to the <a
       href="mailto:quickfix-developers@lists.sourceforge.net">mailing
       list</a> so everyone can weigh in on you're thoughts.
       </p>
       <p>
       <i>Oren Miller</i><br/>
-      <a href="mailto:orenmnero@users.sourceforge.net">orenmnero@users.sourceforge.net</a>
+      <a href="mailto:oren@quickfixengine.org">oren@quickfixengine.org</a>
       </p>
       ]]>
     </section>
@@ -181,7 +189,7 @@
   <page title="Download">
     <section title="Source Code">
       <![CDATA[
-      <br/>
+      <p>
       <table>
         <tr>
           <td align="right">
@@ -204,20 +212,41 @@
           </td>
         </tr>
       </table>
+      </p><br/>
       ]]>
     </section>
-    <section title="Warnings">
+    <section title="External Tools">
       <![CDATA[
-      QuickFIX will not run correctly when compiled
-      with gcc 2.9.6. Some linux distributions  such as RedHat 7.3
-      include this compiler. That version is a development snapshot
-      and not a real  release. See this 
-      <a href="http://gcc.gnu.org/gcc-2.96.html">note</a> from the gcc
-      team why this compiler should not be used for production systems.
-      <br/><br/>
-      If you are compiling on a multi-processor machine, you can't
-      safely compile QuickFIX  with gcc 2.95.x
-      unless you use <a href="http://www.stlport.org/">STLport</a>
+      <p>
+      Here is a list of *free* third party tools that can be used in conjunction
+      with QuickFIX.  These utilities are in no way affiliated with QuickFIX 
+      and are supported by their respective companies or organizations.  All 
+      tools
+      </p>
+      <p>
+      <table border="1" width="100%">
+        <tr>
+          <td><b>Product</b></td>
+          <td><b>Company</b></td>
+          <td><b>Description</b></td>
+        </tr>
+        <tr>
+          <td><a href="http://www.ethereal.com/download.html">Ethereal</a></td>
+          <td><a href="http://www.ethereal.com">Ethereal</a></td>
+          <td>A very powerful and full featured network protocol analyzer which support hundred of protocols, including FIX.  Use this to sniff out all FIX traffic regardless of what FIX engine it originates from.</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.javtech.com/rc/fixionary.htm">FIXionary</a></td>
+          <td><a href="http://www.javtech.com/rc/fixionary.htm">Javelin Technologies</a></td>
+          <td>Interactively browse the FIX protocol specification through this java application. Much nicer then browsing through the massive word documents or XML dictionaries.  Can be downloaded or used online.</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.stunnel.org/download/">Stunnel</a></td>
+	  <td><a href="http://www.stunnel.org">Stunnel.org</a></td>
+	  <td>Allows you to encrypt arbitrary TCP connections inside SSL. Use this to encrypt your FIX sessions without need to modify you're application code.</td>
+        </tr>
+      </table>
+      </p>
       ]]>
     </section>
   </page>
@@ -225,29 +254,35 @@
   <page title="Documentation">
     <section title="Project/Code Documentation">
       <![CDATA[
+      <p>
       Documentation is included with the QuickFIX distribution. You
       can also access it <a
       href="http://quickfix.sourceforge.net/quickfix/doc/html/index.html">online</a>. We generate our 
       documentation with an open source product called 
       <a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a>  It
       is amazing. We highly recommend checking it out.
+      </p>
       ]]>
     </section>
     <section title="Installing QuickFIX">
       <![CDATA[
+      <p>
       You can also find help on how to 
       <a href="http://quickfix.sourceforge.net/quickfix/doc/html/install.html">install QuickFIX</a>
       and run the acceptance tests.
+      </p>
       ]]>
     </section>
     <section title="Protocol Documentation">
       <![CDATA[
+      <p>
       For help with the FIX protocol itself, check out the 
       <a href="http://www.fixprotocol.org">FIX Protocol
       Homepage</a>. Of particular interest are the <a
       href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">specification
       documents</a> and the <a
       href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">discussion forums</a>
+      </p>
       ]]>
     </section>
   </page>
@@ -255,7 +290,7 @@
   <page title="MailingList">
     <section title="Subscriptions and Archives">
       <![CDATA[
-      <br/>
+      <p>
       <b>User Support</b>
       <br/>
       <i>quickfix-users@lists.sourceforge.net</i>
@@ -277,6 +312,7 @@
       <br/>
       <a href="http://sourceforge.net/mailarchive/forum.php?forum_id=7653">Archive</a> | 
       <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-announce">Subscribe/Unsubscribe</a>
+      </p>
       ]]>
     </section>
   </page>
@@ -284,34 +320,39 @@
   <page title="XML">
     <section title="FIX Specification">
       <![CDATA[
+      <p>
       We created a parser to go through the HTML version of the FIX
       specs and generated well formed XML versions of the specs. We
       use this XML version to generate most of the code for our FIX
       engine. Seeing as though it is so useful for us, we figured
       other people might be interested too.
-     <br/><br/>
+      </p>
+      <p>
       This is a <i>machine readable</i> version of the FIX
       specification. If you have been looking for such a thing, this
       is it!
-     <br/><br/>
-     <li>FIX 4.0  <a href="FIX40.xml">xml</a>
-                  <a href="FIX40.html">html</a>
-     </li>
-     <li>FIX 4.1  <a href="FIX41.xml">xml</a>
-                  <a href="FIX41.html">html</a>
-     </li>
-     <li>FIX 4.2  <a href="FIX42.xml">xml</a>
-                  <a href="FIX42.html">html</a>
-     </li>
-     <li>FIX 4.3  <a href="FIX43.xml">xml</a>
-                  <a href="FIX43.html">html</a>
-     </li>    
-     <li>FIX 4.4  <a href="FIX44.xml">xml</a>
-                  <a href="FIX44.html">html</a>
-     </li>    
-     <br/>
-     The XML documents were then reformatted into small browsable HTML
-     files using this <a href="fixtohtml.xsl">xsl stylesheet</a>
+      </p>
+      <p>
+      <li>FIX 4.0  <a href="FIX40.xml">xml</a>
+                   <a href="FIX40.html">html</a>
+      </li>
+      <li>FIX 4.1  <a href="FIX41.xml">xml</a>
+                   <a href="FIX41.html">html</a>
+      </li>
+      <li>FIX 4.2  <a href="FIX42.xml">xml</a>
+                   <a href="FIX42.html">html</a>
+      </li>
+      <li>FIX 4.3  <a href="FIX43.xml">xml</a>
+                   <a href="FIX43.html">html</a>
+      </li>    
+      <li>FIX 4.4  <a href="FIX44.xml">xml</a>
+                   <a href="FIX44.html">html</a>
+      </li>    
+      </p>
+      <p>
+      The XML documents were then reformatted into small browsable HTML
+      files using this <a href="fixtohtml.xsl">xsl stylesheet</a>
+      </p>
       ]]>
     </section>
   </page>
@@ -319,10 +360,12 @@
   <page title="Developers">
     <section title="QuickFIX Source Code">
       <![CDATA[
+      <p>
       The source code for QuickFIX can be accessed by browsing the
       current <a
       href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/quickfix/">CVS</a> 
       tree.
+      </p>
       ]]>
     </section>
     <section title="Anonymous CVS Access">
@@ -349,11 +392,13 @@
   <page title="Services">
     <section title="Consulting">
     <![CDATA[
-     If you are interested in learning about ThoughtWorks' QuickFIX,
+     <p>
+     If you are interested in learning about QuickFIX,
      FIX, and trading related services, just email us at <a
-     href="mailto:trading@thoughtworks.com">trading@thoughtworks.com</a>. Please
+     href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>. Please
      leave your contact information such as email or a telephone
      number where you can be reached.
+     </p>
     ]]>
     </section>
   </page>

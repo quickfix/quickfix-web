@@ -70,7 +70,7 @@
 <td>&nbsp;</td>
 <td class="bodytext">
 
-      <br/>
+      <p>
       <table>
         <tr>
           <td align="right">
@@ -93,35 +93,56 @@
           </td>
         </tr>
       </table>
+      </p><br/>
       
 </td>
 </tr>
 <tr>
-<td colspan="2"><br></td>
+<td colspan="2"></td>
 </tr>
 <tr>
 <td align="right"><img src="img/dots.gif" width="52" height="11" hspace="5" alt=">>>>>"></td>
-<td valign="top" class="headertext">Warnings</td>
+<td valign="top" class="headertext">External Tools</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td class="bodytext">
 
-      QuickFIX will not run correctly when compiled
-      with gcc 2.9.6. Some linux distributions  such as RedHat 7.3
-      include this compiler. That version is a development snapshot
-      and not a real  release. See this 
-      <a href="http://gcc.gnu.org/gcc-2.96.html">note</a> from the gcc
-      team why this compiler should not be used for production systems.
-      <br/><br/>
-      If you are compiling on a multi-processor machine, you can't
-      safely compile QuickFIX  with gcc 2.95.x
-      unless you use <a href="http://www.stlport.org/">STLport</a>
+      <p>
+      Here is a list of *free* third party tools that can be used in conjunction
+      with QuickFIX.  These utilities are in no way affiliated with QuickFIX 
+      and are supported by their respective companies or organizations.  All 
+      tools
+      </p>
+      <p>
+      <table border="1" width="100%">
+        <tr>
+          <td><b>Product</b></td>
+          <td><b>Company</b></td>
+          <td><b>Description</b></td>
+        </tr>
+        <tr>
+          <td><a href="http://www.ethereal.com/download.html">Ethereal</a></td>
+          <td><a href="http://www.ethereal.com">Ethereal</a></td>
+          <td>A very powerful and full featured network protocol analyzer which support hundred of protocols, including FIX.  Use this to sniff out all FIX traffic regardless of what FIX engine it originates from.</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.javtech.com/rc/fixionary.htm">FIXionary</a></td>
+          <td><a href="http://www.javtech.com/rc/fixionary.htm">Javelin Technologies</a></td>
+          <td>Interactively browse the FIX protocol specification through this java application. Much nicer then browsing through the massive word documents or XML dictionaries.  Can be downloaded or used online.</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.stunnel.org/download/">Stunnel</a></td>
+	  <td><a href="http://www.stunnel.org">Stunnel.org</a></td>
+	  <td>Allows you to encrypt arbitrary TCP connections inside SSL. Use this to encrypt your FIX sessions without need to modify you're application code.</td>
+        </tr>
+      </table>
+      </p>
       
 </td>
 </tr>
 <tr>
-<td colspan="2"><br></td>
+<td colspan="2"></td>
 </tr>
 </table>
 </td>
@@ -146,10 +167,12 @@
 <td valign="top"><img src="img/newsDots.gif" alt="::" border="0" vspace="5"></td>
 <td valign="top" class="callouttext">
 
+    <p>
     QuickFIX is a full-featured open source FIX engine, currently
     compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
     Solaris, FreeBSD and Mac OS X.  API's are available for C++,
     Java, and .NET
+    </p>
     
 </td>
 </tr>
@@ -183,12 +206,14 @@
 <td valign="top"><img src="img/newsDots.gif" alt="::" border="0" vspace="5"></td>
 <td valign="top" class="callouttext">
 
+    <p>
     New <b>QuickFIX 1.7.0</b> is available! Please see the release
     <a href="http://quickfix.sourceforge.net/quickfix/NEWS">notes</a>. 
     <br/><br/>
     Need support? Join our <a href="mailinglist.html">mailing
     list</a> or ask us about "<a href="services.html">services</a> we 
     provide."
+    </p>
     
 </td>
 </tr>

@@ -96,7 +96,7 @@ def outputPage(f, page)
     f.puts "</td>"
     f.puts "</tr>"
     f.puts "<tr>"
-    f.puts "<td colspan=\"2\"><br></td>"
+    f.puts "<td colspan=\"2\"></td>"
     f.puts "</tr>"
   }
 end
