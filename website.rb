@@ -57,7 +57,6 @@ f.puts "</tr>"
 f.puts "</table>"
 f.puts "</body>"
 f.puts "</html>"
-
 end
 
 def outputHeader(f, page, document)
@@ -161,7 +160,25 @@ document.elements.each { |element|
 	outputStatic(f, static)
       end
     }
+    f.puts "<table>"
+    f.puts "<tr>"
+    f.puts "<td>"
     f.puts "<a href=\"http://sourceforge.net\"><IMG src=\"http://sourceforge.net/sflogo.php?group_id=37535&amp;type=5\" width=\"210\" height=\"62\" border=\"0\" alt=\"SourceForge.net Logo\"></a>"
+    f.puts "</td>"
+    f.puts "</tr>"
+    f.puts "<tr>"
+    f.puts "<td>"
+    f.puts "<a href=\"http://www.thoughtworks.com\"><IMG src=\"img/thoughtworks.jpg\" width=\"210\" height=\"61\" border=\"0\" alt=\"ThoughtWorks Logo\"></a>"
+    f.puts "</td>"
+    f.puts "</tr>"
+    f.puts "<tr>"
+    f.puts "<td>"
+    f.puts "<p align=\"center\" class=\"bodytext\">"
+f.puts "Website By <a href=\"mailto:ABLewis@thoughtworks.com\">Anne B. Lewis  </a>"
+    f.puts "</p>"
+    f.puts "</td>"
+    f.puts "</tr>"
+    f.puts "</table>"
     f.puts "</table>"
     f.puts "</td>"
     f.puts "</tr>"
