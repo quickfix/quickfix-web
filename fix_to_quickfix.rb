@@ -21,7 +21,7 @@ class IO
   end
 
   def out( value )
-    0.upto($indent) do
+    1.upto($indent) do
       print "  "
     end
 
@@ -48,10 +48,10 @@ class Convertor
     outputTrailer
     puts "  Messages"
     outputMessages { |message| puts "    #{message}" }
-    puts "  Fields"
-    outputFields
     puts "  Components"
     outputComponents { |component| puts "    #{component}" }
+    puts "  Fields"
+    outputFields
     $indent -= 1
     @outputFile.outs "</fix>"
   end
