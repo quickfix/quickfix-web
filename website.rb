@@ -174,7 +174,7 @@ document.elements.each { |element|
     f.puts "<tr>"
     f.puts "<td>"
     f.puts "<p align=\"center\" class=\"bodytext\">"
-f.puts "Website By <a href=\"mailto:ABLewis@thoughtworks.com\">Anne B. Lewis  </a>"
+f.puts "Website Design By <a href=\"mailto:ABLewis@thoughtworks.com\">Anne B. Lewis  </a>"
     f.puts "</p>"
     f.puts "</td>"
     f.puts "</tr>"
