@@ -1,0 +1,187 @@
+<website>
+  <static title="About">
+    <![CDATA[
+    QuickFIX is a full-featured open source FIX engine, currently
+    compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
+    Solaris, FreeBSD and Mac OS X.  API's are available for C++,
+    Java, and .NET
+    ]]>
+  </static>
+  <static title="News">
+    <![CDATA[
+    New QuickFIX 1.6.0 is available! Please see the release
+    notes. Need support? Join our <a href="mailinglist.html">mailing
+    list</a> or ask us about "<a href="services.html">services</a> we 
+    provide."
+    ]]>
+  </static>
+  
+  <page title="About">
+    <section title="About QuickFIX">
+      <![CDATA[
+      QuickFIX is a full-featured open source FIX engine, currently
+      compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
+      Solaris, FreeBSD and Mac OS X.  API's are available for C++,
+      Java, and .NET
+      ]]>
+    </section>
+    <section title="About FIX">
+      <![CDATA[
+      The Financial Information eXchange (FIX) Protocol is a
+      "language" which defines specific kinds of electronic messages
+      for communicating securities transactions between two parties.  
+      FIX defines only the format of the messages and the
+      session-level interaction between two applications. More
+      information on FIX can be found at the 
+      <a href="http://www.fixprotocol.org/">FIX protocol web site</a>.
+      ]]>
+    </section>
+  </page>
+  
+  <page title="Download">
+    <section title="Source Code Archives">
+      <![CDATA[
+      <i>Updated release source code</i>
+      <br/><br/>
+      <b>Windows: </b>
+      <a
+      href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.6.0.zip">
+      quickfix-1.6.0.zip</a>
+      <br/>
+      <b>*nix: </b>
+      <a
+      href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.6.0.tar.gz">
+      quickfix-1.6.0.tar.gz</a>
+      ]]>
+    </section>
+    <section title="Warnings">
+      <![CDATA[
+      QuickFIX will not run correctly when compiled
+      with gcc 2.9.6. Some linux distributions  such as RedHat 7.3
+      include this compiler. That version is a development snapshot
+      and not a real  release. See this 
+      <a href="http://gcc.gnu.org/gcc-2.96.html">note</a> from the gcc
+      team why this compiler should not be used for production systems.
+      <br/><br/>
+      If you are compiling on a multi-processor machine, you can't
+      safely compile QuickFIX  with gcc 2.95.x
+      unless you use <a href="http://www.stlport.org/">STLport</a>
+      ]]>
+    </section>
+  </page>
+  
+  <page title="Documentation">
+    <section title="Project/Code Documentation">
+      <![CDATA[
+      Documentation is included with the QuickFIX distribution. You
+      can also access it <a
+      href="quickfix/doc/html/index.html">online</a>. We generate our 
+      documentation with an open source product called 
+      <a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a>  It
+      is amazing. We highly recommend checking it out.
+      ]]>
+    </section>
+    <section title="Installing QuickFIX">
+      <![CDATA[
+      You can also find help on how to 
+      <a href="quickfix/doc/html/install.html">install QuickFIX</a>
+      and run the acceptance tests.
+      ]]>
+    </section>
+    <section title="Protocol Documentation">
+      <![CDATA[
+      For help with the FIX protocol itself, check out the 
+      <a href="http://www.fixprotocol.org">FIX Protocol Homepage</a>
+      ]]>
+    </section>
+  </page>
+  
+  <page title="MailingList">
+    <section title="Subscribing">
+      <![CDATA[
+      <b>User Support</b>
+      <br/>
+      <i>quickfix-users@lists.sourceforge.net</i>
+      <br/>
+      <a href="http://sourceforge.net/mailarchive/forum.php?forum_id=7996">Archive</a>
+      | 
+      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-users">Subscribe/Unsubscribe</a>
+      <br/><br/>
+      <b>Developer Support*</b>
+      <br/>
+      <i>quickfix-developers@lists.sourceforge.net</i>
+      <br/>
+      <a href="http://sourceforge.net/mailarchive/forum.php?forum_id=103">Archive</a> | 
+      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-developers">Subscribe/Unsubscribe</a>
+      <br/><br/>
+      <b>Announcements</b>
+      <br/>
+      <i>quickfix-announce@lists.sourceforge.net</i>
+      <br/>
+      <a href="http://sourceforge.net/mailarchive/forum.php?forum_id=7653">Archive</a> | 
+      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-announce">Subscribe/Unsubscribe</a>
+      ]]>
+    </section>
+  </page>
+  
+  <page title="XML">
+    <section title="FIX Specification">
+      <![CDATA[
+      We created a parser to go through the HTML version of the FIX
+      specs and generated well formed XML versions of the specs. We
+      use this XML version to generate most of the code for our FIX
+      engine. Seeing as though it is so useful for us, we figured
+      other people might be interested too.
+     <br><br>            
+     <li>FIX 4.0  <a href="FIX40.xml">xml</a>
+                  <a href="FIX40.html">html</a>
+     </li>
+     <li>FIX 4.1  <a href="FIX41.xml">xml</a>
+                  <a href="FIX41.html">html</a>
+     </li>
+     <li>FIX 4.2  <a href="FIX42.xml">xml</a>
+                  <a href="FIX42.html">html</a>
+     </li>
+     <li>FIX 4.3  <a href="FIX43.xml">xml</a>
+                  <a href="FIX43.html">html</a>
+     </li>    
+     <li>FIX 4.4  <a href="FIX43.xml">xml</a>
+                  <a href="FIX43.html">html</a>
+     </li>    
+     <br><br>    
+     The XML documents were then reformatted into small browsable HTML
+     files using this <a href="fixtohtml.xsl">xsl</a>
+     <br><br>
+      ]]>
+    </section>
+  </page>
+  
+  <page title="Developers">
+    <section title="QuickFIX Source Code">
+      <![CDATA[
+      The source code for QuickFIX can be accessed by browsing the
+      current <a
+      href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/quickfix/">CVS</a> 
+      tree.
+      ]]>
+    </section>
+    <section title="Anonymous CVS Access">
+      <![CDATA[
+      Instructions for checking out from the repository using
+      anonymous CVS access can be found <a
+      href="http://sourceforge.net/cvs/?group_id=37535">here</a>.
+      ]]>
+    </section>
+  </page>
+  
+  <page title="Services">
+    <section title="Consulting">
+    <![CDATA[
+     If you are interested in learning about ThoughtWorks' QuickFIX,
+     FIX, and trading related services, just email us at <a
+     href="mailto:trading@thoughtworks.com">trading@thoughtworks.com</a>
+    ]]>
+    </section>
+  </page>
+  
+</website>

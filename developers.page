@@ -1,0 +1,15 @@
+:QuickFIX Source Code:
+The source code for QuickFIX can be accessd by browsing the current CVS tree.
+<a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/quickfix/">CVS</a>
+
+:Anonymous CVS Access:
+This project's SourceForge CVS repository can be checked out through anonymous
+(pserver) CVS with the following instruction set. The module you wish to check
+out must be specified as quickfix.  When prompted for a password for
+<i>anonymous</i>, simply press the Enter key.
+
+<b>cvs -d:pserver:anonymous@cvs.quickfix.sourceforge.net:/cvsroot/quickfix login</b>
+<br/>
+<b>cvs -z3 -d:pserver:anonymous@cvs.quickfix.sourceforge.net:/cvsroot/quickfix co quickfix</b>
+
+Updates from within the module's directory do not need the -d parameter.
