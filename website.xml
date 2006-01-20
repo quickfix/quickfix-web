@@ -2,14 +2,14 @@
   <static title="News">
     <![CDATA[
     <p>
-    <a href="http://www.wikifix.org">WikiFIX</a> is now online.
-    </p>
-    <p>
-    <b><font color="#33DD33">QuickFIX 1.9.2</font></b> is available! Please see the release
+    <b><font color="#AAAA00">QuickFIX 1.10.2</font></b> is available! Please see the release
     <a href="quickfix/NEWS">notes</a>. 
     </p>
     <p>
-    QuickFIX support contracts <a href="services.html">now available</a>.
+    SmartTrade <a href="http://www.smart-trade.net/press/int/PR-SmartTrade-QuickFixJ-final.pdf">provides</a> development resources for QuickFIX/J.
+    </p>
+    <p>
+    TransactTools <a href="http://www.transacttools.net:/news_article.php?id=74">announces</a> partnership with QuickFIX.
     </p>
     ]]>
   </static>
@@ -25,6 +25,7 @@
   </static>
   
   <page title="About">
+    <article/>
     <section title="About QuickFIX">
       <![CDATA[
       <p>
@@ -63,12 +64,6 @@
       </td>
       </tr>
       <tr>
-       <td valign="top"><b><a href="wikifix/index.php?QuickFix">Wiki</a></b></td>
-       <td>
-	 Wikis provide an environment ideal for collaborative content management where anyone can contribute.  This is a good place to get up to date information on what is happening with QuickFIX.
-       </td>
-      </tr>
-      <tr>
        <td valign="top"><b><a href="bugtracker">Bug Tracker</a></b></td>
        <td>
 	 We have recently added a public defect tracker.  Here you can report defects and monitor their progress.
@@ -105,8 +100,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.9.2.zip">
-            quickfix-1.9.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.10.2.zip">
+            quickfix-1.10.2.zip</a>
           </td>
         </tr>
         <tr>
@@ -115,17 +110,17 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vc6-1.9.2.zip">
-            quickfix-bin-vc6-1.9.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vc6-1.10.2.zip">
+            quickfix-bin-vc6-1.10.2.zip</a>
           </td>
         </tr>
         <tr>
           <td>
-          </td
+          </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vc7-1.9.2.zip">
-            quickfix-bin-vc7-1.9.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vc7-1.10.2.zip">
+            quickfix-bin-vc7-1.10.2.zip</a>
           </td>
         </tr>
 	<tr>
@@ -141,8 +136,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.9.2.tar.gz">
-            quickfix-1.9.2.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.10.2.tar.gz">
+            quickfix-1.10.2.tar.gz</a>
           </td>
         </tr>
       </table>
@@ -217,13 +212,6 @@
       Complete instructions are available for 
       <a href="quickfix/doc/html/install.html">installing QuickFIX</a>
       and running the acceptance tests.
-      </p>
-      ]]>
-    </section>
-    <section title="Wiki">
-      <![CDATA[
-      <p>
-      We also maintain a <a href="wikifix/index.php?QuickFix">wiki</a> to provide a forum for discussion and collaboration.
       </p>
       ]]>
     </section>
@@ -404,5 +392,27 @@
     ]]>
     </section>
   </page>
+
+  <page title="Careers" menu="false">
+    <section title="Junior (but smart!) Software Developer">
+      <![CDATA[
+      <i>Chicago, IL</i>
+
+      <p>We are looking for someone who is smart, inquisitive, and motivated. This is an ideal opportunity for someone with little or no experience in the trading industry to work with one of the best teams in the business.</p>
+
+      <p>It is our belief that small talented teams that have fun together build the best software. The success of our firm is completely dependent on keeping our team strong. We need people with real guts and convictions who can participate in a collaborative environment where nothing is set in stone. You need to be able to stand up for your ideas while respecting your co-workers. Over here, intelligent debate is alive and well.</p>
+
+      <p>This is a posting for a software development position, so other than this sentence, we won't even mention the fact that you need to be good at creating software. We will notice if you are not, believe it. No, we do not care so much what programming languages you know.</p>
+
+      <p>We value cooperation over ego, calm over stress, and results over effort. We continuously feel that we have something to prove, and consistently do so. If you also feel you have something to prove, and want someone to prove it to, we want to hear from you.</p>
+
+      <p>Send resumes to <a href="mailto:ask@connamara.com?subject=Careers at Connamara">ask@connamara.com</a>. We are located in Chicago in the heart of the financial district.</p>
+
+      <p>Choice of office furniture or lawn furniture.</p>
+
+      ]]>
+    </section>
+  </page>
   
+  <article file="article1" title="Commodities Have Value" date="06/30/2005" menu="false"/>
 </website>

@@ -1,0 +1,23 @@
+Some people have been going around saying that FIX engines have become a commodity, and that perhaps <a href="http://www.watersinfo.com/news/DW/topstory_archive/050516.asp"/>we have something to do with it</a>.  Whoa.  Sounds pretty bad for commercial vendors.  But then again, <a href="http://www.transacttools.net/news_article.php?id=74">some vendors</a> don't see it that way.
+
+What's going on here?  Are FIX engines really a commodity?
+
+It doesn't really matter. Gold is commodity. Never the less, if I shape a strand of gold into a particularly nice necklace it becomes unique.  I've taken something that many people have, and turned it into something that no one has.  I've created value.  The smart FIX vendors, the ones that are still around and doing better than ever, figured this out some time ago.
+
+In fact, you won't hardly find anyone calling themselves a vanilla FIX Engine vendor at all these days.  <a href="http://www.nyfix.com/">NYFIX</a> "<i>leads the way in FIX-based global electronic trading and execution solutions</i>". <a href="http://www.transacttools.net/">TransactTools</a> "<i>is the leading provider of electronic trading connectivity management solutions for the global financial services industry</i>". <a href="http://www.b2bits.com">B2BITS</a> "<i>is a financial markets software company committed to providing its clients with industry leading technology</i>".  And while at first glance it may appear that <a href="http://www.cameronsystems.com">CameronSystems</a> is selling the CameronFIX Engine, it becomes apparent that it is really the CameronFIX Platform.
+
+So what exactly are these companies doing?  Simple.  They are making necklaces out of gold.  You can't sell a FIX engine for a premium anymore.  No way.  But there is a lot to be made selling products that <b>make use of</b> fix engines.  That is really what all these companies do.
+
+<b><u>Are we competition?</u></b>
+
+Sure, you can say that.  But again, it doesn't matter.  Whatever amount of revenue these companies may have lost due to QuickFIX gaining market share, they have more than made up for by the rapid increase in the size of the market.  Let me go over this very carefully.  It's important to understand what has been happening over the past year.
+
+If you pay any attention to press releases, you'll notice that many vendors (Cameron being particularly prolific in this regard), are making several major announcements a month about this or that broker or exchange adopting<b>*</b> their platform.  We are seeing major institutions all over the world adopting some sort of FIX strategy.  FIX is no longer a North American phenomenon, it is international.  And sure, QuickFIX probably had something to do with that.
+
+So here is the thing.  Why are all these companies so eager to jump on the FIX bandwagon?  It's a good protocol, sure.  Many vendors put out a nice product, of course.  But there is something else.  It's a simple a matter of numbers.  There are legions of trading firms out in the world that have FIX capability for free, and are ready to connect to anybody who will support them.  You better believe QuickFIX has something to do with that.
+
+And you also better believe that the FIX vendors are benefiting from it.  Good for them.
+
+<hr/>
+<b>*</b> We get adopted by major institutions in a similar manner, however they rarely result in press releases as we do not have the marketing muscle the vendors enjoy.
+
