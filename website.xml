@@ -32,7 +32,7 @@
       QuickFIX is a full-featured open source FIX engine, currently
       compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
       Solaris, FreeBSD and Mac OS X.  API's are available for C++,
-      Java, .NET, and Python.  Learn <a href="About QuickFIX.pdf">more</a>.
+      Java, .NET, and Python.
       </p>
       ]]>
     </section>
@@ -346,8 +346,9 @@
       <![CDATA[
       <br/>
       <li><a href="autobuild-i686-linux.html">Slackware Linux 9.0</a></li>
-      <li><a href="autobuild-i386-msvcrt-vc6.html">Windows Visual Studio 6</a></li>
-      <li><a href="autobuild-i386-msvcrt-vc7.html">Windows Visual Studio 7</a></li>
+      <li><a href="autobuild-i386-msvcrt-vs6.html">Windows Visual Studio 6</a></li>
+      <li><a href="autobuild-i386-msvcrt-vs7.html">Windows Visual Studio 7</a></li>
+      <li><a href="autobuild-i386-msvcrt-vs8.html">Windows Visual Studio 8</a></li>
       ]]>
     </section>
   </page>
