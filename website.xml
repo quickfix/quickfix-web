@@ -22,7 +22,7 @@
   </static>
   
   <page title="About">
-    <article/>
+    <!-- <article/> -->
     <section title="About QuickFIX">
       <![CDATA[
       <p>
@@ -468,6 +468,6 @@
       ]]>
     </section>
   </page>
-  
+
   <article file="article1" title="Commodities Have Value" date="06/30/2005" menu="false"/>
 </website>
