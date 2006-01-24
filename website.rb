@@ -226,16 +226,9 @@ end
     f.puts "<tr>"
     if( title != "services" )
       f.puts "<td>"
-      f.puts "<p align=\"center\" class=\"sidetext\">"
-      f.puts "<a href=\"services.html\"/>Customer Support And Consulting By</a>"
+      f.puts "<p align=\"center\" class=\"adtext\">"
+      f.puts "<a href=\"services.html\"/>QuickFIX Support and Consulting</a>"
       f.puts "</p>"
-      f.puts "<a href=\"http://www.connamara.com\"><IMG src=\"img/connamara.gif\" width=\"210\" height=\"33\" border=\"0\" alt=\"Connamara Logo\"></a>"
-      f.puts "</td>"
-      f.puts "</tr>"
-      f.puts "<tr>"
-      f.puts "<td>"
-      f.puts "<a href=\"http://www.macd.com\"><IMG src=\"img/macd.gif\" width=\"210\" height=\"60\" border=\"0\" alt=\"Macdonald Associates Logo\"></a>"
-      f.puts "</td>"
     end
     f.puts "</tr>"
     f.puts "<tr>"
