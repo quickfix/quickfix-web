@@ -411,61 +411,49 @@
     <section title="Support and Consulting">
     <![CDATA[
      <p>
-     <a href="http://www.connamara.com">Connamara Systems</a> and <a href="http://www.macd.com">Macdonald and Associates</a> <a href="PressRelease_QuickFIX_Support.pdf">have teamed up</a> to provide formal QuickFIX support, consulting, and training.  Both these companies have been very supportive of the QuickFIX project.  We are pleased to recognize them as preferred service providers.
+     The following companies provide various QuickFIX consulting and support services: <br/>
+     
+     <li><a href="#CONNAMARA">Connamara Systems</a></li>
+     &nbsp;&nbsp;&nbsp;Software Development, Production Support Contracts for North America
+     <li><a href="#MACDONALD">Macdonald Associates Ltd.</a></li>
+     &nbsp;&nbsp;&nbsp;Software Development, Production Support Contracts for Europe
+     <li><a href="#OCI">Object Computing, Inc.</a></li>
+     &nbsp;&nbsp;&nbsp;Training Classes, Support Contracts
+     <li><a href="#SMARTQUANT">SmartQuant</a></li>
+     &nbsp;&nbsp;&nbsp;Quantitative Trading Integrated With QuickFIX<br/>
+     
+     <br/>If you are interested in learning about QuickFIX, FIX, and trading related services, just email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>. Please leave your contact information such as email or a telephone number where you can be reached.
      </p>
-     <p>
-     If you are interested in learning about QuickFIX, FIX, and trading related services, just email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>. Please leave your contact information such as email or a telephone number where you can be reached.
-     </p>
-     <hr/>
-    ]]>
-    </section>
-    <section title="SmartQuant/FIX Consulting">
-    <![CDATA[
-    <p>
-    <i>QuickFIX</i> also offers joint consulting services with <a href="http://www.smartquant.com">SmartQuant, Ltd.</a>  They are the makers of the popular <i>QuantStudio</i> framework for data analysis and trading.  Together, we are able to provide the set of tools, connectivity, and integration required for a complete trading system.
-    </p>
     ]]>
     </section>
     <section>
     <![CDATA[
+      <a name="CONNAMARA"/>
       <hr/>
       <a href="http://www.connamara.com"><IMG src="img/connamara.gif" border="0" alt="Connamara Logo"></a>
-     <p>With offices in Chicago and New Delhi, Connamara Systems, LLC provides FIX consulting, QuickFIX support and custom trading systems development service to the equities and derivatives trading industries. Connamara was an initial collaborator in the creation of QuickFIX and continues to contribute to the enhancements and maintenance of the engine.  More information can be found at <a href="http://www.connamara.com">www.connamara.com</a></p>
+      <p>With offices in Chicago and New Delhi, Connamara Systems, LLC provides FIX consulting, QuickFIX support and custom trading systems development service to the equities and derivatives trading industries. Connamara was an initial collaborator in the creation of QuickFIX and continues to contribute to the enhancements and maintenance of the engine.  More information can be found at <a href="http://www.connamara.com">www.connamara.com</a></p>
     ]]>
     </section>
     <section>
     <![CDATA[
+      <a name="MACDONALD"/>
       <a href="http://www.macd.com"><IMG src="img/macd.gif" border="0" alt="Macdonald Associates Logo"></a>
-     <p>Macdonald Associates Ltd., founded in 1983, has a pan-European presence covering the UK, Switzerland and Germany. The company has a range of trading products in the equity and fixed income markets and also offers training and consulting to financial institutions.  Macdonald has been active in the QuickFIX community and uses QuickFIX within their own product line. For more details, see <a href="http://www.macd.com">www.macd.com</a> or email <a href="mailto:george.macdonald@macd.com">george.macdonald@macd.com</a></p>
+      <p>Macdonald Associates Ltd., founded in 1983, has a pan-European presence covering the UK, Switzerland and Germany. The company has a range of trading products in the equity and fixed income markets and also offers training and consulting to financial institutions.  Macdonald has been active in the QuickFIX community and uses QuickFIX within their own product line. For more details, see <a href="http://www.macd.com">www.macd.com</a> or email <a href="mailto:george.macdonald@macd.com">george.macdonald@macd.com</a></p>
     ]]>
     </section>
     <section>
-    <![CDATA[
-      <a href="http://www.smartquant.com"><IMG src="img/quantstudio.gif" border="0" alt="QuantStudio Logo"></a>
-     <p>QuantStudio is an advanced financial framework that enables users to develop, test & implement their own quantitative trading strategies & applications over multiple asset classes.  Their mission is to deliver a framework offering a complete set of features and tools for financial data analysis and trading.  Find out more about QuantStudio at <a href="http://www.smartquant.com">http://www.smartquant.com</a>.
-     </p>
-    ]]>
-    </section>
-  </page>
-
-  <page title="Careers" menu="false">
-    <section title="Junior (but smart!) Software Developer">
       <![CDATA[
-      <i>Chicago, IL</i>
-
-      <p>We are looking for someone who is smart, inquisitive, and motivated. This is an ideal opportunity for someone with little or no experience in the trading industry to work with one of the best teams in the business.</p>
-
-      <p>It is our belief that small talented teams that have fun together build the best software. The success of our firm is completely dependent on keeping our team strong. We need people with real guts and convictions who can participate in a collaborative environment where nothing is set in stone. You need to be able to stand up for your ideas while respecting your co-workers. Over here, intelligent debate is alive and well.</p>
-
-      <p>This is a posting for a software development position, so other than this sentence, we won't even mention the fact that you need to be good at creating software. We will notice if you are not, believe it. No, we do not care so much what programming languages you know.</p>
-
-      <p>We value cooperation over ego, calm over stress, and results over effort. We continuously feel that we have something to prove, and consistently do so. If you also feel you have something to prove, and want someone to prove it to, we want to hear from you.</p>
-
-      <p>Send resumes to <a href="mailto:ask@connamara.com?subject=Careers at Connamara">ask@connamara.com</a>. We are located in Chicago in the heart of the financial district.</p>
-
-      <p>Choice of office furniture or lawn furniture.</p>
-
+        <a name="OCI"/>
+        <a href="http://www.ociweb.com"><IMG src="img/oci_logo.gif" border="0" alt="Object Computing Logo"></a>
+        <p>Object Computing Inc. (OCI) is a privately held software engineering company. OCI was founded in 1993 with a commitment to object oriented technology. Today OCI provides software systems consulting, product development, and educational services to progressive corporations across the United States in the Aerospace, Finance, Healthcare and Telecommunication market segments. OCI was one of the pioneers of open source middleware and has an extensive C++ and Java CORBA, open source client base. The St. Louis based OCI Education Center has one of the most extensive object technology and Java training curricula in the Mid West. OCI has a significant presence in Phoenix as well as St. Louis, where its corporate headquarters are located. OCI is a Sun Authorized Java Center and member of the OMG. For more information see <a href="http://www.ociweb.com">www.ociweb.com</a></p>
       ]]>
+    </section>
+    <section>
+    <![CDATA[
+      <a name="SMARTQUANT"/>
+      <a href="http://www.smartquant.com"><IMG src="img/quantstudio.gif" border="0" alt="QuantStudio Logo"></a>
+      <p>QuantStudio is an advanced financial framework that enables users to develop, test & implement their own quantitative trading strategies & applications over multiple asset classes.  Their mission is to deliver a framework offering a complete set of features and tools for financial data analysis and trading.  Find out more about QuantStudio at <a href="http://www.smartquant.com">www.smartquant.com</a>.</p>
+    ]]>
     </section>
   </page>
 

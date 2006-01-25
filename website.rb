@@ -229,6 +229,7 @@ end
       f.puts "<p align=\"center\" class=\"adtext\">"
       f.puts "<a href=\"services.html\"/>QuickFIX Support and Consulting</a>"
       f.puts "</p>"
+      f.puts "</td>"
     end
     f.puts "</tr>"
     f.puts "<tr>"
@@ -237,7 +238,7 @@ end
     f.puts "google_ad_client = \"pub-3929791877599154\";"
     f.puts "google_ad_width = 210;"
     f.puts "google_ad_height = 90;"
-    f.puts "google_ad_format = \"200x90_0ads_al\";"
+    f.puts "google_ad_format = \"200x90_0ads_al_s\";"
     f.puts "google_ad_channel =\"\";"
     f.puts "</script>"
     f.puts "<script type=\"text/javascript\""
