@@ -4,7 +4,7 @@
     <b><font color="#AA00AA">QuickFIX 1.11.1</font></b> is <a href="download.html">available</a>! Please see the release
     <a href="quickfix/NEWS">notes</a>.
     <br/><br/>
-    <b><font color="#AA00AA">QuickFIX/J 1.0.0 beta</font></b> is <a href="download.html">available</a>!
+    <b><font color="#AA00AA">QuickFIX/J 1.0.0</font></b> is <a href="download.html">available</a>!
     ]]>
   </static>
   <static title="About">
@@ -146,57 +146,18 @@
 	<tr>
           <tr><td></td><td></td></tr>
           <td>
-	    <b>(<font color="#AA0000">beta</font>) QuickFIX/J Windows</b>
+	    <b>QuickFIX/J</b>
           </td>
 	  <td>
 	  </td>
 	</tr>
         <tr>
           <td align="right">
-            Source:
+            All:
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.0.0-beta3-src.zip">
-            quickfix-1.0.0-beta3-src.zip</a>
-          </td>
-        </tr>
-        <tr>
-          <td align="right">
-            Binary:
-          </td>
-          <td>
-            <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.0.0-beta3-bin.zip">
-            quickfix-1.0.0-beta3-bin.zip</a>
-          </td>
-        </tr>
-	<tr>
-          <tr><td></td><td></td></tr>
-          <td>
-	    <b>(<font color="#AA0000">beta</font>) QuickFIX/J Unix</b>
-          </td>
-	  <td>
-	  </td>
-	</tr>
-        <tr>
-          <td align="right">
-            Source:
-          </td>
-          <td>
-            <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.0.0-beta3-src.tar.gz">
-            quickfix-1.0.0-beta3-src.tar.gz</a>
-          </td>
-        </tr>
-        <tr>
-          <td align="right">
-            Binary:
-          </td>
-          <td>
-            <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.0.0-beta3-bin.tar.gz">
-            quickfix-1.0.0-beta3-bin.tar.gz</a>
+            href="http://www.quickfixj.org/downloads/?">www.quickfixj.org</a>
           </td>
         </tr>
       </table>
@@ -262,7 +223,7 @@
       <![CDATA[
       <p>
       Online <a href="quickfix/doc/html/index.html">documentation</a> for QuickFIX. <br/>
-      Online <a href="quickfixj/doc/usermanual/index.html">documentation</a> for QuickFIX/J. <br/>
+      Online <a href="http://www.quickfixj.org/documentation/?">documentation</a> for QuickFIX/J. <br/>
       </p>
       ]]>
     </section>
@@ -353,16 +314,6 @@
       </p>
       ]]>
     </section>
-    <section title="FPL Repository XML Conversion">
-      <![CDATA[
-      <p>
-	The FPL has recently released an xml repository for the FIX protocol.  This repository is available to FPL members only.  We have created a script that will convert from the FPL repository into a QuickFIX data dictionary in the format of the ones available above.  Simply place this script in the root directory of the unzipped schema, and run it.  It will scan for all directories in the format of FIX.x.y and create a FIXxy.xml file where x is the major and y is the minor version of FIX.  You will need a <a href="http://www.rubycentral.com/">ruby</a> interpreter.
-      </p>
-      <p>
-	<b>Download Script: </b><a href="fix_to_quickfix.rb">fix_to_quickfix.rb</a>
-      </p>
-      ]]>
-    </section>
   </page>
   
   <page title="Developers">
@@ -376,29 +327,9 @@
     <section title="QuickFIX Source Code">
       <![CDATA[
       <p>
-      The source code for QuickFIX can be accessed by browsing the
-      current <a
-      href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/quickfix/">CVS</a> 
-      tree.
-      </p>
-      ]]>
-    </section>
-    <section title="Anonymous CVS Access">
-      <![CDATA[      
-      <p>
-      <u>login</u><br/>
-      cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/quickfix login
-      <br/><br/>
-      <u>checkout</u><br/>
-      cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/quickfix co quickfix
-      </p>
-      <p>
-      When prompted for a password for anonymous, simply hit [return].
-      </p>
-      <p>
-      More information about CVS access can be found at out
-      SourceForge <a
-      href="http://sourceforge.net/cvs/?group_id=37535">CVS page</a>
+      <a href="http://svn.sourceforge.net/viewcvs.cgi/quickfix/trunk/quickfix/">Browse</a> the latest
+      source online, or check it out directly from subversion:<br/><br/>
+      <i>svn co https://svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i>
       </p>
       ]]>
     </section>
