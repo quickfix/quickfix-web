@@ -46,28 +46,15 @@
     <section title="Getting Help">
       <![CDATA[
       <p>
-      <table cellspacing="10">
-      <tr>
-       <td valign="top"><b><a href="quickfix/doc/html/index.html">Documentation</a></b></td>
-       <td>The best way to get started is with the online documentation, also provided with every QuickFIX download.  The documentation helps you with installation, setting up your projects, creating applications, configuration and code samples for all supported APIs.
-       </td>
-      </tr>
-      <tr>
-	<td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td>       
-	<td>QuickFIX has a very active user and development community.  Join our mailing lists and take advantage of our knowledge and helpful disposition.  Mailing list messages all get stored in a searchable archive.  You can choose to receive emails as they come, in daily batches, or not at all if you prefer to browse through the archives.</a>
-      </td>
-      </tr>
-      <tr>
-       <td valign="top"><b><a href="bugtracker">Bug Tracker</a></b></td>
-       <td>
-	 We have recently added a public defect tracker.  Here you can report defects and monitor their progress.
-       </td>
-      </tr>
-      <tr>
-	<td valign="top"><b><a href="services.html">Support Contracts</a></b></td>
-	<td>Support contracts and consulting services are available for purchase.  You can ensure the someone will be available to assist you, guaranteed. We have offices in in North America and Europe, and provide several levels of support depending on your needs.
-	</td>
-      </tr>
+      <table>
+      <tr><td valign="top"><b><a href="quickfix/doc/html/index.html">Documentation</a></b></td></tr>
+       <tr><td>Get started with our online documentation. Learn how to install QuickFIX and create FIX enabled applications.</td></tr>
+      <tr><td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td></tr>
+	<tr><td>You can choose to receive emails as they come, in daily batches, or just browse the archives.</td></tr>
+      <tr><td valign="top"><b><a href="bugtracker">Bug Tracker</a></b></td></tr>
+      <tr><td>Here you can report defects and monitor their progress.</td></tr>
+      <tr><td valign="top"><b><a href="services.html">Support Contracts</a></b></td></tr>
+      <tr><td>Find out about our international support and consulting packages.</td></tr>
       </table>
       <br/>
       Need more information?  Email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
@@ -188,9 +175,19 @@
             <td><b>Description</b></td>
           </tr>
           <tr>
+            <td><a href="http://www.opentradingsolutions.org/blog/downloads">Log4FIX</a></td>
+            <td><a href="http://www.opentradingsolutions.org">opentradingsolutions.org</a></td>
+            <td>Java based log viewer GUI which can be used with QuickFIX logs.</td>
+          </tr>
+          <tr>
             <td><a href="http://www.ethereal.com/download.html">Ethereal</a></td>
             <td><a href="http://www.ethereal.com">Ethereal</a></td>
             <td>A very powerful and full featured network protocol analyzer which support hundred of protocols, including FIX.  Use this to sniff out all FIX traffic regardless of what FIX engine it originates from.</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.wireshark.org/download">Wireshark</a></td>
+            <td><a href="http://www.wireshark.org">Wireshark</a></td>
+            <td>Fork of Ethereal by the core development team.</td>
           </tr>
           <tr>
             <td><a href="http://www.fixionary.com">FIXionary</a></td>
