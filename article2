@@ -1,0 +1,23 @@
+You might even say <a href="http://www.fixprotocol.org/fast">FAST</a>.
+
+When the FIX protocol was initially released, it had the modest goal of creating an extensible order entry protocol.  Over the years the protocol has expanded to include a whole host of financial transactions including pre-trade, trade, and post-trade.  These have all been met with various degrees of success, but order entry has remained the shining star of the FIX protocol.
+
+As much as we gripe about this or that implementation breaking the standard, for the most part they are pretty good nowadays.  It sure beats the days when everyone had their own proprietary API.  FIX is a resounding success.
+
+But there is a problem, one that has been lingering for years.  "Can we get market data through FIX?" they ask, "Don't bother, look elsewhere" has been my response.  I wish it weren't the case, it is really damn tempting to use the same protocol for orders and market data.  The problem is, FIX just doesn't cut it.  Fact is, FIX for market data is just about as good idea as using FIXML order entry.
+
+The messages are just too big to stuff down the pipe, and require too much effort to parse.  So what is one to do?
+
+Well, the first thing you can do is get rid of the "TAG=" stuff.  With FIX market data you are looking at an extra 4 character per data field.  <B>Gone!</B> "But that's what makes the protocol dynamic!".  Fine keep the tags, but why send them with every message?  Send them along once in a template and make them implicit for the actual messages.
+
+What else?  Stop sending redundant data! Great, microsoft traded 100 times in the last microsecond.  Why the heck are you sending me the same "MSFT" string over and over again?  <B>Gone</B>! Let me know when someone wants to take my TIVO off my hands.
+
+What's that you say?  Google's price is flittering between 390.10 and 390.11?  And you're actually sending me the string "390.10" and "390.11" in rapid succession?  You guessed it.  <B>Gone!</B>  Just the diffs please.
+
+BeginString, Sender and Target CompID?  <B>Gone!</B> Their always the same!
+
+These are just some of the things that FAST can do for the FIX protocol.  What does that mean anyway?  Oh yeah, this confused me at first too.  FAST is not FIX.  It is not an extension to the FIX protocol.  It is more like a way to translate a field based protocol into a format that is efficient for wire transmission.  That is why you may hear terms like FAST over FIX.  This essentially allows us to take advantage of the objects defined by the FIX data dictionary and push them through the wire in a much more efficient format.  It is also why you may see FAST implementations that are <I>not</I> FIX based.  Yikes.
+
+Oh, and for everyone who has been asking.  Yeah.  We're looking into it.
+<hr/>
+

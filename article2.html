@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>QuickFix: Open Source FIX Engine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="css/styleGuide.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td height="1" class="bordercolor" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td width="1" class="bordercolor"><img src="img/blank.gif" class="spacer" alt=""></td>
+<td>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td class="topheader"><img src="img/grayDots.gif" hspace="15" vspace="3" alt=""></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" background="img/grid.gif">
+<tr>
+<td><a href="index.html"><img src="img/logo.gif" alt="QuickFIX"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="navoff">
+<table cellpadding="4" cellspacing="0" border="0">
+<tr>
+<td class="navoff"><a href="index.html"><img src="img/indexOff.gif" alt="index"></a></td>
+<td><img src="img/navDots.gif" alt="::"></td>
+<td class="navoff"><a href="download.html"><img src="img/downloadOff.gif" alt="download"></a></td>
+<td><img src="img/navDots.gif" alt="::"></td>
+<td class="navoff"><a href="documentation.html"><img src="img/documentationOff.gif" alt="documentation"></a></td>
+<td><img src="img/navDots.gif" alt="::"></td>
+<td class="navoff"><a href="mailinglist.html"><img src="img/mailinglistOff.gif" alt="mailinglist"></a></td>
+<td><img src="img/navDots.gif" alt="::"></td>
+<td class="navoff"><a href="xml.html"><img src="img/xmlOff.gif" alt="xml"></a></td>
+<td><img src="img/navDots.gif" alt="::"></td>
+<td class="navoff"><a href="developers.html"><img src="img/developersOff.gif" alt="developers"></a></td>
+<td><img src="img/navDots.gif" alt="::"></td>
+<td class="navoff"><a href="services.html"><img src="img/servicesOff.gif" alt="services"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" bgcolor="#FFFFFF">
+<table cellpadding="15" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="left" valign="top">
+<table cellpadding="0" cellspacing="0" border="0" width="90%">
+<tr><td><table width="100%"><tr><td class="bodytext">07/25/2006</td></tr><tr><td class="headertext">Quicker Than Quick</td><td align="right"><a href="mailto:oren@quickfixengine.org"/>Oren Miller<a></td></tr></table></td></tr>
+<tr><td><hr/></td></tr>
+<tr><td class="bodytext">
+You might even say <a href="http://www.fixprotocol.org/fast">FAST</a>.
+<br/>
+
+<br/>
+When the FIX protocol was initially released, it had the modest goal of creating an extensible order entry protocol.  Over the years the protocol has expanded to include a whole host of financial transactions including pre-trade, trade, and post-trade.  These have all been met with various degrees of success, but order entry has remained the shining star of the FIX protocol.
+<br/>
+
+<br/>
+As much as we gripe about this or that implementation breaking the standard, for the most part they are pretty good nowadays.  It sure beats the days when everyone had their own proprietary API.  FIX is a resounding success.
+<br/>
+
+<br/>
+But there is a problem, one that has been lingering for years.  "Can we get market data through FIX?" they ask, "Don't bother, look elsewhere" has been my response.  I wish it weren't the case, it is really damn tempting to use the same protocol for orders and market data.  The problem is, FIX just doesn't cut it.  Fact is, FIX for market data is just about as good idea as using FIXML order entry.
+<br/>
+
+<br/>
+The messages are just too big to stuff down the pipe, and require too much effort to parse.  So what is one to do?
+<br/>
+
+<br/>
+Well, the first thing you can do is get rid of the "TAG=" stuff.  With FIX market data you are looking at an extra 4 character per data field.  <B>Gone!</B> "But that's what makes the protocol dynamic!".  Fine keep the tags, but why send them with every message?  Send them along once in a template and make them implicit for the actual messages.
+<br/>
+
+<br/>
+What else?  Stop sending redundant data! Great, microsoft traded 100 times in the last microsecond.  Why the heck are you sending me the same "MSFT" string over and over again?  <B>Gone</B>! Let me know when someone wants to take my TIVO off my hands.
+<br/>
+
+<br/>
+What's that you say?  Google's price is flittering between 390.10 and 390.11?  And you're actually sending me the string "390.10" and "390.11" in rapid succession?  You guessed it.  <B>Gone!</B>  Just the diffs please.
+<br/>
+
+<br/>
+BeginString, Sender and Target CompID?  <B>Gone!</B> Their always the same!
+<br/>
+
+<br/>
+These are just some of the things that FAST can do for the FIX protocol.  What does that mean anyway?  Oh yeah, this confused me at first too.  FAST is not FIX.  It is not an extension to the FIX protocol.  It is more like a way to translate a field based protocol into a format that is efficient for wire transmission.  That is why you may hear terms like FAST over FIX.  This essentially allows us to take advantage of the objects defined by the FIX data dictionary and push them through the wire in a much more efficient format.  It is also why you may see FAST implementations that are <I>not</I> FIX based.  Yikes.
+<br/>
+
+<br/>
+Oh, and for everyone who has been asking.  Yeah.  We're looking into it.
+<br/>
+<hr/>
+<br/>
+
+<br/>
+</td></tr>
+</table>
+</td>
+<td align="right" valign="top"><br>
+<table cellpadding="0" cellspacing="0" border="0">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="calloutborder" height="1" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td class="calloutborder" width="1"><img src="img/blank.gif" class="spacer" alt=""></td>
+<td>
+<table cellpadding="0" cellspacing="0" border="0" width="210">
+<tr class="calloutcolor" height="23">
+<td align="left"><img src="img/newsCallout.gif" border="0" alt="news" hspace="3"></td>
+<td align="right"><img src="img/arrows.gif" border="0" alt="" hspace="3"></td>
+</tr>
+<tr>
+<td colspan="2" align="left">
+<table cellpadding="3" cellspacing="0" border="0">
+<tr>
+<td valign="top"><img src="img/newsDots.gif" alt="::" border="0" vspace="5"></td>
+<td valign="top" class="callouttext">
+
+    <b><font color="#00AA00">QuickFIX 1.12.0</font></b> is <a href="download.html">available</a>! Please see the release
+    <a href="quickfix/NEWS">notes</a>.
+    <br/><br/>
+    <b><font color="#00AA00">QuickFIX/J 1.0.0</font></b> is <a href="download.html">available</a>!
+    
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class="calloutborder" width="1"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td class="calloutborder" height="1" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+</table><br>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="calloutborder" height="1" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td class="calloutborder" width="1"><img src="img/blank.gif" class="spacer" alt=""></td>
+<td>
+<table cellpadding="0" cellspacing="0" border="0" width="210">
+<tr class="calloutcolor" height="23">
+<td align="left"><img src="img/aboutCallout.gif" border="0" alt="about" hspace="3"></td>
+<td align="right"><img src="img/arrows.gif" border="0" alt="" hspace="3"></td>
+</tr>
+<tr>
+<td colspan="2" align="left">
+<table cellpadding="3" cellspacing="0" border="0">
+<tr>
+<td valign="top"><img src="img/newsDots.gif" alt="::" border="0" vspace="5"></td>
+<td valign="top" class="callouttext">
+
+    <p>
+    QuickFIX is a full-featured open source FIX engine, currently
+    compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
+    Solaris, FreeBSD and Mac OS X.  API's are available for C++,
+    Java, .NET, Python and Ruby.
+    </p>
+    
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class="calloutborder" width="1"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td class="calloutborder" height="1" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+</table><br>
+<table>
+<tr>
+</tr>
+<tr>
+</tr>
+</tr>
+</tr>
+</table>
+</table>
+</td>
+</tr>
+<tr>
+</tr>
+</table>
+</td>
+<td width="1" class="bordercolor"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td height="1" class="bordercolor" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-253433-1";
+urchinTracker();
+</script>
+</body>
+</html>
+<tr>
+</tr>
+</table>
+</td>
+<td width="1" class="bordercolor"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+<tr>
+<td height="1" class="bordercolor" colspan="3"><img src="img/blank.gif" class="spacer" alt=""></td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-253433-1";
+urchinTracker();
+</script>
+</body>
+</html>
