@@ -1,7 +1,7 @@
 <website>
   <static title="News">
     <![CDATA[
-    <b><font color="#00AA00">QuickFIX 1.12.0</font></b> is <a href="download.html">available</a>! Please see the release
+    <b><font color="#00AA00">QuickFIX 1.12.1</font></b> is <a href="download.html">available</a>! Please see the release
     <a href="quickfix/NEWS">notes</a>.
     <br/><br/>
     <b><font color="#00AA00">QuickFIX/J 1.0.0</font></b> is <a href="download.html">available</a>!
@@ -81,8 +81,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.0.zip">
-            quickfix-1.12.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.1.zip">
+            quickfix-1.12.1.zip</a>
           </td>
         </tr>
         <tr>
@@ -91,8 +91,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs6-1.12.0.zip">
-            quickfix-bin-vs6-1.12.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs6-1.12.1.zip">
+            quickfix-bin-vs6-1.12.1.zip</a>
           </td>
         </tr>
         <tr>
@@ -100,8 +100,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.12.0.zip">
-            quickfix-bin-vs7-1.12.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.12.1.zip">
+            quickfix-bin-vs7-1.12.1.zip</a>
           </td>
         </tr>
         <tr>
@@ -109,8 +109,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.12.0.zip">
-            quickfix-bin-vs8-1.12.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.12.1.zip">
+            quickfix-bin-vs8-1.12.1.zip</a>
           </td>
         </tr>
 	<tr>
@@ -126,8 +126,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.0.tar.gz">
-            quickfix-1.12.0.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.1.tar.gz">
+            quickfix-1.12.1.tar.gz</a>
           </td>
         </tr>
 	<tr>
