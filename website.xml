@@ -1,10 +1,11 @@
 <website>
   <static title="News">
     <![CDATA[
-    <b><font color="#00AA00">QuickFIX 1.12.1</font></b> is <a href="download.html">available</a>! Please see the release
-    <a href="quickfix/NEWS">notes</a>.
+    <b><a href="download.html" style="color: #CC77CC">QuickFIX 1.12.1</a></b>
     <br/><br/>
-    <b><font color="#00AA00">QuickFIX/J 1.0.0</font></b> is <a href="download.html">available</a>!
+    <b><a href="download.html" style="color: #CC00CC">QuickFIX Log Viewer 1.0.0</a></b>
+    <br/><br/>
+    <b><a href="download.html" style="color: #CC77CC">QuickFIX/J 1.0.0</a></b>
     ]]>
   </static>
   <static title="About">
@@ -128,6 +129,35 @@
             <a
             href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.1.tar.gz">
             quickfix-1.12.1.tar.gz</a>
+          </td>
+        </tr>
+	<tr>
+          <tr><td></td><td></td></tr>
+          <td>
+	    <b>QuickFIX Log Viewer</b>
+          </td>
+	  <td>
+	  </td>
+	</tr>
+        <tr>
+          <td align="right">
+            Unix:
+          </td>
+          <td>
+            <a
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.0.0.tar.gz">
+            quickfix-logviewer-1.0.0.tar.gz</a>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            Windows:
+          </td>
+          <td>
+            <a
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.0.0.zip">
+            quickfix-logviewer-1.0.0.zip</a>
+            <a
           </td>
         </tr>
 	<tr>
