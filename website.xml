@@ -3,7 +3,7 @@
     <![CDATA[
     <b><a href="download.html" style="color: #CC77CC">QuickFIX 1.12.1</a></b>
     <br/><br/>
-    <b><a href="download.html" style="color: #CC00CC">QuickFIX Log Viewer 1.0.0</a></b>
+    <b><a href="download.html" style="color: #CC00CC">QuickFIX Log Viewer 1.0.1</a></b>
     <br/><br/>
     <b><a href="download.html" style="color: #CC77CC">QuickFIX/J 1.0.0</a></b>
     ]]>
@@ -145,8 +145,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.0.0.tar.gz">
-            quickfix-logviewer-1.0.0.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.0.1.tar.gz">
+            quickfix-logviewer-1.0.1.tar.gz</a>
           </td>
         </tr>
         <tr>
@@ -155,8 +155,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.0.0.zip">
-            quickfix-logviewer-1.0.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.0.1.zip">
+            quickfix-logviewer-1.0.1.zip</a>
             <a
           </td>
         </tr>
