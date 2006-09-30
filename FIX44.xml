@@ -2822,7 +2822,7 @@
     <field name="TotNumTradeReports" required="N" />
     <field name="TradeRequestResult" required="Y" />
     <field name="TradeRequestStatus" required="Y" />
-  <component name="Instrument" required="Y" />
+    <component name="Instrument" required="N" />
     <group name="NoUnderlyings" required="N">
       <component name="UnderlyingInstrument" required="N" />
     </group>
@@ -3582,6 +3582,30 @@
     <field name="EncodedTextLen" required="N" />
     <field name="EncodedText" required="N" />
   </message>
+  <message name="NetworkStatusRequest" msgtype="BC" msgcat="app">
+    <field name="NetworkRequestType" required="Y" />
+    <field name="NetworkRequestID" required="Y" />
+    <group name="NoCompIDs" required="N">
+      <field name="RefCompID" required="N" />
+      <field name="RefSubID" required="N" />
+      <field name="LocationID" required="N" />
+      <field name="DeskID" required="N" />
+    </group>
+  </message>
+  <message name="NetworkStatusRequest" msgtype="BD" msgcat="app">
+    <field name="NetworkStatusResponseType" required="Y" />
+    <field name="NetworkRequestID" required="N" />
+    <field name="NetworkResponseID" required="N" />
+    <field name="LastNetworkResponseID" required="N" />
+    <group name="NoCompIDs" required="Y">
+      <field name="RefCompID" required="N" />
+      <field name="RefSubID" required="N" />
+      <field name="LocationID" required="N" />
+      <field name="DeskID" required="N" />
+      <field name="StatusValue" required="N" />
+      <field name="StatusText" required="N" />
+    </group>
+  </message>
   <message name="CollateralInquiryAck" msgtype="BG" msgcat="app">
     <field name="CollInquiryID" required="Y" />
     <field name="CollInquiryStatus" required="Y" />
@@ -3732,7 +3756,7 @@
       <component name="UnderlyingStipulations" required="N" />
     </component>
     <component name="InstrumentLeg">
-      <field name="LegSymbol" required="Y" />
+      <field name="LegSymbol" required="N" />
       <field name="LegSymbolSfx" required="N" />
       <field name="LegSecurityID" required="N" />
       <field name="LegSecurityIDSource" required="N" />
@@ -5075,6 +5099,20 @@
       <value enum="7" description="MARKET_IMBALANCE_BUY" />
       <value enum="8" description="MARKET_IMBALANCE_SELL" />
       <value enum="9" description="MARKET_ON_CLOSE_IMBALANCE_BUY" />
+      <value enum="10" description="MARKET_ON_CLOSE_IMBALANCE_SELL" />
+      <value enum="11" description="NOT_ASSIGNED" />
+      <value enum="12" description="NO_MARKET_IMBALANCE" />
+      <value enum="13" description="NO_MARKET_ON_CLOSE_IMBALANCE" />
+      <value enum="14" description="ITS_PRE_OPENING" />
+      <value enum="15" description="NEW_PRICE_INDICATION" />
+      <value enum="16" description="TRADE_DISSEMINATION_TIME" />
+      <value enum="17" description="READY_TO_TRADE_START_OF_SESSION" />
+      <value enum="18" description="NOT_AVAILABLE_FOR_TRADING_END_OF_SESSION" />
+      <value enum="19" description="NOT_TRADED_ON_THIS_MARKET" />
+      <value enum="20" description="UNKNOWN_OR_INVALID" />
+      <value enum="21" description="PRE_OPEN" />
+      <value enum="22" description="OPENING_ROTATION" />
+      <value enum="23" description="FAST_MARKET" />
     </field>
     <field number="327" name="HaltReason" type="CHAR">
       <value enum="I" description="ORDER_IMBALANCE" />
