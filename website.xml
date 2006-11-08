@@ -1,11 +1,11 @@
 <website>
   <static title="News">
     <![CDATA[
-    <b><a href="download.html" style="color: #CC00CC">QuickFIX 1.12.4</a></b>
+    <b><a href="download.html" style="color: #CC77CC">QuickFIX 1.12.4</a></b>
     <br/><br/>
-    <b><a href="download.html" style="color: #CC77CC">QuickFIX Log Viewer 1.1.0</a></b>
+    <b><a href="download.html" style="color: #CC00CC">QuickFIX Log Viewer 1.1.1</a></b>
     <br/><br/>
-    <b><a href="download.html" style="color: #CC77CC">QuickFIX/J 1.0.3</a></b>
+    <b><a href="download.html" style="color: #CC00CC">QuickFIX/J 1.0.4</a></b>
     ]]>
   </static>
   <static title="About">
@@ -145,8 +145,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.1.0.tar.gz">
-            quickfix-logviewer-1.1.0.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.1.1.tar.gz">
+            quickfix-logviewer-1.1.1.tar.gz</a>
           </td>
         </tr>
         <tr>
@@ -155,8 +155,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.1.0.zip">
-            quickfix-logviewer-1.1.0.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-logviewer-1.1.1.zip">
+            quickfix-logviewer-1.1.1.zip</a>
             <a
           </td>
         </tr>
