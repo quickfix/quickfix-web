@@ -251,7 +251,7 @@
       <p>
       Online <a href="quickfix/doc/html/index.html">documentation</a> for QuickFIX. <br/>
       Online <a href="http://www.quickfixj.org/documentation/?">documentation</a> for QuickFIX/J. <br/>
-      Online <a href="quickfix-logviewer/documentation.pdf">documentation</a> for QuickFIX Logviewer [PDF]. <br/>
+      Online <a href="quickfix-logviewer/documentation.pdf">documentation</a> for QuickFIX Log Viewer [PDF]. <br/>
       </p>
       ]]>
     </section>
@@ -352,12 +352,13 @@
         </p>
       ]]>
     </section>
-    <section title="QuickFIX Source Code">
+    <section title="Source Code">
       <![CDATA[
       <p>
-      <a href="http://svn.sourceforge.net/viewcvs.cgi/quickfix/trunk/quickfix/">Browse</a> the latest
-      source online, or check it out directly from subversion:<br/><br/>
-      <i>svn co https://svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i>
+      <a href="http://svn.sourceforge.net/viewcvs.cgi/quickfix/trunk/quickfix/">QuickFIX</a><br/>
+      <i>svn co https://svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i><br/><br/>
+      <a href="http://svn.sourceforge.net/viewcvs.cgi/quickfix/trunk/quickfix-logviewer/">QuickFIX Log Viewer</a><br/>
+      <i>svn co https://svn.sourceforge.net/svnroot/quickfix/trunk/quickfix-logviewer</i>
       </p>
       ]]>
     </section>
