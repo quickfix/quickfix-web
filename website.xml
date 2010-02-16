@@ -4,8 +4,6 @@
     <b><a href="download.html" style="color: #CC77CC">QuickFIX 1.12.4</a></b>
     <br/><br/>
     <b><a href="download.html" style="color: #CC00CC">QuickFIX Log Viewer 1.1.1</a></b>
-    <br/><br/>
-    <b><a href="download.html" style="color: #CC00CC">QuickFIX/J 1.0.4</a></b>
     ]]>
   </static>
   <static title="About">
@@ -52,7 +50,7 @@
       <tr><td>Get started with our online documentation.</td></tr>
       <tr><td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td></tr>
       <tr><td>You can receive emails as they come, in daily batches, or browse the archives.</td></tr>
-      <tr><td valign="top"><b><a href="bugtracker">Bug Tracker</a></b></td></tr>
+      <tr><td valign="top"><b><a href="http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030">Bug Tracker</a></b></td></tr>
       <tr><td>Here you can report defects and monitor their progress.</td></tr>
       <tr><td valign="top"><b><a href="services.html">Support Contracts</a></b></td></tr>
       <tr><td>Find out about our international support and consulting packages.</td></tr>
@@ -335,6 +333,12 @@
       <li>FIX 4.4  <a href="FIX44.xml">xml</a>
                    <a href="FIX44.html">html</a>
       </li>    
+      <li>FIX 5.0  <a href="FIX50.xml">xml</a>
+                   <a href="FIX50.html">html</a>
+      </li>
+      <li>FIXT 1.1  <a href="FIXT11.xml">xml</a>
+                   <a href="FIXT11.html">html</a>
+      </li>
       </p>
       <p>
       The XML documents were then reformatted into small browsable HTML
@@ -348,28 +352,18 @@
     <section title="Defect Tracking">
       <![CDATA[
         <p>
-        Report and follow-up on bug reports <a href="bugtracker">here</a>.
+        Report and follow-up on bug reports <a href=http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030"">here</a>.
         </p>
       ]]>
     </section>
     <section title="Source Code">
       <![CDATA[
       <p>
-      <a href="http://svn.sourceforge.net/viewcvs.cgi/quickfix/trunk/quickfix/">QuickFIX</a><br/>
-      <i>svn co https://svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i><br/><br/>
-      <a href="http://svn.sourceforge.net/viewcvs.cgi/quickfix/trunk/quickfix-logviewer/">QuickFIX Log Viewer</a><br/>
-      <i>svn co https://svn.sourceforge.net/svnroot/quickfix/trunk/quickfix-logviewer</i>
+      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix/">QuickFIX</a><br/>
+      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i><br/><br/>
+      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix-logviewer/">QuickFIX Log Viewer</a><br/>
+      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix-logviewer</i>
       </p>
-      ]]>
-    </section>
-    <section title="Automated Builds">
-      <![CDATA[
-      <br/>
-      <li><a href="autobuild-i686-linux.html">Slackware Linux 9.0</a></li>
-      <li><a href="autobuild-powerpc-darwin.html">Mac OS/X 10.4</a></li>
-      <li><a href="autobuild-i386-msvcrt-vs6.html">Windows Visual Studio 6</a></li>
-      <li><a href="autobuild-i386-msvcrt-vs7.html">Windows Visual Studio 7</a></li>
-      <li><a href="autobuild-i386-msvcrt-vs8.html">Windows Visual Studio 8</a></li>
       ]]>
     </section>
   </page>
