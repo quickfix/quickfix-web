@@ -1,7 +1,7 @@
 <website>
   <static title="News">
     <![CDATA[
-    <b><a href="download.html" style="color: #CC77CC">QuickFIX 1.12.4</a></b>
+    <b><a href="download.html" style="color: #CC77CC">QuickFIX 1.13.0</a></b>
     <br/><br/>
     <b><a href="download.html" style="color: #CC00CC">QuickFIX Log Viewer 1.1.1</a></b>
     ]]>
@@ -10,9 +10,10 @@
     <![CDATA[
     <p>
     QuickFIX is a full-featured open source FIX engine, currently
-    compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
+    compatible with the FIX 4.0-5.0 spec. It runs on Windows, Linux,
     Solaris, FreeBSD and Mac OS X.  API's are available for C++,
-    Java, .NET, Python and Ruby.
+    .NET, Python and Ruby. <a href="http://www.quickfixj.org">QuickFIX/J</a>
+    is available for Java.
     </p>
     ]]>
   </static>
@@ -23,9 +24,10 @@
       <![CDATA[
       <p>
       QuickFIX is a full-featured open source FIX engine, currently
-      compatible with the FIX 4.0-4.4 spec. It runs on Windows, Linux,
+      compatible with the FIX 4.0-5.0 spec. It runs on Windows, Linux,
       Solaris, FreeBSD and Mac OS X.  API's are available for C++,
-      Java, .NET, Python and Ruby.
+      .NET, Python and Ruby. <a href="http://www.quickfixj.org">QuickFIX/J</a>
+      is available for Java.
       </p>
       ]]>
     </section>
@@ -80,8 +82,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.4.zip">
-            quickfix-1.12.4.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.0.zip">
+            quickfix-1.13.0.zip</a>
           </td>
         </tr>
         <tr>
@@ -90,8 +92,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs6-1.12.4.zip">
-            quickfix-bin-vs6-1.12.4.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.13.0.zip">
+            quickfix-bin-vs7-1.13.0.zip</a>
           </td>
         </tr>
         <tr>
@@ -99,8 +101,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.12.4.zip">
-            quickfix-bin-vs7-1.12.4.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.13.0.zip">
+            quickfix-bin-vs8-1.13.0.zip</a>
           </td>
         </tr>
         <tr>
@@ -108,8 +110,17 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.12.4.zip">
-            quickfix-bin-vs8-1.12.4.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs9-1.13.0.zip">
+            quickfix-bin-vs9-1.13.0.zip</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td>
+            <a
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs10-1.13.0.zip">
+            quickfix-bin-vs10-1.13.0.zip</a>
           </td>
         </tr>
 	<tr>
@@ -125,8 +136,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.12.4.tar.gz">
-            quickfix-1.12.4.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.0.tar.gz">
+            quickfix-1.13.0.tar.gz</a>
           </td>
         </tr>
 	<tr>
@@ -203,9 +214,9 @@
             <td><b>Description</b></td>
           </tr>
           <tr>
-            <td><a href="http://www.opentradingsolutions.org/blog/downloads">Log4FIX</a></td>
-            <td><a href="http://www.opentradingsolutions.org">opentradingsolutions.org</a></td>
-            <td>Java based log viewer GUI which can be used with QuickFIX logs.</td>
+            <td><a href="http://code.google.com/p/quickfast/">QuickFAST</a></td>
+            <td><a href="http://code.google.com/p/quickfast/">QuickFAST</a></td>
+            <td>An implementation of the FAST protocol. Generally used for market data. QuickFAST is <b>not</b> affiliated with QuickFIX</td>
           </tr>
           <tr>
             <td><a href="http://www.ethereal.com/download.html">Ethereal</a></td>
@@ -216,11 +227,6 @@
             <td><a href="http://www.wireshark.org/download">Wireshark</a></td>
             <td><a href="http://www.wireshark.org">Wireshark</a></td>
             <td>Fork of Ethereal by the core development team.</td>
-          </tr>
-          <tr>
-            <td><a href="http://www.fixionary.com">FIXionary</a></td>
-            <td><a href="http://www.nyfix.com">NYFIX</a></td>
-            <td>Interactively browse the FIX protocol specification through this java application. Much nicer then browsing through the massive word documents or XML dictionaries.</td>
           </tr>
 	  <tr>
 	    <td><a href="http://www.transacttools.net/ttportal/datadict/browser.jsp">FIX Data Dictionary</a></td>
@@ -317,29 +323,15 @@
       specification. If you have been looking for such a thing, this
       is it!
       </p>
-      <p>
-      <li>FIX 4.0  <a href="FIX40.xml">xml</a>
-                   <a href="FIX40.html">html</a>
-      </li>
-      <li>FIX 4.1  <a href="FIX41.xml">xml</a>
-                   <a href="FIX41.html">html</a>
-      </li>
-      <li>FIX 4.2  <a href="FIX42.xml">xml</a>
-                   <a href="FIX42.html">html</a>
-      </li>
-      <li>FIX 4.3  <a href="FIX43.xml">xml</a>
-                   <a href="FIX43.html">html</a>
-      </li>    
-      <li>FIX 4.4  <a href="FIX44.xml">xml</a>
-                   <a href="FIX44.html">html</a>
-      </li>    
-      <li>FIX 5.0  <a href="FIX50.xml">xml</a>
-                   <a href="FIX50.html">html</a>
-      </li>
-      <li>FIXT 1.1  <a href="FIXT11.xml">xml</a>
-                   <a href="FIXT11.html">html</a>
-      </li>
-      </p>
+      <p><font size="3">
+      <pre><b>FIX  4.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX40.html">html</a></pre>
+      <pre><b>FIX  4.1</b> <a href="FIX40.xml">xml</a> | <a href="FIX41.html">html</a></pre>
+      <pre><b>FIX  4.2</b> <a href="FIX40.xml">xml</a> | <a href="FIX42.html">html</a></pre>
+      <pre><b>FIX  4.3</b> <a href="FIX40.xml">xml</a> | <a href="FIX43.html">html</a></pre>
+      <pre><b>FIX  4.4</b> <a href="FIX40.xml">xml</a> | <a href="FIX44.html">html</a></pre>
+      <pre><b>FIX  5.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX50.html">html</a></pre>
+      <pre><b>FIXT 1.1</b> <a href="FIX40.xml">xml</a> | <a href="FIX11.html">html</a></pre>
+      </font></p>
       <p>
       The XML documents were then reformatted into small browsable HTML
       files using this <a href="fixtohtml.xsl">xsl stylesheet</a>
