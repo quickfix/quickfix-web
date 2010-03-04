@@ -52,6 +52,8 @@
       <tr><td>Get started with our online documentation.</td></tr>
       <tr><td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td></tr>
       <tr><td>You can receive emails as they come, in daily batches, or browse the archives.</td></tr>
+      <tr><td valign="top"><b><a href="forum">Forums</a></b></td></tr>
+      <tr><td>Interactive discussions with users and developers.</td></tr>
       <tr><td valign="top"><b><a href="http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030">Bug Tracker</a></b></td></tr>
       <tr><td>Here you can report defects and monitor their progress.</td></tr>
       <tr><td valign="top"><b><a href="services.html">Support Contracts</a></b></td></tr>
@@ -310,6 +312,13 @@
       </p>
       ]]>
     </section>
+    <section title="Forums">
+      <![CDATA[
+      <p>
+      <a href="http://www.quickfixengine.org/forum">QuickFIX Forum</a>
+      </p>
+      ]]>
+    </section>
   </page>
   
   <page title="XML">
@@ -325,12 +334,12 @@
       </p>
       <p><font size="3">
       <pre><b>FIX  4.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX40.html">html</a></pre>
-      <pre><b>FIX  4.1</b> <a href="FIX40.xml">xml</a> | <a href="FIX41.html">html</a></pre>
-      <pre><b>FIX  4.2</b> <a href="FIX40.xml">xml</a> | <a href="FIX42.html">html</a></pre>
-      <pre><b>FIX  4.3</b> <a href="FIX40.xml">xml</a> | <a href="FIX43.html">html</a></pre>
-      <pre><b>FIX  4.4</b> <a href="FIX40.xml">xml</a> | <a href="FIX44.html">html</a></pre>
-      <pre><b>FIX  5.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX50.html">html</a></pre>
-      <pre><b>FIXT 1.1</b> <a href="FIX40.xml">xml</a> | <a href="FIX11.html">html</a></pre>
+      <pre><b>FIX  4.1</b> <a href="FIX41.xml">xml</a> | <a href="FIX41.html">html</a></pre>
+      <pre><b>FIX  4.2</b> <a href="FIX42.xml">xml</a> | <a href="FIX42.html">html</a></pre>
+      <pre><b>FIX  4.3</b> <a href="FIX43.xml">xml</a> | <a href="FIX43.html">html</a></pre>
+      <pre><b>FIX  4.4</b> <a href="FIX44.xml">xml</a> | <a href="FIX44.html">html</a></pre>
+      <pre><b>FIX  5.0</b> <a href="FIX50.xml">xml</a> | <a href="FIX50.html">html</a></pre>
+      <pre><b>FIXT 1.1</b> <a href="FIXT11.xml">xml</a> | <a href="FIX11.html">html</a></pre>
       </font></p>
       <p>
       The XML documents were then reformatted into small browsable HTML
