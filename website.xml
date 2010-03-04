@@ -216,6 +216,11 @@
             <td><b>Description</b></td>
           </tr>
           <tr>
+            <td><a href="http://www.validfix.com">ValidFIX</a></td>
+            <td><a href="http://www.validfix.com">ValidFIX Ltd</a></td>
+            <td>FIX message analyzer that works through your browser. No installation, just go to this site and start decoding your messages.</td>
+          </tr>
+          <tr>
             <td><a href="http://code.google.com/p/quickfast/">QuickFAST</a></td>
             <td><a href="http://code.google.com/p/quickfast/">QuickFAST</a></td>
             <td>An implementation of the FAST protocol. Generally used for market data. QuickFAST is <b>not</b> affiliated with QuickFIX</td>
