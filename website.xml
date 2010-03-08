@@ -1,7 +1,7 @@
 <website>
   <static title="News">
     <![CDATA[
-    <b><a href="download.html" style="color: #22CC55">QuickFIX 1.13.1</a></b>
+    <b><a href="download.html" style="color: #22CC55">QuickFIX 1.13.2</a></b>
     <br/><br/>
     <b><a href="download.html" style="color: #22CC55">QuickFIX Log Viewer 1.1.1</a></b>
     ]]>
@@ -84,8 +84,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.1.zip">
-            quickfix-1.13.1.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.2.zip">
+            quickfix-1.13.2.zip</a>
           </td>
         </tr>
         <tr>
@@ -94,8 +94,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.13.1.zip">
-            quickfix-bin-vs7-1.13.1.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.13.2.zip">
+            quickfix-bin-vs7-1.13.2.zip</a>
           </td>
         </tr>
         <tr>
@@ -103,8 +103,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.13.1.zip">
-            quickfix-bin-vs8-1.13.1.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.13.2.zip">
+            quickfix-bin-vs8-1.13.2.zip</a>
           </td>
         </tr>
         <tr>
@@ -112,8 +112,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs9-1.13.1.zip">
-            quickfix-bin-vs9-1.13.1.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs9-1.13.2.zip">
+            quickfix-bin-vs9-1.13.2.zip</a>
           </td>
         </tr>
         <tr>
@@ -121,8 +121,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs10-1.13.1.zip">
-            quickfix-bin-vs10-1.13.1.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs10-1.13.2.zip">
+            quickfix-bin-vs10-1.13.2.zip</a>
           </td>
         </tr>
 	<tr>
@@ -138,8 +138,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.1.tar.gz">
-            quickfix-1.13.1.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.2.tar.gz">
+            quickfix-1.13.2.tar.gz</a>
           </td>
         </tr>
 	<tr>
