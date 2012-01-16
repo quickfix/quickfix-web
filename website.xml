@@ -9,11 +9,13 @@
   <static title="About">
     <![CDATA[
     <p>
-    QuickFIX is a full-featured open source FIX engine, currently
-    compatible with the FIX 4.0-5.0 spec. It runs on Windows, Linux,
-    Solaris, FreeBSD and Mac OS X.  API's are available for C++,
-    .NET, Python and Ruby. <a href="http://www.quickfixj.org">QuickFIX/J</a>
-    is available for Java.
+      QuickFIX is a full-featured open source FIX engine, currently
+      compatible with the FIX 4.0-5.0 spec. API's are available for C++,
+      .NET, Python and Ruby. 
+      <hr/>
+      <a href="http://www.quickfixj.org">QuickFIX/J</a> is available for Java. 
+      <br/>
+      <a href="http://www.quickfixn.org">QuickFIX/N</a> is available for .NET.
     </p>
     ]]>
   </static>
@@ -24,10 +26,10 @@
       <![CDATA[
       <p>
       QuickFIX is a full-featured open source FIX engine, currently
-      compatible with the FIX 4.0-5.0 spec. It runs on Windows, Linux,
-      Solaris, FreeBSD and Mac OS X.  API's are available for C++,
+      compatible with the FIX 4.0-5.0 spec. API's are available for C++,
       .NET, Python and Ruby. <a href="http://www.quickfixj.org">QuickFIX/J</a>
-      is available for Java.
+      is available for Java. <a href="http://www.quickfixn.org">QuickFIX/N</a>
+      is available for .NET.
       </p>
       ]]>
     </section>
@@ -84,8 +86,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.2.zip">
-            quickfix-1.13.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.3.zip">
+            quickfix-1.13.3.zip</a>
           </td>
         </tr>
         <tr>
@@ -94,8 +96,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.13.2.zip">
-            quickfix-bin-vs7-1.13.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs7-1.13.3.zip">
+            quickfix-bin-vs7-1.13.3.zip</a>
           </td>
         </tr>
         <tr>
@@ -103,8 +105,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.13.2.zip">
-            quickfix-bin-vs8-1.13.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs8-1.13.3.zip">
+            quickfix-bin-vs8-1.13.3.zip</a>
           </td>
         </tr>
         <tr>
@@ -112,8 +114,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs9-1.13.2.zip">
-            quickfix-bin-vs9-1.13.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs9-1.13.3.zip">
+            quickfix-bin-vs9-1.13.3.zip</a>
           </td>
         </tr>
         <tr>
@@ -121,8 +123,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs10-1.13.2.zip">
-            quickfix-bin-vs10-1.13.2.zip</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-bin-vs10-1.13.3.zip">
+            quickfix-bin-vs10-1.13.3.zip</a>
           </td>
         </tr>
 	<tr>
@@ -138,8 +140,8 @@
           </td>
           <td>
             <a
-            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.2.tar.gz">
-            quickfix-1.13.2.tar.gz</a>
+            href="http://prdownloads.sourceforge.net/quickfix/quickfix-1.13.3.tar.gz">
+            quickfix-1.13.3.tar.gz</a>
           </td>
         </tr>
 	<tr>
@@ -186,6 +188,23 @@
           <td>
             <a
             href="http://www.quickfixj.org/downloads/?">www.quickfixj.org</a>
+          </td>
+        </tr>
+	<tr>
+          <tr><td></td><td></td></tr>
+          <td>
+	    <b>QuickFIX/J</b>
+          </td>
+	  <td>
+	  </td>
+	</tr>
+        <tr>
+          <td align="right">
+            All:
+          </td>
+          <td>
+            <a
+            href="http://www.quickfixn.org/download">www.quickfixn.org</a>
           </td>
         </tr>
       </table>
@@ -428,8 +447,5 @@
     </section>
   </page>
 
-  <article file="post4" title="All Up To Date" date="04/06/2010" menu="true"/>
-  <article file="post3" title="Keeping With The Times" date="02/26/2010" menu="false"/>
-  <article file="post2" title="Quicker Than Quick" date="07/25/2006" menu="false"/>
-  <article file="post1" title="Commodities Have Value" date="06/30/2005" menu="false"/>
+  <article/>
 </website>

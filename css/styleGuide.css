@@ -1,7 +1,7 @@
 body{background-image:url(../img/bgSquares.gif);margin-left:5%;margin-top:2%;margin-right:5%;margin-bottom:5%;}
 img{border:0px;}
 img.spacer{ width:1px;height:1px;border:0px none;}
-a:link{color:#0000FF;text-decoration:underline;}
+a:link{color:#0000FF;text-decoration:none;}
 a:visited{color:#0000FF;text-decoration:underline;}
 a:active{color:#0000FF;text-decoration:underline;}  
 th{font-family:"Verdana","Arial","Helvetica",sans-serif;}

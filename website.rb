@@ -101,16 +101,14 @@ end
 
 def outputPage(f, page)
   page.elements.each("article") { |article|
-    @document.elements.each { |element|
-      element.elements.each("article") { |article|
-        file = article.attributes["file"]
-        title = article.attributes["title"]
-        date = article.attributes["date"]
-        f.puts "<tr><td>&nbsp;</td><td align=\"right\" class=\"bodytext\"><a href=\"#{file}.html\">\"#{title}\"</a><br/></td></tr><tr><td colspan=\"2\">&nbsp;</td></tr>"
-        break
-      }
-    }
+    article = @document.elements["website"].elements["article"]
+    file = article.attributes["file"]
+    title = article.attributes["title"]
+    date = article.attributes["date"]
+    f.puts "<tr><td>&nbsp;</td><td align=\"right\" class=\"bodytext\"><a href=\"#{file}\">\"#{title}\"</a><br/></td></tr><tr><td colspan=\"2\">&nbsp;</td></tr>"
+    break
   }
+
   page.elements.each("section") { |section|
     title = section.attributes["title"]
     if( title != nil )
@@ -210,6 +208,25 @@ def outputStatic(f, static)
   f.puts "</table><br>"
 end
 
+Dir.foreach('posts') do |file|
+  dateSplit, titleSplit = file.split('_')
+  next if dateSplit == nil or titleSplit == nil    
+  date = "#{dateSplit[4...6]}/#{dateSplit[6...8]}/#{dateSplit[0...4]}"
+  title = titleSplit.gsub(/([a-z\d])([A-Z])/, '\1 \2')
+  outputFile = "#{titleSplit}.html"
+  f = File.open("#{outputFile}", "w+")
+  af = File.open("posts/#{file}", "r")
+  article = @document.elements["website"].elements["article"]
+  article.attributes["title"] = title
+  article.attributes["date"] = date
+  article.attributes["menu"] = false
+  article.attributes["file"] = outputFile
+  outputTop(f, article)
+  outputHeader(f, article)
+  outputArticle(f, title, date, af)
+  outputBottom(f)
+end
+
 @document.elements.each { |element|
   element.elements.each("page") { |page|
     title = page.attributes["title"].downcase
@@ -241,18 +258,6 @@ end
     f.puts "</table>"
     f.puts "</td>"
     f.puts "</tr>"
-    outputBottom(f)
-  }
-
-  element.elements.each("article") { |article|
-    file = article.attributes["file"].downcase
-    title = article.attributes["title"]
-    date = article.attributes["date"]
-    f = File.open("#{file}.html", "w+")
-    af = File.open(file, "r")
-    outputTop(f, article)
-    outputHeader(f, article)
-    outputArticle(f, title, date, af)
     outputBottom(f)
   }
 }
