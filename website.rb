@@ -36,7 +36,7 @@ def outputTop(f, page)
   f.puts "<td>"
   f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" background=\"img/grid.gif\">"
   f.puts "<tr>"
-  f.puts "<td><a href=\"index.html\"><img src=\"img/logo.gif\" alt=\"QuickFIX\"></a></td>"
+  f.puts "<td><a href=\"\"><img src=\"img/logo.gif\" alt=\"QuickFIX\"></a></td>"
   if( page.attributes["menu"] != "false" )
     f.puts "<td align=\"right\"><img src=\"img/#{title}Title.gif\" alt=\"#{title}\"></td>"
   end
@@ -83,9 +83,9 @@ def outputHeader(f, page)
       title = "index" if title == "about"
       pageTitle = "index" if pageTitle == "about"
       if( pageTitle == title )
-	f.puts "<td class=\"navon\"><a href=\"#{pageTitle}.html\"><img src=\"img/#{pageTitle}On.gif\" alt=\"#{pageTitle}\"></a></td>"
+	f.puts "<td class=\"navon\"><a href=\"#{pageTitle}\"><img src=\"img/#{pageTitle}On.gif\" alt=\"#{pageTitle}\"></a></td>"
       else
-	f.puts "<td class=\"navoff\"><a href=\"#{pageTitle}.html\"><img src=\"img/#{pageTitle}Off.gif\" alt=\"#{pageTitle}\"></a></td>"
+	f.puts "<td class=\"navoff\"><a href=\"#{pageTitle}\"><img src=\"img/#{pageTitle}Off.gif\" alt=\"#{pageTitle}\"></a></td>"
       end
       if( page != last )
       then

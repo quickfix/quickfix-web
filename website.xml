@@ -1,9 +1,9 @@
 <website>
   <static title="News">
     <![CDATA[
-    <b><a href="download.html" style="color: #22CC55">QuickFIX 1.13.2</a></b>
+    <b><a href="download" style="color: #22CC55">QuickFIX 1.13.2</a></b>
     <br/><br/>
-    <b><a href="download.html" style="color: #22CC55">QuickFIX Log Viewer 1.1.1</a></b>
+    <b><a href="download" style="color: #22CC55">QuickFIX Log Viewer 1.1.1</a></b>
     ]]>
   </static>
   <static title="About">
@@ -50,15 +50,15 @@
       <![CDATA[
       <p>
       <table>
-      <tr><td valign="top"><b><a href="quickfix/doc/html/index.html">Documentation</a></b></td></tr>
+      <tr><td valign="top"><b><a href="quickfix/doc/html">Documentation</a></b></td></tr>
       <tr><td>Get started with our online documentation.</td></tr>
-      <tr><td valign="top"><b><a href="mailinglist.html">Mailing Lists</a></b></td></tr>
+      <tr><td valign="top"><b><a href="mailinglist">Mailing Lists</a></b></td></tr>
       <tr><td>You can receive emails as they come, in daily batches, or browse the archives.</td></tr>
       <tr><td valign="top"><b><a href="forum">Forums</a></b></td></tr>
       <tr><td>Interactive discussions with users and developers.</td></tr>
       <tr><td valign="top"><b><a href="http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030">Bug Tracker</a></b></td></tr>
       <tr><td>Here you can report defects and monitor their progress.</td></tr>
-      <tr><td valign="top"><b><a href="services.html">Support Contracts</a></b></td></tr>
+      <tr><td valign="top"><b><a href="services">Support Contracts</a></b></td></tr>
       <tr><td>Find out about our international support and consulting packages.</td></tr>
       </table>
       <br/>
@@ -245,11 +245,6 @@
             <td>An implementation of the FAST protocol. Generally used for market data. QuickFAST is <b>not</b> affiliated with QuickFIX</td>
           </tr>
           <tr>
-            <td><a href="http://www.ethereal.com/download.html">Ethereal</a></td>
-            <td><a href="http://www.ethereal.com">Ethereal</a></td>
-            <td>A very powerful and full featured network protocol analyzer which support hundred of protocols, including FIX.  Use this to sniff out all FIX traffic regardless of what FIX engine it originates from.</td>
-          </tr>
-          <tr>
             <td><a href="http://www.wireshark.org/download">Wireshark</a></td>
             <td><a href="http://www.wireshark.org">Wireshark</a></td>
             <td>Fork of Ethereal by the core development team.</td>
@@ -279,8 +274,9 @@
     <section title="Project/Code Documentation">
       <![CDATA[
       <p>
-      Online <a href="quickfix/doc/html/index.html">documentation</a> for QuickFIX. <br/>
+      Online <a href="quickfix/doc/html">documentation</a> for QuickFIX. <br/>
       Online <a href="http://www.quickfixj.org/documentation/?">documentation</a> for QuickFIX/J. <br/>
+      Online <a href="http://www.quickfixn.org/tutorial/creating-an-application">documentation</a> for QuickFIX/N. <br/>
       Online <a href="quickfix-logviewer/documentation.pdf">documentation</a> for QuickFIX Log Viewer [PDF]. <br/>
       </p>
       ]]>
@@ -288,21 +284,16 @@
     <section title="Installing QuickFIX">
       <![CDATA[
       <p>
-      Complete instructions are available for 
-      <a href="quickfix/doc/html/install.html">installing QuickFIX</a>
-      and running the acceptance tests.
+      How to <a href="quickfix/doc/html/install.html">Install QuickFIX</a>
       </p>
       ]]>
     </section>
     <section title="Protocol Documentation">
       <![CDATA[
       <p>
-      For help with the FIX protocol itself, check out the 
-      <a href="http://www.fixprotocol.org">FIX Protocol
-      Homepage</a>. Of particular interest are the <a
-      href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">specification
-      documents</a> and the <a
-      href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">discussion forums</a>
+        <a href="http://www.fixprotocol.org">Homepage</a> <br/> <br/>
+        <a href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">Specification Documents</a> <br/> <br/>
+        <a href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">Discussion Forums</a> <br/>
       </p>
       ]]>
     </section>
@@ -365,10 +356,6 @@
       <pre><b>FIX  5.0</b> <a href="FIX50.xml">xml</a> | <a href="FIX50.html">html</a></pre>
       <pre><b>FIXT 1.1</b> <a href="FIXT11.xml">xml</a> | <a href="FIX11.html">html</a></pre>
       </font></p>
-      <p>
-      The XML documents were then reformatted into small browsable HTML
-      files using this <a href="fixtohtml.xsl">xsl stylesheet</a>
-      </p>
       ]]>
     </section>
   </page>
@@ -401,48 +388,20 @@
      </p>
      <p>
      <table>
-     <tr><td><li><a href="#CONNAMARA">Connamara Systems</a></li></td></tr>
+     <tr><td><li><a href="http://www.connamara.com">Connamara Systems</a></li></td></tr>
      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Development, Production Support Contracts for North America</td></tr>
-     <tr><td><li><a href="#MACDONALD">Macdonald Associates Ltd.</a></li></td></tr>
+     <tr><td><li><a href="http://macd.com">Macdonald Associates Ltd.</a></li></td></tr>
      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Development, Training Classes, Production Support Contracts for Europe</td></tr>
-     <tr><td><li><a href="#OCI">Object Computing, Inc.</a></li></td></tr>
+     <tr><td><li><a href="http://www.ociweb.com">Object Computing, Inc.</a></li></td></tr>
      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Development, Training Classes, Support Contracts</td></tr>
-     <tr><td><li><a href="#SMARTQUANT">SmartQuant</a></li></td></tr>
+     <tr><td><li><a href="http://www.smartquant.com">SmartQuant</a></li></td></tr>
      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantitative Trading Integrated With QuickFIX</td></tr>
      </table>
      </p>
      <p>
-     If you are interested in learning about QuickFIX, FIX, and trading related services, just email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>. Please leave your contact information such as email or a telephone number where you can be reached.
+     <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
      </p>
      <hr/>
-    ]]>
-    </section>
-    <section>
-    <![CDATA[
-      <a name="CONNAMARA"/>
-      <a href="http://www.connamara.com"><IMG src="img/connamara.gif" border="0" alt="Connamara Logo"></a>
-      <p>With offices in Chicago and New Delhi, Connamara Systems, LLC provides FIX consulting, QuickFIX support and custom trading systems development service to the equities and derivatives trading industries. Connamara was an initial collaborator in the creation of QuickFIX and continues to contribute to the enhancements and maintenance of the engine.  More information can be found at <a href="http://www.connamara.com">www.connamara.com</a></p>
-    ]]>
-    </section>
-    <section>
-    <![CDATA[
-      <a name="MACDONALD"/>
-      <a href="http://www.macd.com"><IMG src="img/macd.gif" border="0" alt="Macdonald Associates Logo"></a>
-      <p>Macdonald Associates Ltd., founded in 1983, has a pan-European presence covering the UK, Switzerland and Germany. The company has a range of trading products in the equity and fixed income markets and also offers training and consulting to financial institutions.  Macdonald has been active in the QuickFIX community and uses QuickFIX within their own product line. For more details, see <a href="http://www.macd.com">www.macd.com</a> or email <a href="mailto:george.macdonald@macd.com">george.macdonald@macd.com</a></p>
-    ]]>
-    </section>
-    <section>
-      <![CDATA[
-        <a name="OCI"/>
-        <a href="http://www.ociweb.com"><IMG src="img/oci_logo.gif" border="0" alt="Object Computing Logo"></a>
-        <p>Object Computing Inc. (OCI) is a privately held software engineering company. OCI was founded in 1993 with a commitment to object oriented technology. Today OCI provides software systems consulting, product development, and educational services to progressive corporations across the United States in the Aerospace, Finance, Healthcare and Telecommunication market segments. OCI was one of the pioneers of open source middleware and has an extensive C++ and Java CORBA, open source client base. The St. Louis based OCI Education Center has one of the most extensive object technology and Java training curricula in the Mid West. OCI has a significant presence in Phoenix as well as St. Louis, where its corporate headquarters are located. OCI is a Sun Authorized Java Center and member of the OMG. For more information see <a href="http://www.ociweb.com">www.ociweb.com</a></p>
-      ]]>
-    </section>
-    <section>
-    <![CDATA[
-      <a name="SMARTQUANT"/>
-      <a href="http://www.smartquant.com"><IMG src="img/quantstudio.gif" border="0" alt="QuantStudio Logo"></a>
-      <p>QuantStudio is an advanced financial framework that enables users to develop, test & implement their own quantitative trading strategies & applications over multiple asset classes.  Their mission is to deliver a framework offering a complete set of features and tools for financial data analysis and trading.  Find out more about QuantStudio at <a href="http://www.smartquant.com">www.smartquant.com</a>.</p>
     ]]>
     </section>
   </page>
