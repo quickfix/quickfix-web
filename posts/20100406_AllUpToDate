@@ -3,3 +3,5 @@ With this latest release, we are now fully up to date with the FIX specification
 One of the things that we have been doing is updating our xml and code generators.  This will make it very simple to keep up to date with the latest versions from now on.  Unfortunately they had become out of date and were difficult to maintain.  We put a lot of work into improving the generators which will also improve user generated code.
 
 Now they we are caught up with the spec we will be going back to focusing on the core codebase and looking at performance improvements.
+
+<hr/>

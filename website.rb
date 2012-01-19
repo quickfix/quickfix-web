@@ -140,7 +140,7 @@ def outputArticle(f, title, date, text)
   f.puts "<tr><td><table width=\"100%\"><tr><td class=\"bodytext\">#{date}</td></tr><tr><td class=\"headertext\">#{title}</td><td align=\"right\"><a href=\"mailto:oren@quickfixengine.org\"/>Oren Miller<a></td></tr></table></td></tr>"
     f.puts "<tr><td><hr/></td></tr>"
     f.puts "<tr><td class=\"bodytext\">"
-    text.each { |line| f.puts line, "<br/>" }
+    text.each { |line| f.puts line }
     f.puts "</td></tr>"
     f.puts "</table>"
     f.puts "</td>"
@@ -223,7 +223,10 @@ Dir.foreach('posts') do |file|
   article.attributes["file"] = outputFile
   outputTop(f, article)
   outputHeader(f, article)
-  outputArticle(f, title, date, af)
+  
+  text = `./Markdown.pl posts/#{file}`
+
+  outputArticle(f, title, date, text)
   outputBottom(f)
 end
 

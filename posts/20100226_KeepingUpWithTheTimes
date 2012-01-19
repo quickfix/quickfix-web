@@ -2,14 +2,16 @@ Yes, it's a new version of QuickFIX.  With this release we support the newest ve
 
 I originally designed QuickFIX to be a freely available C++ implementation of the FIX protocol.  And at the time it was conceived I felt that's what people wanted.  We could very well of kept the project in that little box and it would have been completely acceptable.  But times change and we try to keep up with those changes.
 
-We added JNI support, which led to Steve Bate's <a href="http://www.quickfixengine.org">QuickFIX/J</a> bringing us a pure Java implementation.  We added C# as its presence in the industry grew.  We even support Ruby and Python, and have for years, as scripting languages have proven useful.
+We added JNI support, which led to Steve Bate's [QuickFIX/J][QuickFIX/J] bringing us a pure Java implementation.  We added C# as its presence in the industry grew.  We even support Ruby and Python, and have for years, as scripting languages have proven useful.
 
 And with this release we bring you the long awaited FIX 5.0 support.
 
-It has been sometime since our last production release.  Some even thought the project had gone stale.  But anyone keeping up with the repository checkins knows that was never the case.  Not only is the project moving forward, it is stronger than ever.  QuickFIX is getting significant donations in the form of hardware and developer time.  I particularly want to thank <a href="http://www.connamara.com">Connamara Systems</a> for their generosity.
+It has been sometime since our last production release.  Some even thought the project had gone stale.  But anyone keeping up with the repository checkins knows that was never the case.  Not only is the project moving forward, it is stronger than ever.  QuickFIX is getting significant donations in the form of hardware and developer time.  I particularly want to thank [Connamara][Connamara Systems] for their generosity.
 
-QuickFIX has proven more successful than I ever believed it could be.  It fulfilled a personal need, and I'm happy to see it has done so for others.  We have just surpassed <b>175,000</b> downloads.
+QuickFIX has proven more successful than I ever believed it could be.  It fulfilled a personal need, and I'm happy to see it has done so for others.  We have just surpassed **175,000** downloads.
 
 Thank you to all the users, contributors, and supporters of the project.
-<hr/>
 
+<hr>
+[QuickFIX/J]: http://www.quickfixengine.org
+[Connamara]: http://www.connamara.com
