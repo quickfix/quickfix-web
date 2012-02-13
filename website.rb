@@ -37,9 +37,6 @@ def outputTop(f, page)
   f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" background=\"img/grid.gif\">"
   f.puts "<tr>"
   f.puts "<td><a href=\"\"><img src=\"img/logo.gif\" alt=\"QuickFIX\"></a></td>"
-  if( page.attributes["menu"] != "false" )
-    f.puts "<td align=\"right\"><img src=\"img/#{title}Title.gif\" alt=\"#{title}\"></td>"
-  end
   f.puts "</tr>"
   f.puts "</table>"
   f.puts "</td>"
@@ -83,13 +80,9 @@ def outputHeader(f, page)
       title = "index" if title == "about"
       pageTitle = "index" if pageTitle == "about"
       if( pageTitle == title )
-	f.puts "<td class=\"navon\"><a href=\"#{pageTitle}\"><img src=\"img/#{pageTitle}On.gif\" alt=\"#{pageTitle}\"></a></td>"
+	f.puts "<td class=\"navon\"><a class=\"title\" href=\"#{pageTitle}\">#{pageTitle}</a></td>"
       else
-	f.puts "<td class=\"navoff\"><a href=\"#{pageTitle}\"><img src=\"img/#{pageTitle}Off.gif\" alt=\"#{pageTitle}\"></a></td>"
-      end
-      if( page != last )
-      then
-	f.puts "<td><img src=\"img/navDots.gif\" alt=\"::\"></td>"
+	f.puts "<td class=\"navoff\"><a class=\"title\" href=\"#{pageTitle}\">#{pageTitle}</a></td>"
       end
     }
   }
@@ -113,7 +106,7 @@ def outputPage(f, page)
     title = section.attributes["title"]
     if( title != nil )
       f.puts "<tr>"
-      f.puts "<td align=\"right\"><img src=\"img/dots.gif\" width=\"52\" height=\"11\" hspace=\"5\" alt=\">>>>>\"></td>"
+      f.puts "<td align=\"right\"></td>"
       f.puts "<td valign=\"top\" class=\"headertext\">#{title}</td>"
       f.puts "</tr>"
     end
@@ -136,7 +129,7 @@ def outputArticle(f, title, date, text)
     f.puts "<table cellpadding=\"15\" cellspacing=\"0\" border=\"0\" width=\"100%\">"
     f.puts "<tr>"
     f.puts "<td align=\"left\" valign=\"top\">"
-    f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"90%\">"
+    f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">"
   f.puts "<tr><td><table width=\"100%\"><tr><td class=\"bodytext\">#{date}</td></tr><tr><td class=\"headertext\">#{title}</td><td align=\"right\"><a href=\"mailto:oren@quickfixengine.org\"/>Oren Miller<a></td></tr></table></td></tr>"
     f.puts "<tr><td><hr/></td></tr>"
     f.puts "<tr><td class=\"bodytext\">"
@@ -241,23 +234,13 @@ end
     f.puts "<table cellpadding=\"15\" cellspacing=\"0\" border=\"0\" width=\"100%\">"
     f.puts "<tr>"
     f.puts "<td align=\"left\" valign=\"top\"><br>"
-    f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"90%\">"
+    f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">"
     outputPage(f, page)
     f.puts "</table>"
     f.puts "</td>"
     f.puts "<td align=\"right\" valign=\"top\"><br>"
     f.puts "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">"
-    outputStatics(f, title)
-    f.puts "<table>"
-    f.puts "<tr>"
-    f.puts "<td width='200'>"
-    f.puts "<p align=\"center\" class=\"sidetext\">"
-    f.puts "Website Design By <a href=\"mailto:ABLewis@thoughtworks.com\">Anne Brent</a>"
-    f.puts "</p>"
-    f.puts "</td>"
-    f.puts "</tr>"
-    f.puts "</tr>"
-    f.puts "</table>"
+    #outputStatics(f, title)
     f.puts "</table>"
     f.puts "</td>"
     f.puts "</tr>"

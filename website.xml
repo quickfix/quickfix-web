@@ -1,25 +1,4 @@
-<website>
-  <static title="News">
-    <![CDATA[
-    <b><a href="download" style="color: #22CC55">QuickFIX 1.13.3</a></b>
-    <br/><br/>
-    <b><a href="download" style="color: #22CC55">QuickFIX Log Viewer 1.1.1</a></b>
-    ]]>
-  </static>
-  <static title="About">
-    <![CDATA[
-    <p>
-      QuickFIX is a full-featured open source FIX engine, currently
-      compatible with the FIX 4.0-5.0 spec. API's are available for C++,
-      .NET, Python and Ruby. 
-      <hr/>
-      <a href="http://www.quickfixj.org">QuickFIX/J</a> is available for Java. 
-      <br/>
-      <a href="http://www.quickfixn.org">QuickFIX/N</a> is available for .NET.
-    </p>
-    ]]>
-  </static>
-  
+<website>  
   <page title="About">
     <article/>
     <section title="About QuickFIX">
@@ -62,7 +41,7 @@
       <tr><td>Find out about our international support and consulting packages.</td></tr>
       </table>
       <br/>
-      Need more information?  Email us at <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
+      <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
       </p>
       ]]>
     </section>
@@ -339,14 +318,6 @@
   <page title="XML">
     <section title="FIX Specification">
       <![CDATA[
-      <p>
-      We created a parser to go through the FIX specs and generated well formed XML versions. We use this XML version to generate most of the code for our FIX engine. Seeing as though it is so useful for us, we figured other people might be interested too.
-      </p>
-      <p>
-      This is a <i>machine readable</i> version of the FIX
-      specification. If you have been looking for such a thing, this
-      is it!
-      </p>
       <p><font size="3">
       <pre><b>FIX  4.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX40.html">html</a></pre>
       <pre><b>FIX  4.1</b> <a href="FIX41.xml">xml</a> | <a href="FIX41.html">html</a></pre>
