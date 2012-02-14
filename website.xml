@@ -26,7 +26,7 @@
       <tr><td>Report defects and monitor their progress.</td></tr>
       </table>
       <br/>
-      <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
+      <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
       </p>
       ]]>
     </section>
@@ -312,6 +312,13 @@
         </p>
       ]]>
     </section>
+    <section title="Email">
+      <![CDATA[
+        <p>
+	<a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
+        </p>
+      ]]>
+    </section>
   </page>
     
   <page title="Services">
@@ -331,9 +338,6 @@
      <tr><td><li><a href="http://www.smartquant.com">SmartQuant</a></li></td></tr>
      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantitative Trading Integrated With QuickFIX</td></tr>
      </table>
-     </p>
-     <p>
-     <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
      </p>
     ]]>
     </section>
