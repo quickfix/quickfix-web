@@ -77,8 +77,6 @@ def outputHeader(f, page)
     element.elements.each("page") { |page|
       next if page.attributes["menu"] == "false"    
       pageTitle = page.attributes["title"].downcase
-      title = "index" if title == "about"
-      pageTitle = "index" if pageTitle == "about"
       if( pageTitle == title )
 	f.puts "<td class=\"navon\"><a class=\"title\" href=\"#{pageTitle}\">#{pageTitle}</a></td>"
       else
@@ -93,22 +91,25 @@ def outputHeader(f, page)
 end
 
 def outputPage(f, page)
-  page.elements.each("article") { |article|
-    article = @document.elements["website"].elements["article"]
-    file = article.attributes["file"]
-    title = article.attributes["title"]
-    date = article.attributes["date"]
-    f.puts "<tr><td>&nbsp;</td><td align=\"right\" class=\"bodytext\"><a href=\"#{file}\">\"#{title}\"</a><br/></td></tr><tr><td colspan=\"2\">&nbsp;</td></tr>"
-    break
-  }
+  #page.elements.each("article") { |article|
+  #  article = @document.elements["website"].elements["article"]
+  #  file = article.attributes["file"]
+  #  title = article.attributes["title"]
+  #  date = article.attributes["date"]
+  #  f.puts "<tr><td>&nbsp;</td><td align=\"left\" class=\"bodytext\"><a href=\"#{file}\">\"#{title}\"</a><br/></td></tr><tr><td colspan=\"2\">&nbsp;</td></tr>"
+  #  break
+  #}
 
   page.elements.each("section") { |section|
     title = section.attributes["title"]
     if( title != nil )
       f.puts "<tr>"
       f.puts "<td align=\"right\"></td>"
-      f.puts "<td valign=\"top\" class=\"headertext\">#{title}</td>"
-      f.puts "</tr>"
+      f.puts "<td valign=\"top\" class=\"headertext\">#{title}"
+      section.elements.each("title") { |title|
+        f.puts "#{title.cdatas}"
+      }     
+      f.puts "</td></tr>"
     end
     f.puts "<tr>"
     f.puts "<td>&nbsp;</td>"

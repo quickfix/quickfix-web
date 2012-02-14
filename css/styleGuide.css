@@ -104,6 +104,7 @@ textarea {
 }
 
 .navon {
+    color:#999;
     background-color:#FFFFFF;
     padding-left:10px;
     padding-right:15px;
@@ -168,7 +169,13 @@ textarea {
 
 .headertext {
     font-size:1em;
-    color:#000000;
+    font-weight:bold;
+    font-family:"Arial","Helvetica",sans-serif;
+}
+
+.subheadertext {
+    color:#777;
+    font-size:1em;
     font-weight:bold;
     font-family:"Arial","Helvetica",sans-serif;
 }

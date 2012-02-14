@@ -4,24 +4,11 @@
     <section title="About QuickFIX">
       <![CDATA[
       <p>
-      QuickFIX is a full-featured open source FIX engine, currently
-      compatible with the FIX 4.0-5.0 spec. API's are available for C++,
-      .NET, Python and Ruby. <a href="http://www.quickfixj.org">QuickFIX/J</a>
-      is available for Java. <a href="http://www.quickfixn.org">QuickFIX/N</a>
-      is available for .NET.
-      </p>
-      ]]>
-    </section>
-    <section title="About FIX">
-      <![CDATA[
-      <p>
-      The Financial Information eXchange (FIX) Protocol is a
-      "language" which defines specific kinds of electronic messages
-      for communicating securities transactions between two parties.  
-      FIX defines only the format of the messages and the
-      session-level interaction between two applications. More
-      information on FIX can be found at the 
-      <a href="http://www.fixprotocol.org/">FIX protocol web site</a>.
+      Free <a href="http://www.fixprotocol.org">FIX Protocol</a> Implementation<br/><br/>
+      FIX versions 4.0-5.0<br/><br/>
+      C++, .NET, Python, Ruby<br/><br/>
+      <a href="http://www.quickfixj.org">QuickFIX/J</a> for Native Java<br/><br/>
+      <a href="http://www.quickfixn.org">QuickFIX/N</a> for Native .NET
       </p>
       ]]>
     </section>
@@ -31,14 +18,12 @@
       <table>
       <tr><td valign="top"><b><a href="quickfix/doc/html">Documentation</a></b></td></tr>
       <tr><td>Get started with our online documentation.</td></tr>
-      <tr><td valign="top"><b><a href="mailinglist">Mailing Lists</a></b></td></tr>
-      <tr><td>You can receive emails as they come, in daily batches, or browse the archives.</td></tr>
+      <tr><td valign="top"><b><a href="help">Mailing Lists</a></b></td></tr>
+      <tr><td>Receive emails as they come, in daily batches, or browse the archives.</td></tr>
       <tr><td valign="top"><b><a href="forum">Forums</a></b></td></tr>
       <tr><td>Interactive discussions with users and developers.</td></tr>
       <tr><td valign="top"><b><a href="http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030">Bug Tracker</a></b></td></tr>
-      <tr><td>Here you can report defects and monitor their progress.</td></tr>
-      <tr><td valign="top"><b><a href="services">Support Contracts</a></b></td></tr>
-      <tr><td>Find out about our international support and consulting packages.</td></tr>
+      <tr><td>Report defects and monitor their progress.</td></tr>
       </table>
       <br/>
       <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>.
@@ -49,12 +34,17 @@
   
   <page title="Download">
     <section title="Packages">
+      <title>
+      <![CDATA[
+	<a href="http://sourceforge.net/api/file/index/project-id/37535/mtime/desc/limit/20/rss"><img width="15" height="15" src="img/rss.svg"></img></a>
+      ]]>
+      </title>
       <![CDATA[
       <p>
       <table>
 	<tr>
-          <td>
-	    <b>QuickFIX Windows</b>
+          <td class="subheadertext">
+	    QuickFIX Windows
           </td>
 	  <td>
 	  </td>
@@ -107,8 +97,8 @@
           </td>
         </tr>
 	<tr>
-          <td>
-	    <b>QuickFIX Unix</b>
+          <td class="subheadertext">
+	    QuickFIX Unix
           </td>
 	  <td>
 	  </td>	
@@ -125,8 +115,8 @@
         </tr>
 	<tr>
           <tr><td></td><td></td></tr>
-          <td>
-	    <b>QuickFIX Log Viewer</b>
+          <td class="subheadertext">
+	    QuickFIX Log Viewer
           </td>
 	  <td>
 	  </td>
@@ -154,8 +144,8 @@
         </tr>
 	<tr>
           <tr><td></td><td></td></tr>
-          <td>
-	    <b>QuickFIX/J</b>
+          <td class="subheadertext">
+	    QuickFIX/J
           </td>
 	  <td>
 	  </td>
@@ -171,8 +161,8 @@
         </tr>
 	<tr>
           <tr><td></td><td></td></tr>
-          <td>
-	    <b>QuickFIX/N</b>
+          <td class="subheadertext">
+	    QuickFIX/N
           </td>
 	  <td>
 	  </td>
@@ -192,27 +182,44 @@
       <br/>
       ]]>
     </section>
-    <section title="Updates">
+    <section title="Source Code">
       <![CDATA[
       <p>
-	Keep informed of future releases by subscribing to our <a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=37535">RSS</a> feed.
+      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix/">QuickFIX</a><br/>
+      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i><br/><br/>
+      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix-logviewer/">QuickFIX Log Viewer</a><br/>
+      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix-logviewer</i>
       </p>
       ]]>
-    </section> -->
-    <section title="External Tools">
+    </section>
+    <section title="Other Tools">
       <![CDATA[
       <p>
-	Here is a list of <i>free</i> third party tools that can be used in conjunction
-	with QuickFIX.  These utilities are in no way affiliated with QuickFIX 
-	and are supported by their respective companies or organizations.
+        <table>
+        <tr>
+	<td><a href="http://www.stunnel.org">Stunnel</a></td>
+	<td width="10"></td>
+        <td>SSL tunnel</td>
+        </tr>
+	<tr>
+        <td><a href="http://code.google.com/p/quickfast/">QuickFAST</a></td>
+	<td width="10"></td>
+        <td>C++ FAST protocol implementation</td>
+	</tr>
+        <td><a href="http://www.openfast.org">OpenFAST</a></td>
+	<td width="10"></td>
+        <td>Java FAST protocol implementation</td>
+	<tr>
+        <td><a href="http://www.wireshark.org">Wireshark</a></td>
+	<td width="10"></td>
+        <td>Packet decorder</td>
+	</tr>
+        </table>
       </p>
-      <p>
-	<table border="1" width="100%">
-          <tr>
-            <td><b>Product</b></td>
-            <td><b>Company</b></td>
-            <td><b>Description</b></td>
-          </tr>
+      ]]>
+    </section>
+  </page>
+        <table>
           <tr>
             <td><a href="http://www.validfix.com">ValidFIX</a></td>
             <td><a href="http://www.validfix.com">ValidFIX Ltd</a></td>
@@ -229,11 +236,6 @@
             <td>Fork of Ethereal by the core development team.</td>
           </tr>
 	  <tr>
-	    <td><a href="http://www.transacttools.net/ttportal/datadict/browser.jsp">FIX Data Dictionary</a></td>
-	    <td><a href="http://www.transacttools.net/">transacttools</a></td>
-	    <td>Similar to FIXionary, but lighter weight.  Only available online</td>
-	  </tr>
-	  <tr>
 	    <td><a href="http://b2bits.com/fixopaedia/index.html">FIXopaedia</a></td>
 	    <td><a href="http://www.b2bits.com/">b2bits</a></td>
 	    <td>Another lightweght online FIX reference</td>
@@ -244,13 +246,9 @@
 	    <td>Allows you to encrypt arbitrary TCP connections inside SSL. Use this to encrypt your FIX sessions without need to modify you're application code.</td>
           </tr>
 	</table>
-      </p>
-      ]]>
-    </section>
-  </page>
   
   <page title="Documentation">
-    <section title="Project/Code Documentation">
+    <section title="QuickFIX Documentation">
       <![CDATA[
       <p>
       Online <a href="quickfix/doc/html">documentation</a> for QuickFIX. <br/>
@@ -260,64 +258,11 @@
       </p>
       ]]>
     </section>
-    <section title="Installing QuickFIX">
-      <![CDATA[
-      <p>
-      How to <a href="quickfix/doc/html/install.html">Install QuickFIX</a>
-      </p>
-      ]]>
-    </section>
-    <section title="Protocol Documentation">
-      <![CDATA[
-      <p>
-        <a href="http://www.fixprotocol.org">Homepage</a> <br/> <br/>
-        <a href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">Specification Documents</a> <br/> <br/>
-        <a href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">Discussion Forums</a> <br/>
-      </p>
-      ]]>
-    </section>
-  </page>
-  
-  <page title="MailingList">
-    <section title="Subscriptions and Archives">
-      <![CDATA[
-      <p>
-      <b>User Support</b>
-      <br/>
-      <i>quickfix-users@lists.sourceforge.net</i>
-      <br/>
-      <a href="http://sourceforge.net/mailarchive/forum.php?forum=quickfix-users">Archive</a>
-      | 
-      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-users">Subscribe/Unsubscribe</a>
-      <br/><br/>
-      <b>Developer Support</b> [<i>most active</i>]
-      <br/>
-      <i>quickfix-developers@lists.sourceforge.net</i>
-      <br/>
-      <a href="http://sourceforge.net/mailarchive/forum.php?forum=quickfix-developers">Archive</a> | 
-      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-developers">Subscribe/Unsubscribe</a>
-      <br/><br/>
-      <b>Announcements</b>
-      <br/>
-      <i>quickfix-announce@lists.sourceforge.net</i>
-      <br/>
-      <a href="http://sourceforge.net/mailarchive/forum.php?forum=quickfix-announce">Archive</a> | 
-      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-announce">Subscribe/Unsubscribe</a>
-      </p>
-      ]]>
-    </section>
-    <section title="Forums">
-      <![CDATA[
-      <p>
-      <a href="http://www.quickfixengine.org/forum">QuickFIX Forum</a>
-      </p>
-      ]]>
-    </section>
-  </page>
-  
-  <page title="XML">
     <section title="FIX Specification">
       <![CDATA[
+      <p>
+        <a href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">Specification Documents</a>
+      </p>
       <p><font size="3">
       <pre><b>FIX  4.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX40.html">html</a></pre>
       <pre><b>FIX  4.1</b> <a href="FIX41.xml">xml</a> | <a href="FIX41.html">html</a></pre>
@@ -331,7 +276,35 @@
     </section>
   </page>
   
-  <page title="Developers">
+  <page title="help">
+    <section title="Forums">
+      <![CDATA[
+      <p>
+      <a href="http://www.quickfixengine.org/forum">QuickFIX</a>
+      <br/><br/>
+      <a href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">FIX Protocol</a> <br/>
+      </p>
+      ]]>
+    </section>
+    <section title="Mailing Lists">
+      <![CDATA[
+      <p>
+      <b class="subheadertext">Developers</b>
+      <br/>      
+      <i>quickfix-developers@lists.sourceforge.net</i>
+      <br/>
+      <a href="http://sourceforge.net/mailarchive/forum.php?forum=quickfix-developers">Archive</a> |
+      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-developers">Subscribe/Unsubscribe</a>
+      <br/><br/>
+      <b class="subheadertext">Announcements</b>
+      <br/>
+      <i>quickfix-announce@lists.sourceforge.net</i>
+      <br/>
+      <a href="http://sourceforge.net/mailarchive/forum.php?forum=quickfix-announce">Archive</a> | 
+      <a href="http://lists.sourceforge.net/lists/listinfo/quickfix-announce">Subscribe/Unsubscribe</a>
+      </p>
+      ]]>
+    </section>
     <section title="Defect Tracking">
       <![CDATA[
         <p>
@@ -339,18 +312,8 @@
         </p>
       ]]>
     </section>
-    <section title="Source Code">
-      <![CDATA[
-      <p>
-      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix/">QuickFIX</a><br/>
-      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i><br/><br/>
-      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix-logviewer/">QuickFIX Log Viewer</a><br/>
-      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix-logviewer</i>
-      </p>
-      ]]>
-    </section>
   </page>
-  
+    
   <page title="Services">
     <section title="Support and Consulting">
     <![CDATA[
@@ -372,7 +335,6 @@
      <p>
      <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
      </p>
-     <hr/>
     ]]>
     </section>
   </page>
