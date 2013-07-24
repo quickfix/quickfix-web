@@ -185,10 +185,10 @@
     <section title="Source Code">
       <![CDATA[
       <p>
-      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix/">QuickFIX</a><br/>
-      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix</i><br/><br/>
-      <a href="http://quickfix.svn.sourceforge.net/viewvc/quickfix/trunk/quickfix-logviewer/">QuickFIX Log Viewer</a><br/>
-      <i>https://quickfix.svn.sourceforge.net/svnroot/quickfix/trunk/quickfix-logviewer</i>
+      <a href="https://github.com/quickfix/quickfix">QuickFIX</a><br/>
+      <i>https://github.com/quickfix/quickfix.git</i><br/><br/>
+      <a href="https://github.com/quickfix/quickfix-logviewer">QuickFIX Log Viewer</a><br/>
+      <i>https://github.com/quickfix/quickfix-logviewer.git</i>
       </p>
       ]]>
     </section>
