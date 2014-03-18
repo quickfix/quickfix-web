@@ -6,7 +6,7 @@
       <p>
       Free <a href="http://www.fixprotocol.org">FIX Protocol</a> Implementation<br/><br/>
       FIX versions 4.0-5.0<br/><br/>
-      C++, .NET, Python, Ruby<br/><br/>
+      C++, Python, Ruby<br/><br/>
       <a href="http://www.quickfixj.org">QuickFIX/J</a> for Native Java<br/><br/>
       <a href="http://www.quickfixn.org">QuickFIX/N</a> for Native .NET
       </p>
@@ -22,11 +22,10 @@
       <tr><td>Receive emails as they come, in daily batches, or browse the archives.</td></tr>
       <tr><td valign="top"><b><a href="forum">Forums</a></b></td></tr>
       <tr><td>Interactive discussions with users and developers.</td></tr>
-      <tr><td valign="top"><b><a href="http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030">Bug Tracker</a></b></td></tr>
-      <tr><td>Report defects and monitor their progress.</td></tr>
+      <tr><td valign="top"><b><a href="https://github.com/quickfix/quickfix/issues">Issue Tracker</a></b></td></tr>
+      <tr><td>Report issues and monitor their progress.</td></tr>
       </table>
       <br/>
-      <a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
       </p>
       ]]>
     </section>
@@ -212,7 +211,7 @@
 	<tr>
         <td><a href="http://www.wireshark.org">Wireshark</a></td>
 	<td width="10"></td>
-        <td>Packet decorder</td>
+        <td>Packet decoder</td>
 	</tr>
         </table>
       </p>
@@ -248,29 +247,28 @@
 	</table>
   
   <page title="Documentation">
-    <section title="QuickFIX Documentation">
+    <section title="Documentation">
       <![CDATA[
       <p>
-      Online <a href="quickfix/doc/html">documentation</a> for QuickFIX. <br/>
-      Online <a href="http://www.quickfixj.org/documentation/?">documentation</a> for QuickFIX/J. <br/>
-      Online <a href="http://www.quickfixn.org/tutorial/creating-an-application">documentation</a> for QuickFIX/N. <br/>
-      Online <a href="quickfix-logviewer/documentation.pdf">documentation</a> for QuickFIX Log Viewer [PDF]. <br/>
+      <a href="quickfix/doc/html">QuickFIX</a><br/><br/>
+      <a href="http://www.quickfixj.org/documentation/?">QuickFIX/J</a><br/><br/>
+      <a href="http://www.quickfixn.org/tutorial/creating-an-application">QuickFIX/N</a><br/><br/>
+      <a href="quickfix-logviewer/documentation.pdf">QuickFIX Log Viewer</a><br/>
       </p>
       ]]>
     </section>
-    <section title="FIX Specification">
+    <section title="Specifications">
       <![CDATA[
-      <p>
-        <a href="http://www.fixprotocol.org/cgi-bin/Spec.cgi?menu=4">Specification Documents</a>
-      </p>
       <p><font size="3">
-      <pre><b>FIX  4.0</b> <a href="FIX40.xml">xml</a> | <a href="FIX40.html">html</a></pre>
-      <pre><b>FIX  4.1</b> <a href="FIX41.xml">xml</a> | <a href="FIX41.html">html</a></pre>
-      <pre><b>FIX  4.2</b> <a href="FIX42.xml">xml</a> | <a href="FIX42.html">html</a></pre>
-      <pre><b>FIX  4.3</b> <a href="FIX43.xml">xml</a> | <a href="FIX43.html">html</a></pre>
-      <pre><b>FIX  4.4</b> <a href="FIX44.xml">xml</a> | <a href="FIX44.html">html</a></pre>
-      <pre><b>FIX  5.0</b> <a href="FIX50.xml">xml</a> | <a href="FIX50.html">html</a></pre>
-      <pre><b>FIXT 1.1</b> <a href="FIXT11.xml">xml</a> | <a href="FIX11.html">html</a></pre>
+      <pre><b>FIX  4.0      </b> <a href="FIX40.xml">xml</a> | <a href="FIX40.html">html</a></pre>
+      <pre><b>FIX  4.1      </b> <a href="FIX41.xml">xml</a> | <a href="FIX41.html">html</a></pre>
+      <pre><b>FIX  4.2      </b> <a href="FIX42.xml">xml</a> | <a href="FIX42.html">html</a></pre>
+      <pre><b>FIX  4.3      </b> <a href="FIX43.xml">xml</a> | <a href="FIX43.html">html</a></pre>
+      <pre><b>FIX  4.4      </b> <a href="FIX44.xml">xml</a> | <a href="FIX44.html">html</a></pre>
+      <pre><b>FIX  5.0      </b> <a href="FIX50.xml">xml</a> | <a href="FIX50.html">html</a></pre>
+      <pre><b>FIX  5.0 sp1  </b> <a href="FIX50SP1.xml">xml</a> | <a href="FIX50SP1.html">html</a></pre>
+      <pre><b>FIX  5.0 sp2  </b> <a href="FIX50SP2.xml">xml</a> | <a href="FIX50SP2.html">html</a></pre>
+      <pre><b>FIXT 1.1      </b> <a href="FIXT11.xml">xml</a> | <a href="FIX11.html">html</a></pre>
       </font></p>
       ]]>
     </section>
@@ -282,7 +280,7 @@
       <p>
       <a href="http://www.quickfixengine.org/forum">QuickFIX</a>
       <br/><br/>
-      <a href="http://www.fixprotocol.org/cgi-bin/Menu.cgi?menu=700">FIX Protocol</a> <br/>
+      <a href="http://www.fixtradingcommunity.org/pg/structure/discussion">FIX Protocol</a> <br/>
       </p>
       ]]>
     </section>
@@ -305,10 +303,10 @@
       </p>
       ]]>
     </section>
-    <section title="Defect Tracking">
+    <section title="Issues">
       <![CDATA[
         <p>
-        Report and follow-up on bug reports <a href=http://sourceforge.net/tracker2/?func=browse&group_id=37535@atid=420030"">here</a>.
+	<a href="https://github.com/quickfix/quickfix/issues">Github</a>
         </p>
       ]]>
     </section>

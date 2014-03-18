@@ -5,6 +5,11 @@
 <xsl:template match="/">
 <HTML>
   <HEADER>
+    <STYLE type="text/css">
+      a {
+        text-decoration: none;
+      }
+    </STYLE>
     <H1>FIX.<xsl:value-of select="fix/@major"/>.<xsl:value-of select="fix/@minor"/></H1>
   </HEADER>
   <BODY>
@@ -78,7 +83,7 @@
         
     <A NAME="fields_bynumber"/>
     <H2><CENTER>FIELDS - BY NUMBER</CENTER></H2>
-    <TABLE BORDER="2">
+    <TABLE BORDER="2" CELLSPACING="0">
       <TR>
         <TD WIDTH="100%" BGCOLOR="AAAAAA">Name</TD>
         <TD BGCOLOR="AAAAAA">Number</TD>
@@ -93,7 +98,7 @@
     
     <A NAME="fields_byname"/>
     <H2><CENTER>FIELDS - BY NAME</CENTER></H2>
-    <TABLE BORDER="2">
+    <TABLE BORDER="2" CELLSPACING="0">
       <TR>
         <TD WIDTH="100%" BGCOLOR="AAAAAA">Name</TD>
         <TD BGCOLOR="AAAAAA">Number</TD>
@@ -112,7 +117,7 @@
 <!-- TEMPLATES -->
 
 <xsl:template name="message-table">
-<TABLE BORDER="2">
+<TABLE BORDER="2" CELLSPACING="0">
   <TR>
     <TD WIDTH="100%" BGCOLOR="AAAAAA">Name</TD>
     <TD BGCOLOR="AAAAAA">Number</TD>
@@ -145,9 +150,11 @@
 
 <xsl:template name="message-rows">
   <xsl:for-each select="node()">
-  <TR>
-  <xsl:call-template name="message-row"/>
-  </TR>
+  <xsl:if test="@name!=''">
+    <TR>
+    <xsl:call-template name="message-row"/>
+    </TR>
+  </xsl:if>
   <xsl:if test="name()='group'">
     <xsl:call-template name="message-rows"/>
   </xsl:if>
@@ -157,13 +164,13 @@
 <xsl:template name="group-path">
   <xsl:if test="name()!=''">
   <xsl:if test="name(../../..)='group'">
-    <FONT FACE="Wingdings">&#224;</FONT>
+    >
   </xsl:if>
   <xsl:if test="name(../..)='group'">
-    <FONT FACE="Wingdings">&#224;</FONT>
+    >
   </xsl:if>
   <xsl:if test="name(..)='group'">
-    <FONT FACE="Wingdings">&#224;</FONT>
+    >
   </xsl:if>
   </xsl:if>
 </xsl:template>
