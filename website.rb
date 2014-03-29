@@ -134,7 +134,7 @@ def outputArticle(f, title, date, text)
   f.puts "<tr><td><table width=\"100%\"><tr><td class=\"bodytext\">#{date}</td></tr><tr><td class=\"headertext\">#{title}</td><td align=\"right\"><a href=\"mailto:oren@quickfixengine.org\"/>Oren Miller<a></td></tr></table></td></tr>"
     f.puts "<tr><td><hr/></td></tr>"
     f.puts "<tr><td class=\"bodytext\">"
-    text.each { |line| f.puts line }
+    text.each_line { |line| f.puts line }
     f.puts "</td></tr>"
     f.puts "</table>"
     f.puts "</td>"

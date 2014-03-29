@@ -20,8 +20,6 @@
       <tr><td>Get started with our online documentation.</td></tr>
       <tr><td valign="top"><b><a href="help">Mailing Lists</a></b></td></tr>
       <tr><td>Receive emails as they come, in daily batches, or browse the archives.</td></tr>
-      <tr><td valign="top"><b><a href="forum">Forums</a></b></td></tr>
-      <tr><td>Interactive discussions with users and developers.</td></tr>
       <tr><td valign="top"><b><a href="https://github.com/quickfix/quickfix/issues">Issue Tracker</a></b></td></tr>
       <tr><td>Report issues and monitor their progress.</td></tr>
       </table>
@@ -275,15 +273,6 @@
   </page>
   
   <page title="help">
-    <section title="Forums">
-      <![CDATA[
-      <p>
-      <a href="http://www.quickfixengine.org/forum">QuickFIX</a>
-      <br/><br/>
-      <a href="http://www.fixtradingcommunity.org/pg/structure/discussion">FIX Protocol</a> <br/>
-      </p>
-      ]]>
-    </section>
     <section title="Mailing Lists">
       <![CDATA[
       <p>
