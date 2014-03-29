@@ -32,9 +32,7 @@
   <page title="Download">
     <section title="Packages">
       <title>
-      <![CDATA[
-	<a href="http://sourceforge.net/api/file/index/project-id/37535/mtime/desc/limit/20/rss"><img width="15" height="15" src="img/rss.svg"></img></a>
-      ]]>
+      <![CDATA[<a href='http://sourceforge.net/api/file/index/project-id/37535/mtime/desc/limit/20/rss'><img width='15' height='15' src='img/rss.svg'></img></a>]]>
       </title>
       <![CDATA[
       <p>
@@ -299,17 +297,10 @@
         </p>
       ]]>
     </section>
-    <section title="Email">
-      <![CDATA[
-        <p>
-	<a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
-        </p>
-      ]]>
-    </section>
   </page>
     
-  <page title="Services">
-    <section title="Support and Consulting">
+  <page title="Contact">
+    <section title="Support and Services">
     <![CDATA[
      <p>
      The following companies provide various QuickFIX consulting and support services: <br/>
@@ -327,6 +318,13 @@
      </table>
      </p>
     ]]>
+    </section>
+    <section title="Email">
+      <![CDATA[
+        <p>
+	<a href="mailto:ask@quickfixengine.org">ask@quickfixengine.org</a>
+        </p>
+      ]]>
     </section>
   </page>
 
