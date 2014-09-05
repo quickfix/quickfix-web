@@ -1,7 +1,0 @@
-With this latest release, we are now fully up to date with the FIX specification.  The last release brought us up to the FIXT 1.1 transport layer and FIX 5.0.  Now we add SP1 and SP2 bringing us completely up to date.
-
-One of the things that we have been doing is updating our xml and code generators.  This will make it very simple to keep up to date with the latest versions from now on.  Unfortunately they had become out of date and were difficult to maintain.  We put a lot of work into improving the generators which will also improve user generated code.
-
-Now they we are caught up with the spec we will be going back to focusing on the core codebase and looking at performance improvements.
-
-<hr/>
