@@ -101,15 +101,30 @@ textarea {
     background-color: white;
 }
 
+#header {
+    padding-bottom: 15px;
+}
+
 #title {
     color: black;
     padding: 1px;
     text-align: center;
-font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 #description {
     text-align: center;
+}
+
+.section {
+    border-top: 1px solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: #DDDDDD;
+}
+
+.dark {
+    background-color: #F5F5F5;
 }
 
 .column {
