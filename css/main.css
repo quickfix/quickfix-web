@@ -139,6 +139,13 @@ textarea {
     text-align: center;
 }
 
+.terminal {
+    color: black;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -292,7 +299,7 @@ textarea {
     a[href^="#"]:after {
         content: "";
     }
-
+    
     pre,
     blockquote {
         border: 1px solid #999;
