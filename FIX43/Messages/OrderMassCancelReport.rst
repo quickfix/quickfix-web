@@ -1,0 +1,2353 @@
+=========================
+OrderMassCancelReport (r)
+=========================
+
++---------+----------+
+| MsgType | Category |
++=========+==========+
+| r       | APP      |
++---------+----------+
+
+Fields
+------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+
+     - Field Name
+
+     - Req'd
+
+     - Data Type
+
+     - Acceptable Enums
+
+   * - `11 <http://fixwiki.org/fixwiki/ClOrdID>`_
+
+     - ClOrdID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `355 <http://fixwiki.org/fixwiki/EncodedText>`_
+
+     - EncodedText
+
+     -
+
+     - DATA
+
+     -
+
+   * - `354 <http://fixwiki.org/fixwiki/EncodedTextLen>`_
+
+     - EncodedTextLen
+
+     -
+
+     - LENGTH
+
+     -
+
+   * -
+
+     - `Instrument`_
+
+     -
+
+     - *Component*
+
+     -
+
+   * - `532 <http://fixwiki.org/fixwiki/MassCancelRejectReason>`_
+
+     - MassCancelRejectReason
+
+     -
+
+     - CHAR
+
+     - 0 = MASS_CANCEL_NOT_SUPPORTED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 1 = INVALID_OR_UNKNOWN_SECURITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 2 = INVALID_OR_UNKNOWN_UNDERLYING
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 3 = INVALID_OR_UNKNOWN_PRODUCT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 4 = INVALID_OR_UNKNOWN_CFICODE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 5 = INVALID_OR_UNKNOWN_SECURITY_TYPE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 6 = INVALID_OR_UNKNOWN_TRADING_SESSION
+
+   * - `530 <http://fixwiki.org/fixwiki/MassCancelRequestType>`_
+
+     - MassCancelRequestType
+
+     - *
+
+     - CHAR
+
+     - 1 = CANCEL_ORDERS_FOR_A_SECURITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 2 = CANCEL_ORDERS_FOR_AN_UNDERLYING_SECURITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 3 = CANCEL_ORDERS_FOR_A_PRODUCT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 4 = CANCEL_ORDERS_FOR_A_CFICODE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 5 = CANCEL_ORDERS_FOR_A_SECURITYTYPE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 6 = CANCEL_ORDERS_FOR_A_TRADING_SESSION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 7 = CANCEL_ALL_ORDERS
+
+   * - `531 <http://fixwiki.org/fixwiki/MassCancelResponse>`_
+
+     - MassCancelResponse
+
+     - *
+
+     - CHAR
+
+     - 0 = CANCEL_REQUEST_REJECTED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 1 = CANCEL_ORDERS_FOR_A_SECURITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 2 = CANCEL_ORDERS_FOR_AN_UNDERLYING_SECURITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 3 = CANCEL_ORDERS_FOR_A_PRODUCT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 4 = CANCEL_ORDERS_FOR_A_CFICODE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 5 = CANCEL_ORDERS_FOR_A_SECURITYTYPE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 6 = CANCEL_ORDERS_FOR_A_TRADING_SESSION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 7 = CANCEL_ALL_ORDERS
+
+   * -
+
+     - *NoAffectedOrders*
+
+     -
+
+     -
+
+     -
+
+   * - > `535 <http://fixwiki.org/fixwiki/AffectedOrderID>`_
+
+     - AffectedOrderID
+
+     -
+
+     - STRING
+
+     -
+
+   * - > `536 <http://fixwiki.org/fixwiki/AffectedSecondaryOrderID>`_
+
+     - AffectedSecondaryOrderID
+
+     -
+
+     - STRING
+
+     -
+
+   * - > `41 <http://fixwiki.org/fixwiki/OrigClOrdID>`_
+
+     - OrigClOrdID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `37 <http://fixwiki.org/fixwiki/OrderID>`_
+
+     - OrderID
+
+     - *
+
+     - STRING
+
+     -
+
+   * - `526 <http://fixwiki.org/fixwiki/SecondaryClOrdID>`_
+
+     - SecondaryClOrdID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `198 <http://fixwiki.org/fixwiki/SecondaryOrderID>`_
+
+     - SecondaryOrderID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `54 <http://fixwiki.org/fixwiki/Side>`_
+
+     - Side
+
+     -
+
+     - CHAR
+
+     - 1 = BUY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 2 = SELL
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 3 = BUY_MINUS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 4 = SELL_PLUS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 5 = SELL_SHORT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 6 = SELL_SHORT_EXEMPT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 7 = UNDISCLOSED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 8 = CROSS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 9 = CROSS_SHORT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - A = CROSS_SHORT_EXEMPT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - B = AS_DEFINED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - C = OPPOSITE
+
+   * - `58 <http://fixwiki.org/fixwiki/Text>`_
+
+     - Text
+
+     -
+
+     - STRING
+
+     -
+
+   * - `533 <http://fixwiki.org/fixwiki/TotalAffectedOrders>`_
+
+     - TotalAffectedOrders
+
+     -
+
+     - INT
+
+     -
+
+   * - `336 <http://fixwiki.org/fixwiki/TradingSessionID>`_
+
+     - TradingSessionID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `625 <http://fixwiki.org/fixwiki/TradingSessionSubID>`_
+
+     - TradingSessionSubID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `60 <http://fixwiki.org/fixwiki/TransactTime>`_
+
+     - TransactTime
+
+     -
+
+     - UTCTIMESTAMP
+
+     -
+
+   * -
+
+     - `UnderlyingInstrument`_
+
+     -
+
+     - *Component*
+
+     -
+
+
+Components
+----------
+
+Instrument
+++++++++++
+
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+
+     - Field Name
+
+     - Req'd
+
+     - Data Type
+
+     - Acceptable Enums
+
+   * - `461 <http://fixwiki.org/fixwiki/CFICode>`_
+
+     - CFICode
+
+     -
+
+     - STRING
+
+     -
+
+   * - `231 <http://fixwiki.org/fixwiki/ContractMultiplier>`_
+
+     - ContractMultiplier
+
+     -
+
+     - FLOAT
+
+     -
+
+   * - `470 <http://fixwiki.org/fixwiki/CountryOfIssue>`_
+
+     - CountryOfIssue
+
+     -
+
+     - COUNTRY
+
+     -
+
+   * - `224 <http://fixwiki.org/fixwiki/CouponPaymentDate>`_
+
+     - CouponPaymentDate
+
+     -
+
+     - UTCDATE
+
+     -
+
+   * - `223 <http://fixwiki.org/fixwiki/CouponRate>`_
+
+     - CouponRate
+
+     -
+
+     - PERCENTAGE
+
+     -
+
+   * - `255 <http://fixwiki.org/fixwiki/CreditRating>`_
+
+     - CreditRating
+
+     -
+
+     - STRING
+
+     -
+
+   * - `349 <http://fixwiki.org/fixwiki/EncodedIssuer>`_
+
+     - EncodedIssuer
+
+     -
+
+     - DATA
+
+     -
+
+   * - `348 <http://fixwiki.org/fixwiki/EncodedIssuerLen>`_
+
+     - EncodedIssuerLen
+
+     -
+
+     - LENGTH
+
+     -
+
+   * - `351 <http://fixwiki.org/fixwiki/EncodedSecurityDesc>`_
+
+     - EncodedSecurityDesc
+
+     -
+
+     - DATA
+
+     -
+
+   * - `350 <http://fixwiki.org/fixwiki/EncodedSecurityDescLen>`_
+
+     - EncodedSecurityDescLen
+
+     -
+
+     - LENGTH
+
+     -
+
+   * - `228 <http://fixwiki.org/fixwiki/Factor>`_
+
+     - Factor
+
+     -
+
+     - FLOAT
+
+     -
+
+   * - `543 <http://fixwiki.org/fixwiki/InstrRegistry>`_
+
+     - InstrRegistry
+
+     -
+
+     - STRING
+
+     -
+
+   * - `225 <http://fixwiki.org/fixwiki/IssueDate>`_
+
+     - IssueDate
+
+     -
+
+     - UTCDATE
+
+     -
+
+   * - `106 <http://fixwiki.org/fixwiki/Issuer>`_
+
+     - Issuer
+
+     -
+
+     - STRING
+
+     -
+
+   * - `472 <http://fixwiki.org/fixwiki/LocaleOfIssue>`_
+
+     - LocaleOfIssue
+
+     -
+
+     - STRING
+
+     -
+
+   * - `541 <http://fixwiki.org/fixwiki/MaturityDate>`_
+
+     - MaturityDate
+
+     -
+
+     - LOCALMKTDATE
+
+     -
+
+   * - `200 <http://fixwiki.org/fixwiki/MaturityMonthYear>`_
+
+     - MaturityMonthYear
+
+     -
+
+     - MONTHYEAR
+
+     -
+
+   * -
+
+     - *NoSecurityAltID*
+
+     -
+
+     -
+
+     -
+
+   * - > `455 <http://fixwiki.org/fixwiki/SecurityAltID>`_
+
+     - SecurityAltID
+
+     -
+
+     - STRING
+
+     -
+
+   * - > `456 <http://fixwiki.org/fixwiki/SecurityAltIDSource>`_
+
+     - SecurityAltIDSource
+
+     -
+
+     - STRING
+
+     -
+
+   * - `206 <http://fixwiki.org/fixwiki/OptAttribute>`_
+
+     - OptAttribute
+
+     -
+
+     - CHAR
+
+     -
+
+   * - `460 <http://fixwiki.org/fixwiki/Product>`_
+
+     - Product
+
+     -
+
+     - INT
+
+     - 1 = AGENCY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 10 = MORTGAGE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 11 = MUNICIPAL
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 12 = OTHER
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 2 = COMMODITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 3 = CORPORATE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 4 = CURRENCY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 5 = EQUITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 6 = GOVERNMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 7 = INDEX
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 8 = LOAN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 9 = MONEYMARKET
+
+   * - `240 <http://fixwiki.org/fixwiki/RedemptionDate>`_
+
+     - RedemptionDate
+
+     -
+
+     - UTCDATE
+
+     -
+
+   * - `239 <http://fixwiki.org/fixwiki/RepoCollateralSecurityType>`_
+
+     - RepoCollateralSecurityType
+
+     -
+
+     - STRING
+
+     -
+
+   * - `227 <http://fixwiki.org/fixwiki/RepurchaseRate>`_
+
+     - RepurchaseRate
+
+     -
+
+     - PERCENTAGE
+
+     -
+
+   * - `226 <http://fixwiki.org/fixwiki/RepurchaseTerm>`_
+
+     - RepurchaseTerm
+
+     -
+
+     - INT
+
+     -
+
+   * - `107 <http://fixwiki.org/fixwiki/SecurityDesc>`_
+
+     - SecurityDesc
+
+     -
+
+     - STRING
+
+     -
+
+   * - `207 <http://fixwiki.org/fixwiki/SecurityExchange>`_
+
+     - SecurityExchange
+
+     -
+
+     - EXCHANGE
+
+     -
+
+   * - `48 <http://fixwiki.org/fixwiki/SecurityID>`_
+
+     - SecurityID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `22 <http://fixwiki.org/fixwiki/SecurityIDSource>`_
+
+     - SecurityIDSource
+
+     -
+
+     - STRING
+
+     - 1 = CUSIP
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 2 = SEDOL
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 3 = QUIK
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 4 = ISIN_NUMBER
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 5 = RIC_CODE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 6 = ISO_CURRENCY_CODE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 7 = ISO_COUNTRY_CODE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 8 = EXCHANGE_SYMBOL
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - 9 = CONSOLIDATED_TAPE_ASSOCIATION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - A = BLOOMBERG_SYMBOL
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - B = WERTPAPIER
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - C = DUTCH
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - D = VALOREN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - E = SICOVAM
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - F = BELGIAN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - G = COMMON
+
+   * - `167 <http://fixwiki.org/fixwiki/SecurityType>`_
+
+     - SecurityType
+
+     -
+
+     - STRING
+
+     - ? = WILDCARD_ENTRY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - ABS = ASSET_BACKED_SECURITIES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - AMENDED = AMENDED_RESTATED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - AN = OTHER_ANTICIPATION_NOTES_BAN_GAN_ETC
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - BA = BANKERS_ACCEPTANCE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - BN = BANK_NOTES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - BOX = BILL_OF_EXCHANGES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - BRADY = BRADY_BOND
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - BRIDGE = BRIDGE_LOAN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CB = CONVERTIBLE_BOND
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CD = CERTIFICATE_OF_DEPOSIT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CL = CALL_LOANS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CMBS = CORP_MORTGAGE_BACKED_SECURITIES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CMO = COLLATERALIZED_MORTGAGE_OBLIGATION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - COFO = CERTIFICATE_OF_OBLIGATION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - COFP = CERTIFICATE_OF_PARTICIPATION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CORP = CORPORATE_BOND
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CP = COMMERCIAL_PAPER
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CPP = CORPORATE_PRIVATE_PLACEMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - CS = COMMON_STOCK
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - DEFLTED = DEFAULTED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - DINP = DEBTOR_IN_POSSESSION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - DN = DEPOSIT_NOTES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - DUAL = DUAL_CURRENCY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - FAC = FEDERAL_AGENCY_COUPON
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - FADN = FEDERAL_AGENCY_DISCOUNT_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - FOR = FOREIGN_EXCHANGE_CONTRACT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - GO = GENERAL_OBLIGATION_BONDS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - IET = IOETTE_MORTGAGE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - LOFC = LETTER_OF_CREDIT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - LQN = LIQUIDITY_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MATURED = MATURED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MBS = MORTGAGE_BACKED_SECURITIES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MF = MUTUAL_FUND
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MIO = MORTGAGE_INTEREST_ONLY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MLEG = MULTI_LEG_INSTRUMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MPO = MORTGAGE_PRINCIPAL_ONLY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MPP = MORTGAGE_PRIVATE_PLACEMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MPT = MISCELLANEOUS_PASS_THROUGH
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MT = MANDATORY_TENDER
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - MTN = MEDIUM_TERM_NOTES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - NONE = NO_SECURITY_TYPE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - ONITE = OVERNIGHT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - PEF = PRIVATE_EXPORT_FUNDING
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - PN = PROMISSORY_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - POOL = AGENCY_POOLS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - PS = PREFERRED_STOCK
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - PZFJ = PLAZOS_FIJOS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - RAN = REVENUE_ANTICIPATION_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - REPLACD = REPLACED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - RETIRED = RETIRED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - REV = REVENUE_BONDS
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - RP = REPURCHASE_AGREEMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - RVLV = REVOLVER_LOAN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - RVLVTRM = REVOLVER_TERM_LOAN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - RVRP = REVERSE_REPURCHASE_AGREEMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - SPCLA = SPECIAL_ASSESSMENT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - SPCLO = SPECIAL_OBLIGATION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - SPCLT = SPECIAL_TAX
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - STN = SHORT_TERM_LOAN_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - STRUCT = STRUCTURED_NOTES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - SWING = SWING_LINE_FACILITY
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TAN = TAX_ANTICIPATION_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TAXA = TAX_ALLOCATION
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TBA = TO_BE_ANNOUNCED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TBOND = US_TREASURY_BOND
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TCAL = PRINCIPAL_STRIP_OF_A_CALLABLE_BOND_OR_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TD = TIME_DEPOSIT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TECP = TAX_EXEMPT_COMMERCIAL_PAPER
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TERM = TERM_LOAN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TINT = INTEREST_STRIP_FROM_ANY_BOND_OR_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TIPS = TREASURY_INFLATION_PROTECTED_SECURITIES
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TPRN = PRINCIPAL_STRIP_FROM_A_NON_CALLABLE_BOND_OR_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - TRAN = TAX_REVENUE_ANTICIPATION_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - UST = US_TREASURY_NOTE_BOND
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - USTB = US_TREASURY_BILL
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - VRDN = VARIABLE_RATE_DEMAND_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - WAR = WARRANT
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - WITHDRN = WITHDRAWN
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - XCN = EXTENDED_COMM_NOTE
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - XLINKD = INDEXED_LINKED
+
+   * -
+
+     -
+
+     -
+
+     -
+
+     - YANK = YANKEE_CORPORATE_BOND
+
+   * - `471 <http://fixwiki.org/fixwiki/StateOrProvinceOfIssue>`_
+
+     - StateOrProvinceOfIssue
+
+     -
+
+     - STRING
+
+     -
+
+   * - `202 <http://fixwiki.org/fixwiki/StrikePrice>`_
+
+     - StrikePrice
+
+     -
+
+     - PRICE
+
+     -
+
+   * - `55 <http://fixwiki.org/fixwiki/Symbol>`_
+
+     - Symbol
+
+     -
+
+     - STRING
+
+     -
+
+   * - `65 <http://fixwiki.org/fixwiki/SymbolSfx>`_
+
+     - SymbolSfx
+
+     -
+
+     - STRING
+
+     -
+
+
+UnderlyingInstrument
+++++++++++++++++++++
+
+.. list-table::
+   :header-rows: 1
+
+   * - Tag
+
+     - Field Name
+
+     - Req'd
+
+     - Data Type
+
+     - Acceptable Enums
+
+   * - `363 <http://fixwiki.org/fixwiki/EncodedUnderlyingIssuer>`_
+
+     - EncodedUnderlyingIssuer
+
+     -
+
+     - DATA
+
+     -
+
+   * - `362 <http://fixwiki.org/fixwiki/EncodedUnderlyingIssuerLen>`_
+
+     - EncodedUnderlyingIssuerLen
+
+     -
+
+     - LENGTH
+
+     -
+
+   * - `365 <http://fixwiki.org/fixwiki/EncodedUnderlyingSecurityDesc>`_
+
+     - EncodedUnderlyingSecurityDesc
+
+     -
+
+     - DATA
+
+     -
+
+   * - `364 <http://fixwiki.org/fixwiki/EncodedUnderlyingSecurityDescLen>`_
+
+     - EncodedUnderlyingSecurityDescLen
+
+     -
+
+     - LENGTH
+
+     -
+
+   * -
+
+     - *NoUnderlyingSecurityAltID*
+
+     -
+
+     -
+
+     -
+
+   * - > `458 <http://fixwiki.org/fixwiki/UnderlyingSecurityAltID>`_
+
+     - UnderlyingSecurityAltID
+
+     -
+
+     - STRING
+
+     -
+
+   * - > `459 <http://fixwiki.org/fixwiki/UnderlyingSecurityAltIDSource>`_
+
+     - UnderlyingSecurityAltIDSource
+
+     -
+
+     - STRING
+
+     -
+
+   * - `463 <http://fixwiki.org/fixwiki/UnderlyingCFICode>`_
+
+     - UnderlyingCFICode
+
+     -
+
+     - STRING
+
+     -
+
+   * - `436 <http://fixwiki.org/fixwiki/UnderlyingContractMultiplier>`_
+
+     - UnderlyingContractMultiplier
+
+     -
+
+     - FLOAT
+
+     -
+
+   * - `592 <http://fixwiki.org/fixwiki/UnderlyingCountryOfIssue>`_
+
+     - UnderlyingCountryOfIssue
+
+     -
+
+     - COUNTRY
+
+     -
+
+   * - `241 <http://fixwiki.org/fixwiki/UnderlyingCouponPaymentDate>`_
+
+     - UnderlyingCouponPaymentDate
+
+     -
+
+     - UTCDATE
+
+     -
+
+   * - `435 <http://fixwiki.org/fixwiki/UnderlyingCouponRate>`_
+
+     - UnderlyingCouponRate
+
+     -
+
+     - PERCENTAGE
+
+     -
+
+   * - `256 <http://fixwiki.org/fixwiki/UnderlyingCreditRating>`_
+
+     - UnderlyingCreditRating
+
+     -
+
+     - STRING
+
+     -
+
+   * - `246 <http://fixwiki.org/fixwiki/UnderlyingFactor>`_
+
+     - UnderlyingFactor
+
+     -
+
+     - FLOAT
+
+     -
+
+   * - `595 <http://fixwiki.org/fixwiki/UnderlyingInstrRegistry>`_
+
+     - UnderlyingInstrRegistry
+
+     -
+
+     - STRING
+
+     -
+
+   * - `242 <http://fixwiki.org/fixwiki/UnderlyingIssueDate>`_
+
+     - UnderlyingIssueDate
+
+     -
+
+     - UTCDATE
+
+     -
+
+   * - `306 <http://fixwiki.org/fixwiki/UnderlyingIssuer>`_
+
+     - UnderlyingIssuer
+
+     -
+
+     - STRING
+
+     -
+
+   * - `594 <http://fixwiki.org/fixwiki/UnderlyingLocaleOfIssue>`_
+
+     - UnderlyingLocaleOfIssue
+
+     -
+
+     - STRING
+
+     -
+
+   * - `542 <http://fixwiki.org/fixwiki/UnderlyingMaturityDate>`_
+
+     - UnderlyingMaturityDate
+
+     -
+
+     - LOCALMKTDATE
+
+     -
+
+   * - `313 <http://fixwiki.org/fixwiki/UnderlyingMaturityMonthYear>`_
+
+     - UnderlyingMaturityMonthYear
+
+     -
+
+     - MONTHYEAR
+
+     -
+
+   * - `317 <http://fixwiki.org/fixwiki/UnderlyingOptAttribute>`_
+
+     - UnderlyingOptAttribute
+
+     -
+
+     - CHAR
+
+     -
+
+   * - `462 <http://fixwiki.org/fixwiki/UnderlyingProduct>`_
+
+     - UnderlyingProduct
+
+     -
+
+     - INT
+
+     -
+
+   * - `315 <http://fixwiki.org/fixwiki/UnderlyingPutOrCall>`_
+
+     - UnderlyingPutOrCall
+
+     -
+
+     - INT
+
+     -
+
+   * - `247 <http://fixwiki.org/fixwiki/UnderlyingRedemptionDate>`_
+
+     - UnderlyingRedemptionDate
+
+     -
+
+     - UTCDATE
+
+     -
+
+   * - `243 <http://fixwiki.org/fixwiki/UnderlyingRepoCollateralSecurityType>`_
+
+     - UnderlyingRepoCollateralSecurityType
+
+     -
+
+     - STRING
+
+     -
+
+   * - `245 <http://fixwiki.org/fixwiki/UnderlyingRepurchaseRate>`_
+
+     - UnderlyingRepurchaseRate
+
+     -
+
+     - PERCENTAGE
+
+     -
+
+   * - `244 <http://fixwiki.org/fixwiki/UnderlyingRepurchaseTerm>`_
+
+     - UnderlyingRepurchaseTerm
+
+     -
+
+     - INT
+
+     -
+
+   * - `307 <http://fixwiki.org/fixwiki/UnderlyingSecurityDesc>`_
+
+     - UnderlyingSecurityDesc
+
+     -
+
+     - STRING
+
+     -
+
+   * - `308 <http://fixwiki.org/fixwiki/UnderlyingSecurityExchange>`_
+
+     - UnderlyingSecurityExchange
+
+     -
+
+     - EXCHANGE
+
+     -
+
+   * - `309 <http://fixwiki.org/fixwiki/UnderlyingSecurityID>`_
+
+     - UnderlyingSecurityID
+
+     -
+
+     - STRING
+
+     -
+
+   * - `305 <http://fixwiki.org/fixwiki/UnderlyingSecurityIDSource>`_
+
+     - UnderlyingSecurityIDSource
+
+     -
+
+     - STRING
+
+     -
+
+   * - `310 <http://fixwiki.org/fixwiki/UnderlyingSecurityType>`_
+
+     - UnderlyingSecurityType
+
+     -
+
+     - STRING
+
+     -
+
+   * - `593 <http://fixwiki.org/fixwiki/UnderlyingStateOrProvinceOfIssue>`_
+
+     - UnderlyingStateOrProvinceOfIssue
+
+     -
+
+     - STRING
+
+     -
+
+   * - `316 <http://fixwiki.org/fixwiki/UnderlyingStrikePrice>`_
+
+     - UnderlyingStrikePrice
+
+     -
+
+     - PRICE
+
+     -
+
+   * - `311 <http://fixwiki.org/fixwiki/UnderlyingSymbol>`_
+
+     - UnderlyingSymbol
+
+     -
+
+     - STRING
+
+     -
+
+   * - `312 <http://fixwiki.org/fixwiki/UnderlyingSymbolSfx>`_
+
+     - UnderlyingSymbolSfx
+
+     -
+
+     - STRING
+
+     -
+
