@@ -1,0 +1,306 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MarketDataRequestReject (Y) &#8212; FIX44.xml  documentation</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MarketDataSnapshotFullRefresh (W)" href="MarketDataSnapshotFullRefresh.html" />
+    <link rel="prev" title="MarketDataRequest (V)" href="MarketDataRequest.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="MarketDataSnapshotFullRefresh.html" title="MarketDataSnapshotFullRefresh (W)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="MarketDataRequest.html" title="MarketDataRequest (V)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX44.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">MarketDataRequestReject (Y)</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#components">Components</a><ul>
+<li><a class="reference internal" href="#mdrjctgrp">MDRjctGrp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="MarketDataRequest.html"
+                        title="previous chapter">MarketDataRequest (V)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="MarketDataSnapshotFullRefresh.html"
+                        title="next chapter">MarketDataSnapshotFullRefresh (W)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Messages/MarketDataRequestReject.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="marketdatarequestreject-y">
+<h1>MarketDataRequestReject (Y)<a class="headerlink" href="#marketdatarequestreject-y" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">MsgType</th>
+<th class="head">Category</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Y</td>
+<td>APP</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedText">355</a></td>
+<td>EncodedText</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedTextLen">354</a></td>
+<td>EncodedTextLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/MDReqID">262</a></td>
+<td>MDReqID</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/MDReqRejReason">281</a></td>
+<td>MDReqRejReason</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>0 = UNKNOWN_SYMBOL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = DUPLICATE_MDREQID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = INSUFFICIENT_BANDWIDTH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = INSUFFICIENT_PERMISSIONS</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = UNSUPPORTED_SUBSCRIPTIONREQUESTTYPE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = UNSUPPORTED_MARKETDEPTH</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = UNSUPPORTED_MDUPDATETYPE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = UNSUPPORTED_AGGREGATEDBOOK</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = UNSUPPORTED_MDENTRYTYPE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = UNSUPPORTED_TRADINGSESSIONID</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = UNSUPPORTED_SCOPE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = UNSUPPORTED_OPENCLOSESETTLEFLAG</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = UNSUPPORTED_MDIMPLICITDELETE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#mdrjctgrp">MDRjctGrp</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Text">58</a></td>
+<td>Text</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mdrjctgrp">
+<h3>MDRjctGrp<a class="headerlink" href="#mdrjctgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoAltMDSource</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/AltMDSourceID">817</a></td>
+<td>AltMDSourceID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="MarketDataSnapshotFullRefresh.html" title="MarketDataSnapshotFullRefresh (W)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="MarketDataRequest.html" title="MarketDataRequest (V)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX44.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>

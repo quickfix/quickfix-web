@@ -1,0 +1,639 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ListStatus (N) &#8212; FIX50.xml  documentation</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ListStatusRequest (M)" href="ListStatusRequest.html" />
+    <link rel="prev" title="ListExecute (L)" href="ListExecute.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ListStatusRequest.html" title="ListStatusRequest (M)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ListExecute.html" title="ListExecute (L)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX50.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ListStatus (N)</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#components">Components</a><ul>
+<li><a class="reference internal" href="#ordliststatgrp">OrdListStatGrp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ListExecute.html"
+                        title="previous chapter">ListExecute (L)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ListStatusRequest.html"
+                        title="next chapter">ListStatusRequest (M)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Messages/ListStatus.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="liststatus-n">
+<h1>ListStatus (N)<a class="headerlink" href="#liststatus-n" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">MsgType</th>
+<th class="head">Category</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>N</td>
+<td>APP</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedListStatusText">446</a></td>
+<td>EncodedListStatusText</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedListStatusTextLen">445</a></td>
+<td>EncodedListStatusTextLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/LastFragment">893</a></td>
+<td>LastFragment</td>
+<td>&#160;</td>
+<td>BOOLEAN</td>
+<td>N = NO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Y = YES</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ListID">66</a></td>
+<td>ListID</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ListOrderStatus">431</a></td>
+<td>ListOrderStatus</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>INT</td>
+<td>1 = IN_BIDDING_PROCESS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = RECEIVED_FOR_EXECUTION</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = EXECUTING</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CANCELLING</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = ALERT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = ALL_DONE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = REJECT</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ListStatusText">444</a></td>
+<td>ListStatusText</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ListStatusType">429</a></td>
+<td>ListStatusType</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>INT</td>
+<td>1 = ACK</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = RESPONSE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = TIMED</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = EXEC_STARTED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = ALL_DONE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = ALERT</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/NoRpts">82</a></td>
+<td>NoRpts</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#ordliststatgrp">OrdListStatGrp</a></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RptSeq">83</a></td>
+<td>RptSeq</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/TotNoOrders">68</a></td>
+<td>TotNoOrders</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/TransactTime">60</a></td>
+<td>TransactTime</td>
+<td>&#160;</td>
+<td>UTCTIMESTAMP</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ordliststatgrp">
+<h3>OrdListStatGrp<a class="headerlink" href="#ordliststatgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoOrders</em></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/AvgPx">6</a></td>
+<td>AvgPx</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/ClOrdID">11</a></td>
+<td>ClOrdID</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CumQty">14</a></td>
+<td>CumQty</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>QTY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CxlQty">84</a></td>
+<td>CxlQty</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>QTY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/EncodedText">355</a></td>
+<td>EncodedText</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/EncodedTextLen">354</a></td>
+<td>EncodedTextLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/LeavesQty">151</a></td>
+<td>LeavesQty</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>QTY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OrdRejReason">103</a></td>
+<td>OrdRejReason</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>0 = BROKER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = UNKNOWN_SYMBOL</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = INVALID_INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = UNSUPPORTED_ORDER_CHARACTERISTIC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = SURVEILLENCE_OPTION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = INCORRECT_QUANTITY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = INCORRECT_ALLOCATED_QUANTITY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = UNKNOWN_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = INVALID_PRICE_INCREMENT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = EXCHANGE_CLOSED</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = ORDER_EXCEEDS_LIMIT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = TOO_LATE_TO_ENTER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = UNKNOWN_ORDER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = DUPLICATE_ORDER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = DUPLICATE_OF_A_VERBALLY_COMMUNICATED_ORDER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = STALE_ORDER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = TRADE_ALONG_REQUIRED</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>99 = OTHER</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OrdStatus">39</a></td>
+<td>OrdStatus</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>CHAR</td>
+<td>0 = NEW</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = PARTIALLY_FILLED</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = FILLED</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = DONE_FOR_DAY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CANCELED</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = REPLACED</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = PENDING_CANCEL</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = STOPPED</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = REJECTED</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = SUSPENDED</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = PENDING_NEW</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = CALCULATED</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = EXPIRED</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>D = ACCEPTED_FOR_BIDDING</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>E = PENDING_REPLACE</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/SecondaryClOrdID">526</a></td>
+<td>SecondaryClOrdID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/Text">58</a></td>
+<td>Text</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/WorkingIndicator">636</a></td>
+<td>WorkingIndicator</td>
+<td>&#160;</td>
+<td>BOOLEAN</td>
+<td>N = NO</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Y = YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ListStatusRequest.html" title="ListStatusRequest (M)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ListExecute.html" title="ListExecute (L)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX50.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2074 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MassQuoteAcknowledgement (b) &#8212; FIX43.xml  documentation</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MultilegOrderCancelReplaceRequest (AC)" href="MultilegOrderCancelReplaceRequest.html" />
+    <link rel="prev" title="MassQuote (i)" href="MassQuote.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="MultilegOrderCancelReplaceRequest.html" title="MultilegOrderCancelReplaceRequest (AC)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="MassQuote.html" title="MassQuote (i)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX43.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">MassQuoteAcknowledgement (b)</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#components">Components</a><ul>
+<li><a class="reference internal" href="#instrument">Instrument</a></li>
+<li><a class="reference internal" href="#parties">Parties</a></li>
+<li><a class="reference internal" href="#underlyinginstrument">UnderlyingInstrument</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="MassQuote.html"
+                        title="previous chapter">MassQuote (i)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="MultilegOrderCancelReplaceRequest.html"
+                        title="next chapter">MultilegOrderCancelReplaceRequest (AC)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Messages/MassQuoteAcknowledgement.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="massquoteacknowledgement-b">
+<h1>MassQuoteAcknowledgement (b)<a class="headerlink" href="#massquoteacknowledgement-b" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">MsgType</th>
+<th class="head">Category</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>b</td>
+<td>APP</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Account">1</a></td>
+<td>Account</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/AccountType">581</a></td>
+<td>AccountType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = ACCOUNT_IS_CARRIED_ON_CUSTOMER_SIDE_OF_BOOKS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = HOUSE_TRADER</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = FLOOR_TRADER</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS_AND_IS_CROSS_MARGINED</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = ACCOUNT_IS_HOUSE_TRADER_AND_IS_CROSS_MARGINED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = JOINT_BACKOFFICE_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoQuoteSets</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td><em>NoQuoteEntries</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/BidForwardPoints">189</a></td>
+<td>BidForwardPoints</td>
+<td>&#160;</td>
+<td>PRICEOFFSET</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/BidForwardPoints2">642</a></td>
+<td>BidForwardPoints2</td>
+<td>&#160;</td>
+<td>PRICEOFFSET</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/BidPx">132</a></td>
+<td>BidPx</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/BidSize">134</a></td>
+<td>BidSize</td>
+<td>&#160;</td>
+<td>QTY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/BidSpotRate">188</a></td>
+<td>BidSpotRate</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/BidYield">632</a></td>
+<td>BidYield</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/Currency">15</a></td>
+<td>Currency</td>
+<td>&#160;</td>
+<td>CURRENCY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/FutSettDate">64</a></td>
+<td>FutSettDate</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/FutSettDate2">193</a></td>
+<td>FutSettDate2</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td><a class="reference internal" href="#instrument">Instrument</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/MidPx">631</a></td>
+<td>MidPx</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/MidYield">633</a></td>
+<td>MidYield</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OfferForwardPoints">191</a></td>
+<td>OfferForwardPoints</td>
+<td>&#160;</td>
+<td>PRICEOFFSET</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OfferForwardPoints2">643</a></td>
+<td>OfferForwardPoints2</td>
+<td>&#160;</td>
+<td>PRICEOFFSET</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OfferPx">133</a></td>
+<td>OfferPx</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OfferSize">135</a></td>
+<td>OfferSize</td>
+<td>&#160;</td>
+<td>QTY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OfferSpotRate">190</a></td>
+<td>OfferSpotRate</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OfferYield">634</a></td>
+<td>OfferYield</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OrdType">40</a></td>
+<td>OrdType</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>1 = MARKET</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = LIMIT</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = STOP</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = STOP_LIMIT</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = MARKET_ON_CLOSE</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = WITH_OR_WITHOUT</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = LIMIT_OR_BETTER</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = LIMIT_WITH_OR_WITHOUT</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = ON_BASIS</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = ON_CLOSE</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = LIMIT_ON_CLOSE</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = FOREX_C</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>D = PREVIOUSLY_QUOTED</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>E = PREVIOUSLY_INDICATED</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>F = FOREX_F</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>G = FOREX_G</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>H = FOREX_H</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>I = FUNARI</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>J = MARKET_IF_TOUCHED</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>K = MARKET_WITH_LEFTOVER_AS_LIMIT</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>L = PREVIOUS_FUND_VALUATION_POINT</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>M = NEXT_FUND_VALUATION_POINT</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>P = PEGGED</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OrderQty2">192</a></td>
+<td>OrderQty2</td>
+<td>&#160;</td>
+<td>QTY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/QuoteEntryID">299</a></td>
+<td>QuoteEntryID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/QuoteEntryRejectReason">368</a></td>
+<td>QuoteEntryRejectReason</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/TradingSessionID">336</a></td>
+<td>TradingSessionID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/TradingSessionSubID">625</a></td>
+<td>TradingSessionSubID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/TransactTime">60</a></td>
+<td>TransactTime</td>
+<td>&#160;</td>
+<td>UTCTIMESTAMP</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; <a class="reference external" href="http://fixwiki.org/fixwiki/ValidUntilTime">62</a></td>
+<td>ValidUntilTime</td>
+<td>&#160;</td>
+<td>UTCTIMESTAMP</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/QuoteSetID">302</a></td>
+<td>QuoteSetID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/TotQuoteEntries">304</a></td>
+<td>TotQuoteEntries</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td><a class="reference internal" href="#underlyinginstrument">UnderlyingInstrument</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#parties">Parties</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/QuoteID">117</a></td>
+<td>QuoteID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/QuoteRejectReason">300</a></td>
+<td>QuoteRejectReason</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = UNKNOWN_SYMBOL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = EXCHANGE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = QUOTE_REQUEST_EXCEEDS_LIMIT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = TOO_LATE_TO_ENTER</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = UNKNOWN_QUOTE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = DUPLICATE_QUOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = INVALID_BID_ASK_SPREAD</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = INVALID_PRICE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = NOT_AUTHORIZED_TO_QUOTE_SECURITY</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/QuoteReqID">131</a></td>
+<td>QuoteReqID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/QuoteResponseLevel">301</a></td>
+<td>QuoteResponseLevel</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>0 = NO_ACKNOWLEDGEMENT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = ACKNOWLEDGE_ONLY_NEGATIVE_OR_ERRONEOUS_QUOTES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = ACKNOWLEDGE_EACH_QUOTE_MESSAGES</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/QuoteStatus">297</a></td>
+<td>QuoteStatus</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>INT</td>
+<td>0 = ACCEPTED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = CANCELED_FOR_SYMBOL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = PENDING</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = CANCELED_FOR_SECURITY_TYPE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = CANCELED_FOR_UNDERLYING</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CANCELED_ALL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = REJECTED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = REMOVED_FROM_MARKET</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = EXPIRED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = QUERY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = QUOTE_NOT_FOUND</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/QuoteType">537</a></td>
+<td>QuoteType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>0 = INDICATIVE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = TRADEABLE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = RESTRICTED_TRADEABLE</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Text">58</a></td>
+<td>Text</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="instrument">
+<h3>Instrument<a class="headerlink" href="#instrument" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/CFICode">461</a></td>
+<td>CFICode</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ContractMultiplier">231</a></td>
+<td>ContractMultiplier</td>
+<td>&#160;</td>
+<td>FLOAT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/CountryOfIssue">470</a></td>
+<td>CountryOfIssue</td>
+<td>&#160;</td>
+<td>COUNTRY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/CouponPaymentDate">224</a></td>
+<td>CouponPaymentDate</td>
+<td>&#160;</td>
+<td>UTCDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/CouponRate">223</a></td>
+<td>CouponRate</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/CreditRating">255</a></td>
+<td>CreditRating</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedIssuer">349</a></td>
+<td>EncodedIssuer</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedIssuerLen">348</a></td>
+<td>EncodedIssuerLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedSecurityDesc">351</a></td>
+<td>EncodedSecurityDesc</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedSecurityDescLen">350</a></td>
+<td>EncodedSecurityDescLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Factor">228</a></td>
+<td>Factor</td>
+<td>&#160;</td>
+<td>FLOAT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/InstrRegistry">543</a></td>
+<td>InstrRegistry</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/IssueDate">225</a></td>
+<td>IssueDate</td>
+<td>&#160;</td>
+<td>UTCDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Issuer">106</a></td>
+<td>Issuer</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/LocaleOfIssue">472</a></td>
+<td>LocaleOfIssue</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/MaturityDate">541</a></td>
+<td>MaturityDate</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/MaturityMonthYear">200</a></td>
+<td>MaturityMonthYear</td>
+<td>&#160;</td>
+<td>MONTHYEAR</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><em>NoSecurityAltID</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/SecurityAltID">455</a></td>
+<td>SecurityAltID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/SecurityAltIDSource">456</a></td>
+<td>SecurityAltIDSource</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/OptAttribute">206</a></td>
+<td>OptAttribute</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Product">460</a></td>
+<td>Product</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = AGENCY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = MORTGAGE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = MUNICIPAL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = OTHER</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = COMMODITY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = CORPORATE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CURRENCY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = EQUITY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = GOVERNMENT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = INDEX</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = LOAN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = MONEYMARKET</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RedemptionDate">240</a></td>
+<td>RedemptionDate</td>
+<td>&#160;</td>
+<td>UTCDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RepoCollateralSecurityType">239</a></td>
+<td>RepoCollateralSecurityType</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RepurchaseRate">227</a></td>
+<td>RepurchaseRate</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RepurchaseTerm">226</a></td>
+<td>RepurchaseTerm</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/SecurityDesc">107</a></td>
+<td>SecurityDesc</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/SecurityExchange">207</a></td>
+<td>SecurityExchange</td>
+<td>&#160;</td>
+<td>EXCHANGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/SecurityID">48</a></td>
+<td>SecurityID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/SecurityIDSource">22</a></td>
+<td>SecurityIDSource</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>1 = CUSIP</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = SEDOL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = QUIK</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = ISIN_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = RIC_CODE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = ISO_CURRENCY_CODE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = ISO_COUNTRY_CODE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = EXCHANGE_SYMBOL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = CONSOLIDATED_TAPE_ASSOCIATION</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = BLOOMBERG_SYMBOL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = WERTPAPIER</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = DUTCH</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>D = VALOREN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>E = SICOVAM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>F = BELGIAN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>G = COMMON</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/SecurityType">167</a></td>
+<td>SecurityType</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>? = WILDCARD_ENTRY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ABS = ASSET_BACKED_SECURITIES</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AMENDED = AMENDED_RESTATED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>AN = OTHER_ANTICIPATION_NOTES_BAN_GAN_ETC</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>BA = BANKERS_ACCEPTANCE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>BN = BANK_NOTES</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>BOX = BILL_OF_EXCHANGES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>BRADY = BRADY_BOND</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>BRIDGE = BRIDGE_LOAN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CB = CONVERTIBLE_BOND</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CD = CERTIFICATE_OF_DEPOSIT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CL = CALL_LOANS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CMBS = CORP_MORTGAGE_BACKED_SECURITIES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CMO = COLLATERALIZED_MORTGAGE_OBLIGATION</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>COFO = CERTIFICATE_OF_OBLIGATION</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>COFP = CERTIFICATE_OF_PARTICIPATION</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CORP = CORPORATE_BOND</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CP = COMMERCIAL_PAPER</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CPP = CORPORATE_PRIVATE_PLACEMENT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>CS = COMMON_STOCK</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>DEFLTED = DEFAULTED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>DINP = DEBTOR_IN_POSSESSION</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>DN = DEPOSIT_NOTES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>DUAL = DUAL_CURRENCY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>FAC = FEDERAL_AGENCY_COUPON</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>FADN = FEDERAL_AGENCY_DISCOUNT_NOTE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>FOR = FOREIGN_EXCHANGE_CONTRACT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>GO = GENERAL_OBLIGATION_BONDS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>IET = IOETTE_MORTGAGE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>LOFC = LETTER_OF_CREDIT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>LQN = LIQUIDITY_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MATURED = MATURED</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MBS = MORTGAGE_BACKED_SECURITIES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MF = MUTUAL_FUND</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MIO = MORTGAGE_INTEREST_ONLY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MLEG = MULTI_LEG_INSTRUMENT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MPO = MORTGAGE_PRINCIPAL_ONLY</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MPP = MORTGAGE_PRIVATE_PLACEMENT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MPT = MISCELLANEOUS_PASS_THROUGH</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MT = MANDATORY_TENDER</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>MTN = MEDIUM_TERM_NOTES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>NONE = NO_SECURITY_TYPE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>ONITE = OVERNIGHT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>PEF = PRIVATE_EXPORT_FUNDING</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>PN = PROMISSORY_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>POOL = AGENCY_POOLS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>PS = PREFERRED_STOCK</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>PZFJ = PLAZOS_FIJOS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RAN = REVENUE_ANTICIPATION_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>REPLACD = REPLACED</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RETIRED = RETIRED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>REV = REVENUE_BONDS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RP = REPURCHASE_AGREEMENT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RVLV = REVOLVER_LOAN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RVLVTRM = REVOLVER_TERM_LOAN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>RVRP = REVERSE_REPURCHASE_AGREEMENT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SPCLA = SPECIAL_ASSESSMENT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SPCLO = SPECIAL_OBLIGATION</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SPCLT = SPECIAL_TAX</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>STN = SHORT_TERM_LOAN_NOTE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>STRUCT = STRUCTURED_NOTES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>SWING = SWING_LINE_FACILITY</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TAN = TAX_ANTICIPATION_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TAXA = TAX_ALLOCATION</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TBA = TO_BE_ANNOUNCED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TBOND = US_TREASURY_BOND</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TCAL = PRINCIPAL_STRIP_OF_A_CALLABLE_BOND_OR_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TD = TIME_DEPOSIT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TECP = TAX_EXEMPT_COMMERCIAL_PAPER</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TERM = TERM_LOAN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TINT = INTEREST_STRIP_FROM_ANY_BOND_OR_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TIPS = TREASURY_INFLATION_PROTECTED_SECURITIES</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TPRN = PRINCIPAL_STRIP_FROM_A_NON_CALLABLE_BOND_OR_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>TRAN = TAX_REVENUE_ANTICIPATION_NOTE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>UST = US_TREASURY_NOTE_BOND</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>USTB = US_TREASURY_BILL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>VRDN = VARIABLE_RATE_DEMAND_NOTE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>WAR = WARRANT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>WITHDRN = WITHDRAWN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>XCN = EXTENDED_COMM_NOTE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>XLINKD = INDEXED_LINKED</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>YANK = YANKEE_CORPORATE_BOND</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/StateOrProvinceOfIssue">471</a></td>
+<td>StateOrProvinceOfIssue</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/StrikePrice">202</a></td>
+<td>StrikePrice</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Symbol">55</a></td>
+<td>Symbol</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/SymbolSfx">65</a></td>
+<td>SymbolSfx</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="parties">
+<h3>Parties<a class="headerlink" href="#parties" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoPartyIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyID">448</a></td>
+<td>PartyID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyIDSource">447</a></td>
+<td>PartyIDSource</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>1 = KOREAN_INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = TAIWANESE_QUALIFIED_FOREIGN_INVESTOR_ID_QFII</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = TAIWANESE_TRADING_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = MALAYSIAN_CENTRAL_DEPOSITORY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = CHINESE_B_SHARE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = UK_NATIONAL_INSURANCE_OR_PENSION_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = US_SOCIAL_SECURITY_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = US_EMPLOYER_IDENTIFICATION_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = AUSTRALIAN_BUSINESS_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = AUSTRALIAN_TAX_FILE_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = BIC</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>D = PROPRIETARY_CUSTOM_CODE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>E = ISO_COUNTRY_CODE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>F = SETTLEMENT_ENTITY_LOCATION</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyRole">452</a></td>
+<td>PartyRole</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = EXECUTING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = SETTLEMENT_LOCATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = ORDER_ORIGINATION_TRADER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = EXECUTING_TRADER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = ORDER_ORIGINATION_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = GIVEUP_CLEARING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = CORRESPONDANT_CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>16 = EXECUTING_SYSTEM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>17 = CONTRA_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = CONTRA_CLEARING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>19 = SPONSORING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = BROKER_OF_CREDIT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>20 = UNDERLYING_CONTRA_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = CLIENT_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = INTRODUCING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = ENTERING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = LOCATE_LENDING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = FUND_MANAGER_CLIENT_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartySubID">523</a></td>
+<td>PartySubID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="underlyinginstrument">
+<h3>UnderlyingInstrument<a class="headerlink" href="#underlyinginstrument" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedUnderlyingIssuer">363</a></td>
+<td>EncodedUnderlyingIssuer</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedUnderlyingIssuerLen">362</a></td>
+<td>EncodedUnderlyingIssuerLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedUnderlyingSecurityDesc">365</a></td>
+<td>EncodedUnderlyingSecurityDesc</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedUnderlyingSecurityDescLen">364</a></td>
+<td>EncodedUnderlyingSecurityDescLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoUnderlyingSecurityAltID</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityAltID">458</a></td>
+<td>UnderlyingSecurityAltID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityAltIDSource">459</a></td>
+<td>UnderlyingSecurityAltIDSource</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingCFICode">463</a></td>
+<td>UnderlyingCFICode</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingContractMultiplier">436</a></td>
+<td>UnderlyingContractMultiplier</td>
+<td>&#160;</td>
+<td>FLOAT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingCountryOfIssue">592</a></td>
+<td>UnderlyingCountryOfIssue</td>
+<td>&#160;</td>
+<td>COUNTRY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingCouponPaymentDate">241</a></td>
+<td>UnderlyingCouponPaymentDate</td>
+<td>&#160;</td>
+<td>UTCDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingCouponRate">435</a></td>
+<td>UnderlyingCouponRate</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingCreditRating">256</a></td>
+<td>UnderlyingCreditRating</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingFactor">246</a></td>
+<td>UnderlyingFactor</td>
+<td>&#160;</td>
+<td>FLOAT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingInstrRegistry">595</a></td>
+<td>UnderlyingInstrRegistry</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingIssueDate">242</a></td>
+<td>UnderlyingIssueDate</td>
+<td>&#160;</td>
+<td>UTCDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingIssuer">306</a></td>
+<td>UnderlyingIssuer</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingLocaleOfIssue">594</a></td>
+<td>UnderlyingLocaleOfIssue</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingMaturityDate">542</a></td>
+<td>UnderlyingMaturityDate</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingMaturityMonthYear">313</a></td>
+<td>UnderlyingMaturityMonthYear</td>
+<td>&#160;</td>
+<td>MONTHYEAR</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingOptAttribute">317</a></td>
+<td>UnderlyingOptAttribute</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingProduct">462</a></td>
+<td>UnderlyingProduct</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingPutOrCall">315</a></td>
+<td>UnderlyingPutOrCall</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingRedemptionDate">247</a></td>
+<td>UnderlyingRedemptionDate</td>
+<td>&#160;</td>
+<td>UTCDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingRepoCollateralSecurityType">243</a></td>
+<td>UnderlyingRepoCollateralSecurityType</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingRepurchaseRate">245</a></td>
+<td>UnderlyingRepurchaseRate</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingRepurchaseTerm">244</a></td>
+<td>UnderlyingRepurchaseTerm</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityDesc">307</a></td>
+<td>UnderlyingSecurityDesc</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityExchange">308</a></td>
+<td>UnderlyingSecurityExchange</td>
+<td>&#160;</td>
+<td>EXCHANGE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityID">309</a></td>
+<td>UnderlyingSecurityID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityIDSource">305</a></td>
+<td>UnderlyingSecurityIDSource</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSecurityType">310</a></td>
+<td>UnderlyingSecurityType</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingStateOrProvinceOfIssue">593</a></td>
+<td>UnderlyingStateOrProvinceOfIssue</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingStrikePrice">316</a></td>
+<td>UnderlyingStrikePrice</td>
+<td>&#160;</td>
+<td>PRICE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSymbol">311</a></td>
+<td>UnderlyingSymbol</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/UnderlyingSymbolSfx">312</a></td>
+<td>UnderlyingSymbolSfx</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="MultilegOrderCancelReplaceRequest.html" title="MultilegOrderCancelReplaceRequest (AC)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="MassQuote.html" title="MassQuote (i)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX43.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>

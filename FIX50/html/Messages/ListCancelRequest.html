@@ -1,0 +1,1052 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ListCancelRequest (K) &#8212; FIX50.xml  documentation</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ListExecute (L)" href="ListExecute.html" />
+    <link rel="prev" title="IOI (6)" href="IOI.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ListExecute.html" title="ListExecute (L)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="IOI.html" title="IOI (6)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX50.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ListCancelRequest (K)</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#components">Components</a><ul>
+<li><a class="reference internal" href="#parties">Parties</a></li>
+<li><a class="reference internal" href="#ptyssubgrp">PtysSubGrp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="IOI.html"
+                        title="previous chapter">IOI (6)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ListExecute.html"
+                        title="next chapter">ListExecute (L)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Messages/ListCancelRequest.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="listcancelrequest-k">
+<h1>ListCancelRequest (K)<a class="headerlink" href="#listcancelrequest-k" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">MsgType</th>
+<th class="head">Category</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>K</td>
+<td>APP</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedText">355</a></td>
+<td>EncodedText</td>
+<td>&#160;</td>
+<td>DATA</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/EncodedTextLen">354</a></td>
+<td>EncodedTextLen</td>
+<td>&#160;</td>
+<td>LENGTH</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ListID">66</a></td>
+<td>ListID</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#parties">Parties</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Text">58</a></td>
+<td>Text</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/TradeDate">75</a></td>
+<td>TradeDate</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/TradeOriginationDate">229</a></td>
+<td>TradeOriginationDate</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/TransactTime">60</a></td>
+<td>TransactTime</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>UTCTIMESTAMP</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="parties">
+<h3>Parties<a class="headerlink" href="#parties" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoPartyIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyID">448</a></td>
+<td>PartyID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyIDSource">447</a></td>
+<td>PartyIDSource</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>1 = KOREAN_INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = TAIWANESE_QUALIFIED_FOREIGN_INVESTOR_ID_QFII_FID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = TAIWANESE_TRADING_ACCT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = MALAYSIAN_CENTRAL_DEPOSITORY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = CHINESE_INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = UK_NATIONAL_INSURANCE_OR_PENSION_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = US_SOCIAL_SECURITY_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = US_EMPLOYER_OR_TAX_ID_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = AUSTRALIAN_BUSINESS_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = AUSTRALIAN_TAX_FILE_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = BIC</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>D = PROPRIETARY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>E = ISO_COUNTRY_CODE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>F = SETTLEMENT_ENTITY_LOCATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>G = MIC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>H = CSD_PARTICIPANT_MEMBER_CODE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>I = DIRECTED_BROKER_THREE_CHARACTER_ACRONYM_AS_DEFINED_IN_ISITC_ETC_BEST_PRACTICE_GUIDELINES_DOCUMENT</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyRole">452</a></td>
+<td>PartyRole</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = EXECUTING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = SETTLEMENT_LOCATION</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = ORDER_ORIGINATION_TRADER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = EXECUTING_TRADER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = ORDER_ORIGINATION_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = GIVEUP_CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = CORRESPONDANT_CLEARING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>16 = EXECUTING_SYSTEM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>17 = CONTRA_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = CONTRA_CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>19 = SPONSORING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = BROKER_OF_CREDIT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>20 = UNDERLYING_CONTRA_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>21 = CLEARING_ORGANIZATION</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>22 = EXCHANGE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>24 = CUSTOMER_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>25 = CORRESPONDENT_CLEARING_ORGANIZATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>26 = CORRESPONDENT_BROKER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>27 = BUYER_SELLER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>28 = CUSTODIAN</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>29 = INTERMEDIARY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = CLIENT_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>30 = AGENT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>31 = SUB_CUSTODIAN</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>32 = BENEFICIARY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>33 = INTERESTED_PARTY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>34 = REGULATORY_BODY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>35 = LIQUIDITY_PROVIDER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>36 = ENTERING_TRADER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>37 = CONTRA_TRADER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>38 = POSITION_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>39 = CONTRA_INVESTOR_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CLEARING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>40 = TRANSFER_TO_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>41 = CONTRA_POSITION_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>42 = CONTRA_EXCHANGE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>43 = INTERNAL_CARRY_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>44 = ORDER_ENTRY_OPERATOR_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>45 = SECONDARY_ACCOUNT_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>46 = FORIEGN_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>47 = THIRD_PARTY_ALLOCATION_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>48 = CLAIMING_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>49 = ASSET_MANAGER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = INVESTOR_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>50 = PLEDGOR_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>51 = PLEDGEE_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>52 = LARGE_TRADER_REPORTABLE_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>53 = TRADER_MNEMONIC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>54 = SENDER_LOCATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>55 = SESSION_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>56 = ACCEPTABLE_COUNTERPARTY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>57 = UNACCEPTABLE_COUNTERPARTY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>58 = ENTERING_UNIT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>59 = EXECUTING_UNIT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = INTRODUCING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>60 = INTRODUCING_BROKER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>61 = QUOTE_ORIGINATOR</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>62 = REPORT_ORIGINATOR</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>63 = SYSTEMATIC_INTERNALISER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>64 = MULTILATERAL_TRADING_FACILITY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>65 = REGULATED_MARKET</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>66 = MARKET_MAKER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>67 = INVESTMENT_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>68 = HOST_COMPETENT_AUTHORITY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>69 = HOME_COMPETENT_AUTHORITY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = ENTERING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>70 = COMPETENT_AUTHORITY_OF_THE_MOST_RELEVANT_MARKET_IN_TERMS_OF_LIQUIDITY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>71 = COMPETENT_AUTHORITY_OF_THE_TRANSACTION</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>72 = REPORTING_INTERMEDIARY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>73 = EXECUTION_VENUE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>74 = MARKET_DATA_ENTRY_ORIGINATOR</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>75 = LOCATION_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>76 = DESK_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>77 = MARKET_DATA_MARKET</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>78 = ALLOCATION_ENTITY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = LOCATE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = FUND_MANAGER_CLIENT_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td><a class="reference internal" href="#ptyssubgrp">PtysSubGrp</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ptyssubgrp">
+<h3>PtysSubGrp<a class="headerlink" href="#ptyssubgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoPartySubIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartySubID">523</a></td>
+<td>PartySubID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartySubIDType">803</a></td>
+<td>PartySubIDType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = SECURITIES_ACCOUNT_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = REGISTRATION_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = REGISTERED_ADDRESS_12</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = REGULATORY_STATUS</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = REGISTRATION_NAME</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = CASH_ACCOUNT_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>16 = BIC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>17 = CSD_PARTICIPANT_MEMBER_CODE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = REGISTERED_ADDRESS_18</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>19 = FUND_ACCOUNT_NAME</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = PERSON</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>20 = TELEX_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>21 = FAX_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>22 = SECURITIES_ACCOUNT_NAME</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>23 = CASH_ACCOUNT_NAME</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>24 = DEPARTMENT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>25 = LOCATION_DESK</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>26 = POSITION_ACCOUNT_TYPE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>27 = SECURITY_LOCATE_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>28 = MARKET_MAKER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>29 = ELIGIBLE_COUNTERPARTY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = SYSTEM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>30 = PROFESSIONAL_CLIENT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>31 = LOCATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>32 = EXECUTION_VENUE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = APPLICATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = FULL_LEGAL_NAME_OF_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = POSTAL_ADDRESS</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = PHONE_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = EMAIL_ADDRESS</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = CONTACT_NAME</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ListExecute.html" title="ListExecute (L)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="IOI.html" title="IOI (6)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX50.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>

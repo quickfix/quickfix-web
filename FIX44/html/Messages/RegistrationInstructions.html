@@ -1,0 +1,1417 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RegistrationInstructions (o) &#8212; FIX44.xml  documentation</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="RegistrationInstructionsResponse (p)" href="RegistrationInstructionsResponse.html" />
+    <link rel="prev" title="RFQRequest (AH)" href="RFQRequest.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="RegistrationInstructionsResponse.html" title="RegistrationInstructionsResponse (p)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="RFQRequest.html" title="RFQRequest (AH)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX44.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">RegistrationInstructions (o)</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#components">Components</a><ul>
+<li><a class="reference internal" href="#nestedparties">NestedParties</a></li>
+<li><a class="reference internal" href="#nstdptyssubgrp">NstdPtysSubGrp</a></li>
+<li><a class="reference internal" href="#parties">Parties</a></li>
+<li><a class="reference internal" href="#ptyssubgrp">PtysSubGrp</a></li>
+<li><a class="reference internal" href="#rgstdistinstgrp">RgstDistInstGrp</a></li>
+<li><a class="reference internal" href="#rgstdtlsgrp">RgstDtlsGrp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="RFQRequest.html"
+                        title="previous chapter">RFQRequest (AH)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="RegistrationInstructionsResponse.html"
+                        title="next chapter">RegistrationInstructionsResponse (p)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Messages/RegistrationInstructions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="registrationinstructions-o">
+<h1>RegistrationInstructions (o)<a class="headerlink" href="#registrationinstructions-o" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">MsgType</th>
+<th class="head">Category</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>o</td>
+<td>APP</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/Account">1</a></td>
+<td>Account</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/AcctIDSource">660</a></td>
+<td>AcctIDSource</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = BIC</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = SID_CODE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = TFM</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = OMGEO</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = DTCC_CODE</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>99 = OTHER</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/ClOrdID">11</a></td>
+<td>ClOrdID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/OwnershipType">517</a></td>
+<td>OwnershipType</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>2 = JOINT_TRUSTEES</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>J = JOINT_INVESTORS</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>T = TENANTS_IN_COMMON</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#parties">Parties</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RegistAcctType">493</a></td>
+<td>RegistAcctType</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RegistID">513</a></td>
+<td>RegistID</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RegistRefID">508</a></td>
+<td>RegistRefID</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://fixwiki.org/fixwiki/RegistTransType">514</a></td>
+<td>RegistTransType</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>CHAR</td>
+<td>0 = NEW</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = REPLACE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = CANCEL</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="#rgstdistinstgrp">RgstDistInstGrp</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="#rgstdtlsgrp">RgstDtlsGrp</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://fixwiki.org/fixwiki/TaxAdvantageType">495</a></td>
+<td>TaxAdvantageType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>0 = NONE_NOT_APPLICABLE</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>1 = MAXI_ISA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = EMPLOYEE_CURRENT_YEAR</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = EMPLOYER</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = EMPLOYER_CURRENT_YEAR</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = NON_FUND_PROTOTYPE_IRA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = NON_FUND_QUALIFIED_PLAN</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = DEFINED_CONTRIBUTION_PLAN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>16 = INDIVIDUAL_RETIREMENT_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>17 = INDIVIDUAL_RETIREMENT_ACCOUNT_ROLLOVER</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = KEOGH</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>19 = PROFIT_SHARING_PLAN</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = TESSA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>20 = 401K</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>21 = SELF_DIRECTED_IRA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>22 = 403</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>23 = 457</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>24 = ROTH_IRA_24</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>25 = ROTH_IRA_25</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>26 = ROTH_CONVERSION_IRA_26</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>27 = ROTH_CONVERSION_IRA_27</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>28 = EDUCATION_IRA_28</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>29 = EDUCATION_IRA_29</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = MINI_CASH_ISA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = MINI_STOCKS_AND_SHARES_ISA</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = MINI_INSURANCE_ISA</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = CURRENT_YEAR_PAYMENT</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = PRIOR_YEAR_PAYMENT</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = ASSET_TRANSFER</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = EMPLOYEE</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nestedparties">
+<h3>NestedParties<a class="headerlink" href="#nestedparties" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoNestedPartyIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/NestedPartyID">524</a></td>
+<td>NestedPartyID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/NestedPartyIDSource">525</a></td>
+<td>NestedPartyIDSource</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/NestedPartyRole">538</a></td>
+<td>NestedPartyRole</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td><a class="reference internal" href="#nstdptyssubgrp">NstdPtysSubGrp</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nstdptyssubgrp">
+<h3>NstdPtysSubGrp<a class="headerlink" href="#nstdptyssubgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoNestedPartySubIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/NestedPartySubID">545</a></td>
+<td>NestedPartySubID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/NestedPartySubIDType">805</a></td>
+<td>NestedPartySubIDType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="parties">
+<h3>Parties<a class="headerlink" href="#parties" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoPartyIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyID">448</a></td>
+<td>PartyID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyIDSource">447</a></td>
+<td>PartyIDSource</td>
+<td>&#160;</td>
+<td>CHAR</td>
+<td>1 = KOREAN_INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = TAIWANESE_QUALIFIED_FOREIGN_INVESTOR_ID_QFII</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = TAIWANESE_TRADING_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = MALAYSIAN_CENTRAL_DEPOSITORY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = CHINESE_B_SHARE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = UK_NATIONAL_INSURANCE_OR_PENSION_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = US_SOCIAL_SECURITY_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = US_EMPLOYER_IDENTIFICATION_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = AUSTRALIAN_BUSINESS_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>A = AUSTRALIAN_TAX_FILE_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>B = BIC</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>C = GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>D = PROPRIETARY_CUSTOM_CODE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>E = ISO_COUNTRY_CODE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>F = SETTLEMENT_ENTITY_LOCATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>G = MIC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>H = CSD_PARTICIPANT_MEMBER_CODE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>I = DIRECTED_BROKER_THREE_CHARACTER_ACRONYM_AS_DEFINED_IN_ISITC_ETC_BEST_PRACTICE_GUIDELINES_DOCUMENT</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartyRole">452</a></td>
+<td>PartyRole</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = EXECUTING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = SETTLEMENT_LOCATION</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = ORDER_ORIGINATION_TRADER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = EXECUTING_TRADER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = ORDER_ORIGINATION_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = GIVEUP_CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = CORRESPONDANT_CLEARING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>16 = EXECUTING_SYSTEM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>17 = CONTRA_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = CONTRA_CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>19 = SPONSORING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = BROKER_OF_CREDIT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>20 = UNDERLYING_CONTRA_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>21 = CLEARING_ORGANIZATION</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>22 = EXCHANGE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>24 = CUSTOMER_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>25 = CORRESPONDENT_CLEARING_ORGANIZATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>26 = CORRESPONDENT_BROKER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>27 = BUYER_SELLER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>28 = CUSTODIAN</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>29 = INTERMEDIARY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = CLIENT_ID</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>30 = AGENT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>31 = SUB_CUSTODIAN</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>32 = BENEFICIARY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>33 = INTERESTED_PARTY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>34 = REGULATORY_BODY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>35 = LIQUIDITY_PROVIDER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>36 = ENTERING_TRADER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>37 = CONTRA_TRADER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>38 = POSITION_ACCOUNT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CLEARING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = INVESTOR_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = INTRODUCING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = ENTERING_FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = LOCATE_LENDING_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = FUND_MANAGER_CLIENT_ID</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td><a class="reference internal" href="#ptyssubgrp">PtysSubGrp</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ptyssubgrp">
+<h3>PtysSubGrp<a class="headerlink" href="#ptyssubgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoPartySubIDs</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartySubID">523</a></td>
+<td>PartySubID</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/PartySubIDType">803</a></td>
+<td>PartySubIDType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = FIRM</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = SECURITIES_ACCOUNT_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = REGISTRATION_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = REGISTERED_ADDRESS_12</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = REGULATORY_STATUS</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>14 = REGISTRATION_NAME</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>15 = CASH_ACCOUNT_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>16 = BIC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>17 = CSD_PARTICIPANT_MEMBER_CODE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>18 = REGISTERED_ADDRESS_18</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>19 = FUND_ACCOUNT_NAME</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = PERSON</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>20 = TELEX_NUMBER</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>21 = FAX_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>22 = SECURITIES_ACCOUNT_NAME</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>23 = CASH_ACCOUNT_NAME</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>24 = DEPARTMENT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>25 = LOCATION</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>26 = POSITION_ACCOUNT_TYPE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = SYSTEM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = APPLICATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = FULL_LEGAL_NAME_OF_FIRM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = POSTAL_ADDRESS</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = PHONE_NUMBER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = EMAIL_ADDRESS</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = CONTACT_NAME</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rgstdistinstgrp">
+<h3>RgstDistInstGrp<a class="headerlink" href="#rgstdistinstgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoDistribInsts</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CashDistribAgentAcctName">502</a></td>
+<td>CashDistribAgentAcctName</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CashDistribAgentAcctNumber">500</a></td>
+<td>CashDistribAgentAcctNumber</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CashDistribAgentCode">499</a></td>
+<td>CashDistribAgentCode</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CashDistribAgentName">498</a></td>
+<td>CashDistribAgentName</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CashDistribCurr">478</a></td>
+<td>CashDistribCurr</td>
+<td>&#160;</td>
+<td>CURRENCY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/CashDistribPayRef">501</a></td>
+<td>CashDistribPayRef</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/DistribPaymentMethod">477</a></td>
+<td>DistribPaymentMethod</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = CREST</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = BPAY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = HIGH_VALUE_CLEARING_SYSTEM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = REINVEST_IN_FUND</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = NSCC</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = EUROCLEAR</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = CLEARSTREAM</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = CHEQUE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = TELEGRAPHIC_TRANSFER</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = FEDWIRE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = DIRECT_CREDIT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = ACH_CREDIT</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/DistribPercentage">512</a></td>
+<td>DistribPercentage</td>
+<td>&#160;</td>
+<td>PERCENTAGE</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rgstdtlsgrp">
+<h3>RgstDtlsGrp<a class="headerlink" href="#rgstdtlsgrp" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Field Name</th>
+<th class="head">Req’d</th>
+<th class="head">Data Type</th>
+<th class="head">Acceptable Enums</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td><em>NoRegistDtls</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/DateOfBirth">486</a></td>
+<td>DateOfBirth</td>
+<td>&#160;</td>
+<td>LOCALMKTDATE</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/InvestorCountryOfResidence">475</a></td>
+<td>InvestorCountryOfResidence</td>
+<td>&#160;</td>
+<td>COUNTRY</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/MailingDtls">474</a></td>
+<td>MailingDtls</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/MailingInst">482</a></td>
+<td>MailingInst</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td><a class="reference internal" href="#nestedparties">NestedParties</a></td>
+<td>&#160;</td>
+<td><em>Component</em></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/OwnerType">522</a></td>
+<td>OwnerType</td>
+<td>&#160;</td>
+<td>INT</td>
+<td>1 = INDIVIDUAL_INVESTOR</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>10 = NETWORKING_SUB_ACCOUNT</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>11 = NON_PROFIT_ORGANIZATION</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>12 = CORPORATE_BODY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>13 = NOMINEE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2 = PUBLIC_COMPANY</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>3 = PRIVATE_COMPANY</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4 = INDIVIDUAL_TRUSTEE</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>5 = COMPANY_TRUSTEE</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>6 = PENSION_PLAN</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>7 = CUSTODIAN_UNDER_GIFTS_TO_MINORS_ACT</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>8 = TRUSTS</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>9 = FIDUCIARIES</td>
+</tr>
+<tr class="row-odd"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/RegistDtls">509</a></td>
+<td>RegistDtls</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&gt; <a class="reference external" href="http://fixwiki.org/fixwiki/RegistEmail">511</a></td>
+<td>RegistEmail</td>
+<td>&#160;</td>
+<td>STRING</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="RegistrationInstructionsResponse.html" title="RegistrationInstructionsResponse (p)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="RFQRequest.html" title="RFQRequest (AH)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FIX44.xml  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright .
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>
